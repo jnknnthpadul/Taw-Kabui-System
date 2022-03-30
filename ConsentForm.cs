@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Taw_Kabui_Management_System
+{
+    public partial class ConsentForm : Form
+    {
+        public ConsentForm()
+        {
+            InitializeComponent();
+        }
+    }
+}

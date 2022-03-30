@@ -1,0 +1,32 @@
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\bin\Debug\Taw Kabui Management System.exe.config
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\bin\Debug\Taw Kabui Management System.exe
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\bin\Debug\Taw Kabui Management System.pdb
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw Kabui Management System.csproj.AssemblyReference.cache
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw Kabui Management System.csproj.SuggestedBindingRedirects.cache
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw_Kabui_Management_System.LoginForm.resources
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw_Kabui_Management_System.Properties.Resources.resources
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw Kabui Management System.csproj.GenerateResource.cache
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw Kabui Management System.csproj.CoreCompileInputs.cache
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw Kabui Management System.exe
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw Kabui Management System.pdb
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw_Kabui_Management_System.MainForm.resources
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw_Kabui_Management_System.AccountForms.resources
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw_Kabui_Management_System.FeesForm.resources
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw_Kabui_Management_System.ClassesForm.resources
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw_Kabui_Management_System.ReportForm.resources
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw_Kabui_Management_System.ConsentForm.resources
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw_Kabui_Management_System.InformantCopyForm.resources
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw_Kabui_Management_System.ScreeningForm.resources
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw_Kabui_Management_System.StaffForm.resources
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw_Kabui_Management_System.EnrollmentForm.resources
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw_Kabui_Management_System.UCaccount.resources
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw_Kabui_Management_System.UCclasses.resources
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw_Kabui_Management_System.UCenroll.resources
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw_Kabui_Management_System.UCfees.resources
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw_Kabui_Management_System.UCreport.resources
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw_Kabui_Management_System.UCscreening.resources
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw_Kabui_Management_System.UCstaff.resources
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw_Kabui_Management_System.RecoverForm.resources
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw_Kabui_Management_System.ClassNew.resources
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\PAD'Z\Desktop\Taw Kabui Management System\obj\Debug\Taw Kabui Management System.csproj.CopyComplete

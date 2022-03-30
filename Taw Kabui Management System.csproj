@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{94669D07-6687-488D-8249-D707338AF7F2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Taw_Kabui_Management_System</RootNamespace>
+    <AssemblyName>Taw Kabui Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>packages\FontAwesome.Sharp.5.15.4\lib\net48\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountForms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountForms.Designer.cs">
+      <DependentUpon>AccountForms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassesForm.Designer.cs">
+      <DependentUpon>ClassesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassNew.Designer.cs">
+      <DependentUpon>ClassNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsentForm.Designer.cs">
+      <DependentUpon>ConsentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RecoverForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecoverForm.Designer.cs">
+      <DependentUpon>RecoverForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffForm.Designer.cs">
+      <DependentUpon>StaffForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnrollmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnrollmentForm.Designer.cs">
+      <DependentUpon>EnrollmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeesForm.Designer.cs">
+      <DependentUpon>FeesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InformantCopyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformantCopyForm.Designer.cs">
+      <DependentUpon>InformantCopyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ScreeningForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScreeningForm.Designer.cs">
+      <DependentUpon>ScreeningForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCaccount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCaccount.Designer.cs">
+      <DependentUpon>UCaccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCclasses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCclasses.Designer.cs">
+      <DependentUpon>UCclasses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCenroll.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCenroll.Designer.cs">
+      <DependentUpon>UCenroll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCfees.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCfees.Designer.cs">
+      <DependentUpon>UCfees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCreport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCreport.Designer.cs">
+      <DependentUpon>UCreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCscreening.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCscreening.Designer.cs">
+      <DependentUpon>UCscreening.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCstaff.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCstaff.Designer.cs">
+      <DependentUpon>UCstaff.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccountForms.resx">
+      <DependentUpon>AccountForms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassesForm.resx">
+      <DependentUpon>ClassesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassNew.resx">
+      <DependentUpon>ClassNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsentForm.resx">
+      <DependentUpon>ConsentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecoverForm.resx">
+      <DependentUpon>RecoverForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffForm.resx">
+      <DependentUpon>StaffForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnrollmentForm.resx">
+      <DependentUpon>EnrollmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeesForm.resx">
+      <DependentUpon>FeesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InformantCopyForm.resx">
+      <DependentUpon>InformantCopyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScreeningForm.resx">
+      <DependentUpon>ScreeningForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCaccount.resx">
+      <DependentUpon>UCaccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCclasses.resx">
+      <DependentUpon>UCclasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCenroll.resx">
+      <DependentUpon>UCenroll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCfees.resx">
+      <DependentUpon>UCfees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCreport.resx">
+      <DependentUpon>UCreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCscreening.resx">
+      <DependentUpon>UCscreening.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCstaff.resx">
+      <DependentUpon>UCstaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\274971748_480693566933104_4470172570114014334_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visibility.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visibility %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desktop-computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\desktop-computer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\students.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teamwork %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\energy-class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
