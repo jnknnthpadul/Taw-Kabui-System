@@ -29,44 +29,44 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cbSY = new System.Windows.Forms.ComboBox();
             this.btnBack = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.cbTerm = new System.Windows.Forms.ComboBox();
+            this.cbLevel = new System.Windows.Forms.ComboBox();
+            this.lblSY = new System.Windows.Forms.Label();
+            this.lblTerm = new System.Windows.Forms.Label();
+            this.lblLevel = new System.Windows.Forms.Label();
+            this.gbAttribute = new System.Windows.Forms.GroupBox();
+            this.rtbDescription = new System.Windows.Forms.RichTextBox();
+            this.lblDescription = new System.Windows.Forms.Label();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.gbAttribute.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
-            this.panel1.Controls.Add(this.comboBox3);
+            this.panel1.Controls.Add(this.cbSY);
             this.panel1.Controls.Add(this.btnBack);
-            this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.cbTerm);
+            this.panel1.Controls.Add(this.cbLevel);
+            this.panel1.Controls.Add(this.lblSY);
+            this.panel1.Controls.Add(this.lblTerm);
+            this.panel1.Controls.Add(this.lblLevel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 100);
             this.panel1.TabIndex = 0;
             // 
-            // comboBox3
+            // cbSY
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(604, 39);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(171, 28);
-            this.comboBox3.TabIndex = 5;
+            this.cbSY.FormattingEnabled = true;
+            this.cbSY.Location = new System.Drawing.Point(604, 39);
+            this.cbSY.Name = "cbSY";
+            this.cbSY.Size = new System.Drawing.Size(171, 28);
+            this.cbSY.TabIndex = 5;
             // 
             // btnBack
             // 
@@ -81,86 +81,86 @@
             this.btnBack.UseVisualStyleBackColor = true;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // comboBox2
+            // cbTerm
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(321, 39);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(171, 28);
-            this.comboBox2.TabIndex = 4;
+            this.cbTerm.FormattingEnabled = true;
+            this.cbTerm.Location = new System.Drawing.Point(321, 39);
+            this.cbTerm.Name = "cbTerm";
+            this.cbTerm.Size = new System.Drawing.Size(171, 28);
+            this.cbTerm.TabIndex = 4;
             // 
-            // comboBox1
+            // cbLevel
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(89, 39);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(171, 28);
-            this.comboBox1.TabIndex = 3;
+            this.cbLevel.FormattingEnabled = true;
+            this.cbLevel.Location = new System.Drawing.Point(89, 39);
+            this.cbLevel.Name = "cbLevel";
+            this.cbLevel.Size = new System.Drawing.Size(171, 28);
+            this.cbLevel.TabIndex = 3;
             // 
-            // label3
+            // lblSY
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(498, 42);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "School Year:";
+            this.lblSY.AutoSize = true;
+            this.lblSY.Location = new System.Drawing.Point(498, 42);
+            this.lblSY.Name = "lblSY";
+            this.lblSY.Size = new System.Drawing.Size(100, 20);
+            this.lblSY.TabIndex = 2;
+            this.lblSY.Text = "School Year:";
             // 
-            // label2
+            // lblTerm
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(266, 42);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Term:";
+            this.lblTerm.AutoSize = true;
+            this.lblTerm.Location = new System.Drawing.Point(266, 42);
+            this.lblTerm.Name = "lblTerm";
+            this.lblTerm.Size = new System.Drawing.Size(49, 20);
+            this.lblTerm.TabIndex = 1;
+            this.lblTerm.Text = "Term:";
             // 
-            // label1
+            // lblLevel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(33, 42);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Level:";
+            this.lblLevel.AutoSize = true;
+            this.lblLevel.Location = new System.Drawing.Point(33, 42);
+            this.lblLevel.Name = "lblLevel";
+            this.lblLevel.Size = new System.Drawing.Size(50, 20);
+            this.lblLevel.TabIndex = 0;
+            this.lblLevel.Text = "Level:";
             // 
-            // groupBox1
+            // gbAttribute
             // 
-            this.groupBox1.Controls.Add(this.richTextBox1);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(37, 135);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(684, 220);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Attribute";
+            this.gbAttribute.Controls.Add(this.rtbDescription);
+            this.gbAttribute.Controls.Add(this.lblDescription);
+            this.gbAttribute.ForeColor = System.Drawing.Color.White;
+            this.gbAttribute.Location = new System.Drawing.Point(37, 135);
+            this.gbAttribute.Name = "gbAttribute";
+            this.gbAttribute.Size = new System.Drawing.Size(684, 220);
+            this.gbAttribute.TabIndex = 1;
+            this.gbAttribute.TabStop = false;
+            this.gbAttribute.Text = "Attribute";
             // 
-            // richTextBox1
+            // rtbDescription
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(48, 63);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(604, 133);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "";
+            this.rtbDescription.Location = new System.Drawing.Point(48, 63);
+            this.rtbDescription.Name = "rtbDescription";
+            this.rtbDescription.Size = new System.Drawing.Size(604, 133);
+            this.rtbDescription.TabIndex = 2;
+            this.rtbDescription.Text = "";
             // 
-            // label4
+            // lblDescription
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(44, 40);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 20);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Description:";
+            this.lblDescription.AutoSize = true;
+            this.lblDescription.Location = new System.Drawing.Point(44, 40);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(93, 20);
+            this.lblDescription.TabIndex = 1;
+            this.lblDescription.Text = "Description:";
             // 
-            // button2
+            // btnAdd
             // 
-            this.button2.Location = new System.Drawing.Point(636, 388);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 33);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "ADD";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAdd.Location = new System.Drawing.Point(636, 388);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(85, 33);
+            this.btnAdd.TabIndex = 3;
+            this.btnAdd.Text = "ADD";
+            this.btnAdd.UseVisualStyleBackColor = true;
             // 
             // ClassNew
             // 
@@ -168,8 +168,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(84)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.gbAttribute);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ClassNew";
@@ -177,8 +177,8 @@
             this.Text = "ClassNew";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbAttribute.ResumeLayout(false);
+            this.gbAttribute.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -186,16 +186,16 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.GroupBox gbAttribute;
+        private System.Windows.Forms.ComboBox cbSY;
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox cbTerm;
+        private System.Windows.Forms.ComboBox cbLevel;
+        private System.Windows.Forms.Label lblSY;
+        private System.Windows.Forms.Label lblTerm;
+        private System.Windows.Forms.Label lblLevel;
+        private System.Windows.Forms.RichTextBox rtbDescription;
+        private System.Windows.Forms.Label lblDescription;
+        private System.Windows.Forms.Button btnAdd;
     }
 }

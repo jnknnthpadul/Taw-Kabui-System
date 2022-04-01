@@ -17,6 +17,12 @@ namespace Taw_Kabui_Management_System
             InitializeComponent();
         }
 
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            Form mainform = new MainForm();
+            mainform.Show();
+            this.Hide();
+        }
         private void btnScreeningForm_Click(object sender, EventArgs e)
         {
             if (!panelContainer.Controls.Contains(UCscreening.Instance))
@@ -28,7 +34,7 @@ namespace Taw_Kabui_Management_System
             else
                 UCscreening.Instance.BringToFront();
         }
-        private void btnStudentForm_Click_1(object sender, EventArgs e)
+        private void btnEnrollment_Click(object sender, EventArgs e)
         {
             if (!panelContainer.Controls.Contains(UCenroll.Instance))
             {
@@ -63,7 +69,7 @@ namespace Taw_Kabui_Management_System
                 UCaccount.Instance.BringToFront();
         }
 
-        private void btnEmploymentForm_Click(object sender, EventArgs e)
+        private void btnStaff_Click(object sender, EventArgs e)
         {
             if (!panelContainer.Controls.Contains(UCstaff.Instance))
             {
@@ -107,11 +113,6 @@ namespace Taw_Kabui_Management_System
             }
         }
 
-        private void btnDashboard_Click(object sender, EventArgs e)
-        {
-            Form mainform = new MainForm();
-            mainform.Show();
-            this.Hide();
-        }
+
     }
 }

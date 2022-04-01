@@ -29,79 +29,78 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.flpNavigation = new System.Windows.Forms.FlowLayoutPanel();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.btnScreeningForm = new System.Windows.Forms.Button();
-            this.btnStudentForm = new System.Windows.Forms.Button();
-            this.btnEmploymentForm = new System.Windows.Forms.Button();
+            this.btnEnrollment = new System.Windows.Forms.Button();
+            this.btnStaff = new System.Windows.Forms.Button();
             this.btnClassesForm = new System.Windows.Forms.Button();
             this.btnFeesForm = new System.Windows.Forms.Button();
             this.btnReportForm = new System.Windows.Forms.Button();
             this.bntAccountForm = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlTitle = new System.Windows.Forms.Panel();
             this.btnExit = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.pnlName = new System.Windows.Forms.Panel();
+            this.lblTawKabui = new System.Windows.Forms.Label();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
+            this.lblWelcome = new System.Windows.Forms.Label();
             this.panelContainer = new System.Windows.Forms.Panel();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Calendar = new System.Windows.Forms.MonthCalendar();
+            this.pnlNotPaid = new System.Windows.Forms.Panel();
+            this.lblNotPaidCounter = new System.Windows.Forms.Label();
+            this.lblNotPaid = new System.Windows.Forms.Label();
+            this.pnlPaid = new System.Windows.Forms.Panel();
+            this.lblPaidCount = new System.Windows.Forms.Label();
+            this.lblPaid = new System.Windows.Forms.Label();
+            this.pnlDownSyndrome = new System.Windows.Forms.Panel();
+            this.lblDownSCount = new System.Windows.Forms.Label();
+            this.lblDownS = new System.Windows.Forms.Label();
+            this.pnlClasses = new System.Windows.Forms.Panel();
+            this.lblClassesCount = new System.Windows.Forms.Label();
+            this.lblClasses = new System.Windows.Forms.Label();
+            this.pnlAutism = new System.Windows.Forms.Panel();
+            this.lblAutismCount = new System.Windows.Forms.Label();
+            this.lblAutism = new System.Windows.Forms.Label();
+            this.pnLADHD = new System.Windows.Forms.Panel();
+            this.lblADHDCount = new System.Windows.Forms.Label();
+            this.lblADHD = new System.Windows.Forms.Label();
+            this.pnlStaff = new System.Windows.Forms.Panel();
+            this.lblStaffCount = new System.Windows.Forms.Label();
+            this.pnlStudent = new System.Windows.Forms.Panel();
+            this.lblStudentCount = new System.Windows.Forms.Label();
+            this.lblStudent = new System.Windows.Forms.Label();
+            this.lblStaff = new System.Windows.Forms.Label();
+            this.flpNavigation.SuspendLayout();
+            this.pnlTitle.SuspendLayout();
+            this.pnlName.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.panelContainer.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel11.SuspendLayout();
+            this.pnlNotPaid.SuspendLayout();
+            this.pnlPaid.SuspendLayout();
+            this.pnlDownSyndrome.SuspendLayout();
+            this.pnlClasses.SuspendLayout();
+            this.pnlAutism.SuspendLayout();
+            this.pnLADHD.SuspendLayout();
+            this.pnlStaff.SuspendLayout();
+            this.pnlStudent.SuspendLayout();
             this.SuspendLayout();
             // 
-            // flowLayoutPanel1
+            // flpNavigation
             // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(84)))));
-            this.flowLayoutPanel1.Controls.Add(this.btnDashboard);
-            this.flowLayoutPanel1.Controls.Add(this.btnScreeningForm);
-            this.flowLayoutPanel1.Controls.Add(this.btnStudentForm);
-            this.flowLayoutPanel1.Controls.Add(this.btnEmploymentForm);
-            this.flowLayoutPanel1.Controls.Add(this.btnClassesForm);
-            this.flowLayoutPanel1.Controls.Add(this.btnFeesForm);
-            this.flowLayoutPanel1.Controls.Add(this.btnReportForm);
-            this.flowLayoutPanel1.Controls.Add(this.bntAccountForm);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 68);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(234, 972);
-            this.flowLayoutPanel1.TabIndex = 3;
+            this.flpNavigation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(84)))));
+            this.flpNavigation.Controls.Add(this.btnDashboard);
+            this.flpNavigation.Controls.Add(this.btnScreeningForm);
+            this.flpNavigation.Controls.Add(this.btnEnrollment);
+            this.flpNavigation.Controls.Add(this.btnStaff);
+            this.flpNavigation.Controls.Add(this.btnClassesForm);
+            this.flpNavigation.Controls.Add(this.btnFeesForm);
+            this.flpNavigation.Controls.Add(this.btnReportForm);
+            this.flpNavigation.Controls.Add(this.bntAccountForm);
+            this.flpNavigation.Dock = System.Windows.Forms.DockStyle.Left;
+            this.flpNavigation.Location = new System.Drawing.Point(0, 68);
+            this.flpNavigation.Name = "flpNavigation";
+            this.flpNavigation.Size = new System.Drawing.Size(234, 972);
+            this.flpNavigation.TabIndex = 3;
             // 
             // btnDashboard
             // 
@@ -142,42 +141,42 @@
             this.btnScreeningForm.UseVisualStyleBackColor = false;
             this.btnScreeningForm.Click += new System.EventHandler(this.btnScreeningForm_Click);
             // 
-            // btnStudentForm
+            // btnEnrollment
             // 
-            this.btnStudentForm.BackColor = System.Drawing.Color.Transparent;
-            this.btnStudentForm.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnStudentForm.FlatAppearance.BorderSize = 0;
-            this.btnStudentForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStudentForm.ForeColor = System.Drawing.Color.White;
-            this.btnStudentForm.Image = global::Taw_Kabui_Management_System.Properties.Resources.students;
-            this.btnStudentForm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStudentForm.Location = new System.Drawing.Point(3, 205);
-            this.btnStudentForm.Name = "btnStudentForm";
-            this.btnStudentForm.Size = new System.Drawing.Size(225, 95);
-            this.btnStudentForm.TabIndex = 32;
-            this.btnStudentForm.Text = "ENROLLMENT";
-            this.btnStudentForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStudentForm.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnStudentForm.UseVisualStyleBackColor = false;
-            this.btnStudentForm.Click += new System.EventHandler(this.btnStudentForm_Click_1);
+            this.btnEnrollment.BackColor = System.Drawing.Color.Transparent;
+            this.btnEnrollment.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnEnrollment.FlatAppearance.BorderSize = 0;
+            this.btnEnrollment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEnrollment.ForeColor = System.Drawing.Color.White;
+            this.btnEnrollment.Image = global::Taw_Kabui_Management_System.Properties.Resources.students;
+            this.btnEnrollment.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEnrollment.Location = new System.Drawing.Point(3, 205);
+            this.btnEnrollment.Name = "btnEnrollment";
+            this.btnEnrollment.Size = new System.Drawing.Size(225, 95);
+            this.btnEnrollment.TabIndex = 32;
+            this.btnEnrollment.Text = "ENROLLMENT";
+            this.btnEnrollment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEnrollment.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEnrollment.UseVisualStyleBackColor = false;
+            this.btnEnrollment.Click += new System.EventHandler(this.btnEnrollment_Click);
             // 
-            // btnEmploymentForm
+            // btnStaff
             // 
-            this.btnEmploymentForm.BackColor = System.Drawing.Color.Transparent;
-            this.btnEmploymentForm.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnEmploymentForm.FlatAppearance.BorderSize = 0;
-            this.btnEmploymentForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmploymentForm.ForeColor = System.Drawing.Color.White;
-            this.btnEmploymentForm.Image = global::Taw_Kabui_Management_System.Properties.Resources.teamwork__1_;
-            this.btnEmploymentForm.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEmploymentForm.Location = new System.Drawing.Point(3, 306);
-            this.btnEmploymentForm.Name = "btnEmploymentForm";
-            this.btnEmploymentForm.Size = new System.Drawing.Size(225, 95);
-            this.btnEmploymentForm.TabIndex = 27;
-            this.btnEmploymentForm.Text = "STAFF";
-            this.btnEmploymentForm.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEmploymentForm.UseVisualStyleBackColor = false;
-            this.btnEmploymentForm.Click += new System.EventHandler(this.btnEmploymentForm_Click);
+            this.btnStaff.BackColor = System.Drawing.Color.Transparent;
+            this.btnStaff.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnStaff.FlatAppearance.BorderSize = 0;
+            this.btnStaff.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStaff.ForeColor = System.Drawing.Color.White;
+            this.btnStaff.Image = global::Taw_Kabui_Management_System.Properties.Resources.teamwork__1_;
+            this.btnStaff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStaff.Location = new System.Drawing.Point(3, 306);
+            this.btnStaff.Name = "btnStaff";
+            this.btnStaff.Size = new System.Drawing.Size(225, 95);
+            this.btnStaff.TabIndex = 27;
+            this.btnStaff.Text = "STAFF";
+            this.btnStaff.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnStaff.UseVisualStyleBackColor = false;
+            this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
             // 
             // btnClassesForm
             // 
@@ -251,17 +250,17 @@
             this.bntAccountForm.UseVisualStyleBackColor = false;
             this.bntAccountForm.Click += new System.EventHandler(this.bntAccountForm_Click);
             // 
-            // panel2
+            // pnlTitle
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.btnExit);
-            this.panel2.Controls.Add(this.panel1);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1920, 68);
-            this.panel2.TabIndex = 4;
+            this.pnlTitle.BackColor = System.Drawing.Color.White;
+            this.pnlTitle.Controls.Add(this.btnExit);
+            this.pnlTitle.Controls.Add(this.pnlName);
+            this.pnlTitle.Controls.Add(this.lblWelcome);
+            this.pnlTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTitle.Location = new System.Drawing.Point(0, 0);
+            this.pnlTitle.Name = "pnlTitle";
+            this.pnlTitle.Size = new System.Drawing.Size(1920, 68);
+            this.pnlTitle.TabIndex = 4;
             // 
             // btnExit
             // 
@@ -276,380 +275,367 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // panel1
+            // pnlName
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(234, 68);
-            this.panel1.TabIndex = 1;
+            this.pnlName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
+            this.pnlName.Controls.Add(this.lblTawKabui);
+            this.pnlName.Controls.Add(this.pbLogo);
+            this.pnlName.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlName.Location = new System.Drawing.Point(0, 0);
+            this.pnlName.Name = "pnlName";
+            this.pnlName.Size = new System.Drawing.Size(234, 68);
+            this.pnlName.TabIndex = 1;
             // 
-            // label1
+            // lblTawKabui
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(94, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 20);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "TAW KABUI";
+            this.lblTawKabui.AutoSize = true;
+            this.lblTawKabui.Location = new System.Drawing.Point(94, 28);
+            this.lblTawKabui.Name = "lblTawKabui";
+            this.lblTawKabui.Size = new System.Drawing.Size(97, 20);
+            this.lblTawKabui.TabIndex = 2;
+            this.lblTawKabui.Text = "TAW KABUI";
             // 
-            // pictureBox1
+            // pbLogo
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Image = global::Taw_Kabui_Management_System.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 68);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.pbLogo.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pbLogo.Image = global::Taw_Kabui_Management_System.Properties.Resources.logo;
+            this.pbLogo.Location = new System.Drawing.Point(0, 0);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(100, 68);
+            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLogo.TabIndex = 2;
+            this.pbLogo.TabStop = false;
             // 
-            // label2
+            // lblWelcome
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(953, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(349, 20);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "WELCOME TO TAW KABUI FOR A CHILD INC.";
+            this.lblWelcome.AutoSize = true;
+            this.lblWelcome.Location = new System.Drawing.Point(953, 26);
+            this.lblWelcome.Name = "lblWelcome";
+            this.lblWelcome.Size = new System.Drawing.Size(349, 20);
+            this.lblWelcome.TabIndex = 0;
+            this.lblWelcome.Text = "WELCOME TO TAW KABUI FOR A CHILD INC.";
             // 
             // panelContainer
             // 
             this.panelContainer.BackColor = System.Drawing.SystemColors.Control;
             this.panelContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panelContainer.Controls.Add(this.monthCalendar1);
-            this.panelContainer.Controls.Add(this.panel7);
-            this.panelContainer.Controls.Add(this.panel6);
-            this.panelContainer.Controls.Add(this.panel8);
-            this.panelContainer.Controls.Add(this.panel5);
-            this.panelContainer.Controls.Add(this.panel9);
-            this.panelContainer.Controls.Add(this.panel10);
-            this.panelContainer.Controls.Add(this.panel4);
-            this.panelContainer.Controls.Add(this.panel11);
+            this.panelContainer.Controls.Add(this.Calendar);
+            this.panelContainer.Controls.Add(this.pnlNotPaid);
+            this.panelContainer.Controls.Add(this.pnlPaid);
+            this.panelContainer.Controls.Add(this.pnlDownSyndrome);
+            this.panelContainer.Controls.Add(this.pnlClasses);
+            this.panelContainer.Controls.Add(this.pnlAutism);
+            this.panelContainer.Controls.Add(this.pnLADHD);
+            this.panelContainer.Controls.Add(this.pnlStaff);
+            this.panelContainer.Controls.Add(this.pnlStudent);
             this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelContainer.Location = new System.Drawing.Point(234, 68);
             this.panelContainer.Name = "panelContainer";
             this.panelContainer.Size = new System.Drawing.Size(1686, 972);
             this.panelContainer.TabIndex = 5;
             // 
-            // monthCalendar1
+            // Calendar
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(1309, 679);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 19;
+            this.Calendar.Location = new System.Drawing.Point(1294, 681);
+            this.Calendar.Name = "Calendar";
+            this.Calendar.TabIndex = 19;
             // 
-            // panel7
+            // pnlNotPaid
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(202)))), ((int)(((byte)(212)))));
-            this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
-            this.panel7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel7.Controls.Add(this.label11);
-            this.panel7.Controls.Add(this.label12);
-            this.panel7.Location = new System.Drawing.Point(1321, 350);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(300, 300);
-            this.panel7.TabIndex = 16;
+            this.pnlNotPaid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(202)))), ((int)(((byte)(212)))));
+            this.pnlNotPaid.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlNotPaid.BackgroundImage")));
+            this.pnlNotPaid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnlNotPaid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlNotPaid.Controls.Add(this.lblNotPaidCounter);
+            this.pnlNotPaid.Controls.Add(this.lblNotPaid);
+            this.pnlNotPaid.Location = new System.Drawing.Point(1321, 350);
+            this.pnlNotPaid.Name = "pnlNotPaid";
+            this.pnlNotPaid.Size = new System.Drawing.Size(300, 300);
+            this.pnlNotPaid.TabIndex = 16;
             // 
-            // label11
+            // lblNotPaidCounter
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(103, 157);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(64, 46);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "30";
+            this.lblNotPaidCounter.AutoSize = true;
+            this.lblNotPaidCounter.BackColor = System.Drawing.Color.Transparent;
+            this.lblNotPaidCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNotPaidCounter.ForeColor = System.Drawing.Color.White;
+            this.lblNotPaidCounter.Location = new System.Drawing.Point(103, 157);
+            this.lblNotPaidCounter.Name = "lblNotPaidCounter";
+            this.lblNotPaidCounter.Size = new System.Drawing.Size(64, 46);
+            this.lblNotPaidCounter.TabIndex = 1;
+            this.lblNotPaidCounter.Text = "30";
             // 
-            // label12
+            // lblNotPaid
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(73, 89);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(155, 36);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "NOT PAID";
+            this.lblNotPaid.AutoSize = true;
+            this.lblNotPaid.BackColor = System.Drawing.Color.Transparent;
+            this.lblNotPaid.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNotPaid.ForeColor = System.Drawing.Color.White;
+            this.lblNotPaid.Location = new System.Drawing.Point(73, 89);
+            this.lblNotPaid.Name = "lblNotPaid";
+            this.lblNotPaid.Size = new System.Drawing.Size(155, 36);
+            this.lblNotPaid.TabIndex = 0;
+            this.lblNotPaid.Text = "NOT PAID";
             // 
-            // panel6
+            // pnlPaid
             // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(202)))), ((int)(((byte)(212)))));
-            this.panel6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel6.BackgroundImage")));
-            this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel6.Controls.Add(this.label9);
-            this.panel6.Controls.Add(this.label10);
-            this.panel6.Location = new System.Drawing.Point(1321, 24);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(300, 300);
-            this.panel6.TabIndex = 12;
+            this.pnlPaid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(202)))), ((int)(((byte)(212)))));
+            this.pnlPaid.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPaid.BackgroundImage")));
+            this.pnlPaid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnlPaid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlPaid.Controls.Add(this.lblPaidCount);
+            this.pnlPaid.Controls.Add(this.lblPaid);
+            this.pnlPaid.Location = new System.Drawing.Point(1321, 24);
+            this.pnlPaid.Name = "pnlPaid";
+            this.pnlPaid.Size = new System.Drawing.Size(300, 300);
+            this.pnlPaid.TabIndex = 12;
             // 
-            // label9
+            // lblPaidCount
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(126, 166);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(64, 46);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "20";
+            this.lblPaidCount.AutoSize = true;
+            this.lblPaidCount.BackColor = System.Drawing.Color.Transparent;
+            this.lblPaidCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPaidCount.ForeColor = System.Drawing.Color.White;
+            this.lblPaidCount.Location = new System.Drawing.Point(126, 166);
+            this.lblPaidCount.Name = "lblPaidCount";
+            this.lblPaidCount.Size = new System.Drawing.Size(64, 46);
+            this.lblPaidCount.TabIndex = 1;
+            this.lblPaidCount.Text = "20";
             // 
-            // label10
+            // lblPaid
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(114, 89);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(85, 36);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "PAID";
+            this.lblPaid.AutoSize = true;
+            this.lblPaid.BackColor = System.Drawing.Color.Transparent;
+            this.lblPaid.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPaid.ForeColor = System.Drawing.Color.White;
+            this.lblPaid.Location = new System.Drawing.Point(114, 89);
+            this.lblPaid.Name = "lblPaid";
+            this.lblPaid.Size = new System.Drawing.Size(85, 36);
+            this.lblPaid.TabIndex = 0;
+            this.lblPaid.Text = "PAID";
             // 
-            // panel8
+            // pnlDownSyndrome
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(194)))), ((int)(((byte)(73)))));
-            this.panel8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel8.BackgroundImage")));
-            this.panel8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.label13);
-            this.panel8.Controls.Add(this.label14);
-            this.panel8.Location = new System.Drawing.Point(927, 350);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(300, 300);
-            this.panel8.TabIndex = 17;
+            this.pnlDownSyndrome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(194)))), ((int)(((byte)(73)))));
+            this.pnlDownSyndrome.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlDownSyndrome.BackgroundImage")));
+            this.pnlDownSyndrome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnlDownSyndrome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlDownSyndrome.Controls.Add(this.lblDownSCount);
+            this.pnlDownSyndrome.Controls.Add(this.lblDownS);
+            this.pnlDownSyndrome.Location = new System.Drawing.Point(927, 350);
+            this.pnlDownSyndrome.Name = "pnlDownSyndrome";
+            this.pnlDownSyndrome.Size = new System.Drawing.Size(300, 300);
+            this.pnlDownSyndrome.TabIndex = 17;
             // 
-            // label13
+            // lblDownSCount
             // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(107, 157);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(64, 46);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "25";
+            this.lblDownSCount.AutoSize = true;
+            this.lblDownSCount.BackColor = System.Drawing.Color.Transparent;
+            this.lblDownSCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDownSCount.ForeColor = System.Drawing.Color.White;
+            this.lblDownSCount.Location = new System.Drawing.Point(107, 157);
+            this.lblDownSCount.Name = "lblDownSCount";
+            this.lblDownSCount.Size = new System.Drawing.Size(64, 46);
+            this.lblDownSCount.TabIndex = 1;
+            this.lblDownSCount.Text = "25";
             // 
-            // label14
+            // lblDownS
             // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(8, 89);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(289, 36);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "DOWN SYNDROME";
+            this.lblDownS.AutoSize = true;
+            this.lblDownS.BackColor = System.Drawing.Color.Transparent;
+            this.lblDownS.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDownS.ForeColor = System.Drawing.Color.White;
+            this.lblDownS.Location = new System.Drawing.Point(8, 89);
+            this.lblDownS.Name = "lblDownS";
+            this.lblDownS.Size = new System.Drawing.Size(289, 36);
+            this.lblDownS.TabIndex = 0;
+            this.lblDownS.Text = "DOWN SYNDROME";
             // 
-            // panel5
+            // pnlClasses
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(194)))), ((int)(((byte)(73)))));
-            this.panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel5.BackgroundImage")));
-            this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.label7);
-            this.panel5.Controls.Add(this.label8);
-            this.panel5.Location = new System.Drawing.Point(927, 24);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(300, 300);
-            this.panel5.TabIndex = 13;
+            this.pnlClasses.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(194)))), ((int)(((byte)(73)))));
+            this.pnlClasses.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlClasses.BackgroundImage")));
+            this.pnlClasses.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnlClasses.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlClasses.Controls.Add(this.lblClassesCount);
+            this.pnlClasses.Controls.Add(this.lblClasses);
+            this.pnlClasses.Location = new System.Drawing.Point(927, 24);
+            this.pnlClasses.Name = "pnlClasses";
+            this.pnlClasses.Size = new System.Drawing.Size(300, 300);
+            this.pnlClasses.TabIndex = 13;
             // 
-            // label7
+            // lblClassesCount
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(129, 166);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(42, 46);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "8";
+            this.lblClassesCount.AutoSize = true;
+            this.lblClassesCount.BackColor = System.Drawing.Color.Transparent;
+            this.lblClassesCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClassesCount.ForeColor = System.Drawing.Color.White;
+            this.lblClassesCount.Location = new System.Drawing.Point(129, 166);
+            this.lblClassesCount.Name = "lblClassesCount";
+            this.lblClassesCount.Size = new System.Drawing.Size(42, 46);
+            this.lblClassesCount.TabIndex = 1;
+            this.lblClassesCount.Text = "8";
             // 
-            // label8
+            // lblClasses
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(82, 89);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(154, 36);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "CLASSES";
+            this.lblClasses.AutoSize = true;
+            this.lblClasses.BackColor = System.Drawing.Color.Transparent;
+            this.lblClasses.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClasses.ForeColor = System.Drawing.Color.White;
+            this.lblClasses.Location = new System.Drawing.Point(82, 89);
+            this.lblClasses.Name = "lblClasses";
+            this.lblClasses.Size = new System.Drawing.Size(154, 36);
+            this.lblClasses.TabIndex = 0;
+            this.lblClasses.Text = "CLASSES";
             // 
-            // panel9
+            // pnlAutism
             // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(163)))), ((int)(((byte)(229)))));
-            this.panel9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel9.BackgroundImage")));
-            this.panel9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel9.Controls.Add(this.label15);
-            this.panel9.Controls.Add(this.label16);
-            this.panel9.Location = new System.Drawing.Point(510, 350);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(300, 300);
-            this.panel9.TabIndex = 18;
+            this.pnlAutism.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(163)))), ((int)(((byte)(229)))));
+            this.pnlAutism.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlAutism.BackgroundImage")));
+            this.pnlAutism.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnlAutism.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlAutism.Controls.Add(this.lblAutismCount);
+            this.pnlAutism.Controls.Add(this.lblAutism);
+            this.pnlAutism.Location = new System.Drawing.Point(510, 350);
+            this.pnlAutism.Name = "pnlAutism";
+            this.pnlAutism.Size = new System.Drawing.Size(300, 300);
+            this.pnlAutism.TabIndex = 18;
             // 
-            // label15
+            // lblAutismCount
             // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(119, 157);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(64, 46);
-            this.label15.TabIndex = 1;
-            this.label15.Text = "15";
+            this.lblAutismCount.AutoSize = true;
+            this.lblAutismCount.BackColor = System.Drawing.Color.Transparent;
+            this.lblAutismCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAutismCount.ForeColor = System.Drawing.Color.White;
+            this.lblAutismCount.Location = new System.Drawing.Point(119, 157);
+            this.lblAutismCount.Name = "lblAutismCount";
+            this.lblAutismCount.Size = new System.Drawing.Size(64, 46);
+            this.lblAutismCount.TabIndex = 1;
+            this.lblAutismCount.Text = "15";
             // 
-            // label16
+            // lblAutism
             // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(104, 89);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(129, 36);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "AUTISM";
+            this.lblAutism.AutoSize = true;
+            this.lblAutism.BackColor = System.Drawing.Color.Transparent;
+            this.lblAutism.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAutism.ForeColor = System.Drawing.Color.White;
+            this.lblAutism.Location = new System.Drawing.Point(104, 89);
+            this.lblAutism.Name = "lblAutism";
+            this.lblAutism.Size = new System.Drawing.Size(129, 36);
+            this.lblAutism.TabIndex = 0;
+            this.lblAutism.Text = "AUTISM";
             // 
-            // panel10
+            // pnLADHD
             // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(86)))), ((int)(((byte)(91)))));
-            this.panel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel10.BackgroundImage")));
-            this.panel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel10.Controls.Add(this.label17);
-            this.panel10.Controls.Add(this.label18);
-            this.panel10.Location = new System.Drawing.Point(118, 350);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(300, 300);
-            this.panel10.TabIndex = 15;
+            this.pnLADHD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(86)))), ((int)(((byte)(91)))));
+            this.pnLADHD.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnLADHD.BackgroundImage")));
+            this.pnLADHD.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnLADHD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnLADHD.Controls.Add(this.lblADHDCount);
+            this.pnLADHD.Controls.Add(this.lblADHD);
+            this.pnLADHD.Location = new System.Drawing.Point(118, 350);
+            this.pnLADHD.Name = "pnLADHD";
+            this.pnLADHD.Size = new System.Drawing.Size(300, 300);
+            this.pnLADHD.TabIndex = 15;
             // 
-            // label17
+            // lblADHDCount
             // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(96, 157);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(64, 46);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "10";
+            this.lblADHDCount.AutoSize = true;
+            this.lblADHDCount.BackColor = System.Drawing.Color.Transparent;
+            this.lblADHDCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblADHDCount.ForeColor = System.Drawing.Color.White;
+            this.lblADHDCount.Location = new System.Drawing.Point(96, 157);
+            this.lblADHDCount.Name = "lblADHDCount";
+            this.lblADHDCount.Size = new System.Drawing.Size(64, 46);
+            this.lblADHDCount.TabIndex = 1;
+            this.lblADHDCount.Text = "10";
             // 
-            // label18
+            // lblADHD
             // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.White;
-            this.label18.Location = new System.Drawing.Point(87, 80);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(99, 36);
-            this.label18.TabIndex = 0;
-            this.label18.Text = "ADHD";
+            this.lblADHD.AutoSize = true;
+            this.lblADHD.BackColor = System.Drawing.Color.Transparent;
+            this.lblADHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblADHD.ForeColor = System.Drawing.Color.White;
+            this.lblADHD.Location = new System.Drawing.Point(87, 80);
+            this.lblADHD.Name = "lblADHD";
+            this.lblADHD.Size = new System.Drawing.Size(99, 36);
+            this.lblADHD.TabIndex = 0;
+            this.lblADHD.Text = "ADHD";
             // 
-            // panel4
+            // pnlStaff
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(163)))), ((int)(((byte)(229)))));
-            this.panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel4.BackgroundImage")));
-            this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.label19);
-            this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.label6);
-            this.panel4.Location = new System.Drawing.Point(510, 24);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(300, 300);
-            this.panel4.TabIndex = 14;
+            this.pnlStaff.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(163)))), ((int)(((byte)(229)))));
+            this.pnlStaff.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlStaff.BackgroundImage")));
+            this.pnlStaff.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnlStaff.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlStaff.Controls.Add(this.lblStaffCount);
+            this.pnlStaff.Controls.Add(this.lblStaff);
+            this.pnlStaff.Location = new System.Drawing.Point(510, 24);
+            this.pnlStaff.Name = "pnlStaff";
+            this.pnlStaff.Size = new System.Drawing.Size(300, 300);
+            this.pnlStaff.TabIndex = 14;
             // 
-            // label19
+            // lblStaffCount
             // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(104, 89);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(110, 36);
-            this.label19.TabIndex = 2;
-            this.label19.Text = "STAFF";
+            this.lblStaffCount.AutoSize = true;
+            this.lblStaffCount.BackColor = System.Drawing.Color.Transparent;
+            this.lblStaffCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStaffCount.ForeColor = System.Drawing.Color.White;
+            this.lblStaffCount.Location = new System.Drawing.Point(119, 166);
+            this.lblStaffCount.Name = "lblStaffCount";
+            this.lblStaffCount.Size = new System.Drawing.Size(64, 46);
+            this.lblStaffCount.TabIndex = 1;
+            this.lblStaffCount.Text = "10";
             // 
-            // label5
+            // pnlStudent
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(119, 166);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 46);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "10";
+            this.pnlStudent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(86)))), ((int)(((byte)(91)))));
+            this.pnlStudent.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlStudent.BackgroundImage")));
+            this.pnlStudent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pnlStudent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlStudent.Controls.Add(this.lblStudentCount);
+            this.pnlStudent.Controls.Add(this.lblStudent);
+            this.pnlStudent.Location = new System.Drawing.Point(118, 24);
+            this.pnlStudent.Name = "pnlStudent";
+            this.pnlStudent.Size = new System.Drawing.Size(300, 300);
+            this.pnlStudent.TabIndex = 11;
             // 
-            // label6
+            // lblStudentCount
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.LiveSetting = System.Windows.Forms.Automation.AutomationLiveSetting.Polite;
-            this.label6.Location = new System.Drawing.Point(104, 89);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(110, 36);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "STAFF";
+            this.lblStudentCount.AutoSize = true;
+            this.lblStudentCount.BackColor = System.Drawing.Color.Transparent;
+            this.lblStudentCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudentCount.ForeColor = System.Drawing.Color.White;
+            this.lblStudentCount.Location = new System.Drawing.Point(111, 166);
+            this.lblStudentCount.Name = "lblStudentCount";
+            this.lblStudentCount.Size = new System.Drawing.Size(64, 46);
+            this.lblStudentCount.TabIndex = 1;
+            this.lblStudentCount.Text = "50";
             // 
-            // panel11
+            // lblStudent
             // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(86)))), ((int)(((byte)(91)))));
-            this.panel11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel11.BackgroundImage")));
-            this.panel11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel11.Controls.Add(this.label4);
-            this.panel11.Controls.Add(this.label3);
-            this.panel11.Location = new System.Drawing.Point(118, 24);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(300, 300);
-            this.panel11.TabIndex = 11;
+            this.lblStudent.AutoSize = true;
+            this.lblStudent.BackColor = System.Drawing.Color.Transparent;
+            this.lblStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStudent.ForeColor = System.Drawing.Color.White;
+            this.lblStudent.Location = new System.Drawing.Point(76, 89);
+            this.lblStudent.Name = "lblStudent";
+            this.lblStudent.Size = new System.Drawing.Size(156, 36);
+            this.lblStudent.TabIndex = 0;
+            this.lblStudent.Text = "STUDENT";
             // 
-            // label4
+            // lblStaff
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(111, 166);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 46);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "50";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(76, 89);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(156, 36);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "STUDENT";
+            this.lblStaff.AutoSize = true;
+            this.lblStaff.BackColor = System.Drawing.Color.Transparent;
+            this.lblStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStaff.ForeColor = System.Drawing.Color.White;
+            this.lblStaff.LiveSetting = System.Windows.Forms.Automation.AutomationLiveSetting.Polite;
+            this.lblStaff.Location = new System.Drawing.Point(104, 89);
+            this.lblStaff.Name = "lblStaff";
+            this.lblStaff.Size = new System.Drawing.Size(110, 36);
+            this.lblStaff.TabIndex = 0;
+            this.lblStaff.Text = "STAFF";
             // 
             // MainForm
             // 
@@ -657,82 +643,82 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1920, 1040);
             this.Controls.Add(this.panelContainer);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.flpNavigation);
+            this.Controls.Add(this.pnlTitle);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1920, 1045);
+            this.MinimumSize = new System.Drawing.Size(1918, 1018);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.flpNavigation.ResumeLayout(false);
+            this.pnlTitle.ResumeLayout(false);
+            this.pnlTitle.PerformLayout();
+            this.pnlName.ResumeLayout(false);
+            this.pnlName.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.panelContainer.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
+            this.pnlNotPaid.ResumeLayout(false);
+            this.pnlNotPaid.PerformLayout();
+            this.pnlPaid.ResumeLayout(false);
+            this.pnlPaid.PerformLayout();
+            this.pnlDownSyndrome.ResumeLayout(false);
+            this.pnlDownSyndrome.PerformLayout();
+            this.pnlClasses.ResumeLayout(false);
+            this.pnlClasses.PerformLayout();
+            this.pnlAutism.ResumeLayout(false);
+            this.pnlAutism.PerformLayout();
+            this.pnLADHD.ResumeLayout(false);
+            this.pnLADHD.PerformLayout();
+            this.pnlStaff.ResumeLayout(false);
+            this.pnlStaff.PerformLayout();
+            this.pnlStudent.ResumeLayout(false);
+            this.pnlStudent.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.FlowLayoutPanel flpNavigation;
         private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Button btnScreeningForm;
-        private System.Windows.Forms.Button btnEmploymentForm;
+        private System.Windows.Forms.Button btnStaff;
         private System.Windows.Forms.Button btnClassesForm;
         private System.Windows.Forms.Button btnFeesForm;
         private System.Windows.Forms.Button btnReportForm;
         private System.Windows.Forms.Button bntAccountForm;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnStudentForm;
+        private System.Windows.Forms.Panel pnlTitle;
+        private System.Windows.Forms.Panel pnlName;
+        private System.Windows.Forms.Label lblTawKabui;
+        private System.Windows.Forms.PictureBox pbLogo;
+        private System.Windows.Forms.Label lblWelcome;
+        private System.Windows.Forms.Button btnEnrollment;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Panel pnlStudent;
+        private System.Windows.Forms.Label lblStudentCount;
+        private System.Windows.Forms.Label lblStudent;
+        private System.Windows.Forms.Panel pnlStaff;
+        private System.Windows.Forms.Label lblStaffCount;
+        private System.Windows.Forms.Panel pnLADHD;
+        private System.Windows.Forms.Label lblADHDCount;
+        private System.Windows.Forms.Label lblADHD;
+        private System.Windows.Forms.Panel pnlAutism;
+        private System.Windows.Forms.Label lblAutismCount;
+        private System.Windows.Forms.Label lblAutism;
+        private System.Windows.Forms.Panel pnlClasses;
+        private System.Windows.Forms.Label lblClassesCount;
+        private System.Windows.Forms.Label lblClasses;
+        private System.Windows.Forms.Panel pnlDownSyndrome;
+        private System.Windows.Forms.Label lblDownSCount;
+        private System.Windows.Forms.Label lblDownS;
+        private System.Windows.Forms.Panel pnlPaid;
+        private System.Windows.Forms.Label lblPaidCount;
+        private System.Windows.Forms.Label lblPaid;
+        private System.Windows.Forms.Panel pnlNotPaid;
+        private System.Windows.Forms.Label lblNotPaidCounter;
+        private System.Windows.Forms.Label lblNotPaid;
         private System.Windows.Forms.Panel panelContainer;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.MonthCalendar Calendar;
+        private System.Windows.Forms.Label lblStaff;
     }
 }

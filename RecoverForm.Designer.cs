@@ -28,204 +28,204 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.gbRecoverPass = new System.Windows.Forms.GroupBox();
+            this.btnRecover = new System.Windows.Forms.Button();
+            this.tbEmail = new System.Windows.Forms.TextBox();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.gbQandA = new System.Windows.Forms.GroupBox();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.tbAnswer = new System.Windows.Forms.TextBox();
+            this.tbQuestion = new System.Windows.Forms.TextBox();
+            this.lblAnswer = new System.Windows.Forms.Label();
+            this.lblQuestion = new System.Windows.Forms.Label();
+            this.gbChangePass = new System.Windows.Forms.GroupBox();
+            this.btnChangePass = new System.Windows.Forms.Button();
+            this.tbConfirmPass = new System.Windows.Forms.TextBox();
+            this.tbNewPass = new System.Windows.Forms.TextBox();
+            this.lblConfirmPass = new System.Windows.Forms.Label();
+            this.lblNewPass = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.gbRecoverPass.SuspendLayout();
+            this.gbQandA.SuspendLayout();
+            this.gbChangePass.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // gbRecoverPass
             // 
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(12, 55);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(776, 102);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Recover Password";
+            this.gbRecoverPass.Controls.Add(this.btnRecover);
+            this.gbRecoverPass.Controls.Add(this.tbEmail);
+            this.gbRecoverPass.Controls.Add(this.lblEmail);
+            this.gbRecoverPass.ForeColor = System.Drawing.Color.White;
+            this.gbRecoverPass.Location = new System.Drawing.Point(12, 55);
+            this.gbRecoverPass.Name = "gbRecoverPass";
+            this.gbRecoverPass.Size = new System.Drawing.Size(776, 102);
+            this.gbRecoverPass.TabIndex = 0;
+            this.gbRecoverPass.TabStop = false;
+            this.gbRecoverPass.Text = "Recover Password";
             // 
-            // button1
+            // btnRecover
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(650, 36);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(87, 37);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Recover";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnRecover.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
+            this.btnRecover.FlatAppearance.BorderSize = 0;
+            this.btnRecover.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRecover.ForeColor = System.Drawing.Color.Black;
+            this.btnRecover.Location = new System.Drawing.Point(650, 36);
+            this.btnRecover.Name = "btnRecover";
+            this.btnRecover.Size = new System.Drawing.Size(87, 37);
+            this.btnRecover.TabIndex = 2;
+            this.btnRecover.Text = "Recover";
+            this.btnRecover.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // tbEmail
             // 
-            this.textBox1.Location = new System.Drawing.Point(137, 41);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(490, 26);
-            this.textBox1.TabIndex = 1;
+            this.tbEmail.Location = new System.Drawing.Point(137, 41);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.Size = new System.Drawing.Size(490, 26);
+            this.tbEmail.TabIndex = 1;
             // 
-            // label1
+            // lblEmail
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Enter Email:";
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Location = new System.Drawing.Point(36, 44);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(95, 20);
+            this.lblEmail.TabIndex = 0;
+            this.lblEmail.Text = "Enter Email:";
             // 
-            // groupBox2
+            // gbQandA
             // 
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(12, 180);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(776, 135);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Security Question and Answer";
+            this.gbQandA.Controls.Add(this.btnSubmit);
+            this.gbQandA.Controls.Add(this.tbAnswer);
+            this.gbQandA.Controls.Add(this.tbQuestion);
+            this.gbQandA.Controls.Add(this.lblAnswer);
+            this.gbQandA.Controls.Add(this.lblQuestion);
+            this.gbQandA.ForeColor = System.Drawing.Color.White;
+            this.gbQandA.Location = new System.Drawing.Point(12, 180);
+            this.gbQandA.Name = "gbQandA";
+            this.gbQandA.Size = new System.Drawing.Size(776, 135);
+            this.gbQandA.TabIndex = 1;
+            this.gbQandA.TabStop = false;
+            this.gbQandA.Text = "Security Question and Answer";
             // 
-            // button2
+            // btnSubmit
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(650, 62);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(87, 37);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Submit";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnSubmit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
+            this.btnSubmit.FlatAppearance.BorderSize = 0;
+            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmit.ForeColor = System.Drawing.Color.Black;
+            this.btnSubmit.Location = new System.Drawing.Point(650, 62);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(87, 37);
+            this.btnSubmit.TabIndex = 3;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = false;
             // 
-            // textBox3
+            // tbAnswer
             // 
-            this.textBox3.Location = new System.Drawing.Point(137, 89);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(490, 26);
-            this.textBox3.TabIndex = 3;
+            this.tbAnswer.Location = new System.Drawing.Point(137, 89);
+            this.tbAnswer.Name = "tbAnswer";
+            this.tbAnswer.Size = new System.Drawing.Size(490, 26);
+            this.tbAnswer.TabIndex = 3;
             // 
-            // textBox2
+            // tbQuestion
             // 
-            this.textBox2.Location = new System.Drawing.Point(137, 42);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(490, 26);
-            this.textBox2.TabIndex = 2;
+            this.tbQuestion.Location = new System.Drawing.Point(137, 42);
+            this.tbQuestion.Name = "tbQuestion";
+            this.tbQuestion.Size = new System.Drawing.Size(490, 26);
+            this.tbQuestion.TabIndex = 2;
             // 
-            // label3
+            // lblAnswer
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(65, 92);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Answer:";
+            this.lblAnswer.AutoSize = true;
+            this.lblAnswer.Location = new System.Drawing.Point(65, 92);
+            this.lblAnswer.Name = "lblAnswer";
+            this.lblAnswer.Size = new System.Drawing.Size(66, 20);
+            this.lblAnswer.TabIndex = 2;
+            this.lblAnswer.Text = "Answer:";
             // 
-            // label2
+            // lblQuestion
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(54, 45);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(77, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Question:";
+            this.lblQuestion.AutoSize = true;
+            this.lblQuestion.Location = new System.Drawing.Point(54, 45);
+            this.lblQuestion.Name = "lblQuestion";
+            this.lblQuestion.Size = new System.Drawing.Size(77, 20);
+            this.lblQuestion.TabIndex = 1;
+            this.lblQuestion.Text = "Question:";
             // 
-            // groupBox3
+            // gbChangePass
             // 
-            this.groupBox3.Controls.Add(this.button3);
-            this.groupBox3.Controls.Add(this.textBox5);
-            this.groupBox3.Controls.Add(this.textBox4);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(12, 339);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(776, 149);
-            this.groupBox3.TabIndex = 1;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Change Password";
+            this.gbChangePass.Controls.Add(this.btnChangePass);
+            this.gbChangePass.Controls.Add(this.tbConfirmPass);
+            this.gbChangePass.Controls.Add(this.tbNewPass);
+            this.gbChangePass.Controls.Add(this.lblConfirmPass);
+            this.gbChangePass.Controls.Add(this.lblNewPass);
+            this.gbChangePass.ForeColor = System.Drawing.Color.White;
+            this.gbChangePass.Location = new System.Drawing.Point(12, 339);
+            this.gbChangePass.Name = "gbChangePass";
+            this.gbChangePass.Size = new System.Drawing.Size(776, 149);
+            this.gbChangePass.TabIndex = 1;
+            this.gbChangePass.TabStop = false;
+            this.gbChangePass.Text = "Change Password";
             // 
-            // button3
+            // btnChangePass
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ForeColor = System.Drawing.Color.Black;
-            this.button3.Location = new System.Drawing.Point(650, 37);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(120, 90);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Change Password";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnChangePass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
+            this.btnChangePass.FlatAppearance.BorderSize = 0;
+            this.btnChangePass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChangePass.ForeColor = System.Drawing.Color.Black;
+            this.btnChangePass.Location = new System.Drawing.Point(650, 37);
+            this.btnChangePass.Name = "btnChangePass";
+            this.btnChangePass.Size = new System.Drawing.Size(120, 90);
+            this.btnChangePass.TabIndex = 4;
+            this.btnChangePass.Text = "Change Password";
+            this.btnChangePass.UseVisualStyleBackColor = false;
             // 
-            // textBox5
+            // tbConfirmPass
             // 
-            this.textBox5.Location = new System.Drawing.Point(154, 96);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(490, 26);
-            this.textBox5.TabIndex = 5;
+            this.tbConfirmPass.Location = new System.Drawing.Point(154, 96);
+            this.tbConfirmPass.Name = "tbConfirmPass";
+            this.tbConfirmPass.Size = new System.Drawing.Size(490, 26);
+            this.tbConfirmPass.TabIndex = 5;
             // 
-            // textBox4
+            // tbNewPass
             // 
-            this.textBox4.Location = new System.Drawing.Point(154, 40);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(490, 26);
-            this.textBox4.TabIndex = 4;
+            this.tbNewPass.Location = new System.Drawing.Point(154, 40);
+            this.tbNewPass.Name = "tbNewPass";
+            this.tbNewPass.Size = new System.Drawing.Size(490, 26);
+            this.tbNewPass.TabIndex = 4;
             // 
-            // label5
+            // lblConfirmPass
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 99);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(141, 20);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Confirm Password:";
+            this.lblConfirmPass.AutoSize = true;
+            this.lblConfirmPass.Location = new System.Drawing.Point(7, 99);
+            this.lblConfirmPass.Name = "lblConfirmPass";
+            this.lblConfirmPass.Size = new System.Drawing.Size(141, 20);
+            this.lblConfirmPass.TabIndex = 4;
+            this.lblConfirmPass.Text = "Confirm Password:";
             // 
-            // label4
+            // lblNewPass
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(31, 43);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(117, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "New Password:";
+            this.lblNewPass.AutoSize = true;
+            this.lblNewPass.Location = new System.Drawing.Point(31, 43);
+            this.lblNewPass.Name = "lblNewPass";
+            this.lblNewPass.Size = new System.Drawing.Size(117, 20);
+            this.lblNewPass.TabIndex = 3;
+            this.lblNewPass.Text = "New Password:";
             // 
-            // button4
+            // btnExit
             // 
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(728, 12);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(60, 37);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "X";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(728, 12);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(60, 37);
+            this.btnExit.TabIndex = 3;
+            this.btnExit.Text = "X";
+            this.btnExit.UseVisualStyleBackColor = true;
             // 
             // btnBack
             // 
@@ -247,44 +247,44 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(84)))));
             this.ClientSize = new System.Drawing.Size(800, 500);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnBack);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbChangePass);
+            this.Controls.Add(this.gbQandA);
+            this.Controls.Add(this.gbRecoverPass);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "RecoverForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RecoverForm";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.gbRecoverPass.ResumeLayout(false);
+            this.gbRecoverPass.PerformLayout();
+            this.gbQandA.ResumeLayout(false);
+            this.gbQandA.PerformLayout();
+            this.gbChangePass.ResumeLayout(false);
+            this.gbChangePass.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox gbRecoverPass;
+        private System.Windows.Forms.Button btnRecover;
+        private System.Windows.Forms.TextBox tbEmail;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.GroupBox gbQandA;
+        private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.TextBox tbAnswer;
+        private System.Windows.Forms.TextBox tbQuestion;
+        private System.Windows.Forms.Label lblAnswer;
+        private System.Windows.Forms.Label lblQuestion;
+        private System.Windows.Forms.GroupBox gbChangePass;
+        private System.Windows.Forms.Button btnChangePass;
+        private System.Windows.Forms.TextBox tbConfirmPass;
+        private System.Windows.Forms.TextBox tbNewPass;
+        private System.Windows.Forms.Label lblConfirmPass;
+        private System.Windows.Forms.Label lblNewPass;
         private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnExit;
     }
 }

@@ -35,10 +35,7 @@ namespace Taw_Kabui_Management_System
 
         private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
-            {
-                e.Handled = true;
-            }
+
         }
 
         private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
@@ -89,26 +86,23 @@ namespace Taw_Kabui_Management_System
 
         private void textBox16_Enter(object sender, EventArgs e)
         {
-            if(textBox16.Text == "Others, please specify")
+            if(tbOther.Text == "Others, please specify")
             {
-                textBox16.Text = "";
+                tbOther.Text = "";
             }
         }
 
         private void textBox16_Leave(object sender, EventArgs e)
         {
-            if (textBox16.Text == "")
+            if (tbOther.Text == "")
             {
-                textBox16.Text = "Others, please specify";
+                tbOther.Text = "Others, please specify";
             }
         }
 
         private void textBox19_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
-            {
-                e.Handled = true;
-            }
+
         }
 
         private void textBox20_KeyPress(object sender, KeyPressEventArgs e)

@@ -31,20 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCclasses));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.btnNewClass = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.tbSearch = new System.Windows.Forms.TextBox();
+            this.cbSY = new System.Windows.Forms.ComboBox();
+            this.cbTerm = new System.Windows.Forms.ComboBox();
+            this.cbLevel = new System.Windows.Forms.ComboBox();
+            this.lblSY = new System.Windows.Forms.Label();
+            this.lblTerm = new System.Windows.Forms.Label();
+            this.lblLevel = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblClasses = new System.Windows.Forms.Label();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -65,34 +66,35 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
-            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.btnSearch);
+            this.panel2.Controls.Add(this.btnRefresh);
             this.panel2.Controls.Add(this.btnNewClass);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.comboBox3);
-            this.panel2.Controls.Add(this.comboBox2);
-            this.panel2.Controls.Add(this.comboBox1);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.btnUpdate);
+            this.panel2.Controls.Add(this.btnDelete);
+            this.panel2.Controls.Add(this.tbSearch);
+            this.panel2.Controls.Add(this.cbSY);
+            this.panel2.Controls.Add(this.cbTerm);
+            this.panel2.Controls.Add(this.cbLevel);
+            this.panel2.Controls.Add(this.lblSY);
+            this.panel2.Controls.Add(this.lblTerm);
+            this.panel2.Controls.Add(this.lblLevel);
             this.panel2.Controls.Add(this.dataGridView1);
             this.panel2.Location = new System.Drawing.Point(1, 99);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1662, 844);
             this.panel2.TabIndex = 246;
             // 
-            // button4
+            // btnRefresh
             // 
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(1559, 782);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(85, 49);
-            this.button4.TabIndex = 269;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnRefresh.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRefresh.BackgroundImage")));
+            this.btnRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnRefresh.FlatAppearance.BorderSize = 0;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.Location = new System.Drawing.Point(1559, 782);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(85, 49);
+            this.btnRefresh.TabIndex = 269;
+            this.btnRefresh.UseVisualStyleBackColor = true;
             // 
             // btnNewClass
             // 
@@ -103,91 +105,91 @@
             this.btnNewClass.Name = "btnNewClass";
             this.btnNewClass.Size = new System.Drawing.Size(107, 45);
             this.btnNewClass.TabIndex = 268;
-            this.btnNewClass.Text = "NEW";
+            this.btnNewClass.Text = "New";
             this.btnNewClass.UseVisualStyleBackColor = false;
             this.btnNewClass.Click += new System.EventHandler(this.btnNewClass_Click_1);
             // 
-            // button2
+            // btnUpdate
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(1313, 782);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(107, 45);
-            this.button2.TabIndex = 267;
-            this.button2.Text = "UPDATE";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
+            this.btnUpdate.FlatAppearance.BorderSize = 0;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Location = new System.Drawing.Point(1313, 782);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(107, 45);
+            this.btnUpdate.TabIndex = 267;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnDelete
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(1191, 782);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 45);
-            this.button1.TabIndex = 266;
-            this.button1.Text = "DELETE";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
+            this.btnDelete.FlatAppearance.BorderSize = 0;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Location = new System.Drawing.Point(1191, 782);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(107, 45);
+            this.btnDelete.TabIndex = 266;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // tbSearch
             // 
-            this.textBox1.Location = new System.Drawing.Point(32, 793);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(470, 26);
-            this.textBox1.TabIndex = 265;
+            this.tbSearch.Location = new System.Drawing.Point(32, 793);
+            this.tbSearch.Name = "tbSearch";
+            this.tbSearch.Size = new System.Drawing.Size(470, 26);
+            this.tbSearch.TabIndex = 265;
             // 
-            // comboBox3
+            // cbSY
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(908, 17);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(319, 28);
-            this.comboBox3.TabIndex = 264;
+            this.cbSY.FormattingEnabled = true;
+            this.cbSY.Location = new System.Drawing.Point(908, 17);
+            this.cbSY.Name = "cbSY";
+            this.cbSY.Size = new System.Drawing.Size(319, 28);
+            this.cbSY.TabIndex = 264;
             // 
-            // comboBox2
+            // cbTerm
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(474, 17);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(319, 28);
-            this.comboBox2.TabIndex = 263;
+            this.cbTerm.FormattingEnabled = true;
+            this.cbTerm.Location = new System.Drawing.Point(474, 17);
+            this.cbTerm.Name = "cbTerm";
+            this.cbTerm.Size = new System.Drawing.Size(319, 28);
+            this.cbTerm.TabIndex = 263;
             // 
-            // comboBox1
+            // cbLevel
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(80, 17);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(319, 28);
-            this.comboBox1.TabIndex = 262;
+            this.cbLevel.FormattingEnabled = true;
+            this.cbLevel.Location = new System.Drawing.Point(80, 17);
+            this.cbLevel.Name = "cbLevel";
+            this.cbLevel.Size = new System.Drawing.Size(319, 28);
+            this.cbLevel.TabIndex = 262;
             // 
-            // label4
+            // lblSY
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(802, 20);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 20);
-            this.label4.TabIndex = 261;
-            this.label4.Text = "School Year:";
+            this.lblSY.AutoSize = true;
+            this.lblSY.Location = new System.Drawing.Point(802, 20);
+            this.lblSY.Name = "lblSY";
+            this.lblSY.Size = new System.Drawing.Size(100, 20);
+            this.lblSY.TabIndex = 261;
+            this.lblSY.Text = "School Year:";
             // 
-            // label3
+            // lblTerm
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(419, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 20);
-            this.label3.TabIndex = 260;
-            this.label3.Text = "Term:";
+            this.lblTerm.AutoSize = true;
+            this.lblTerm.Location = new System.Drawing.Point(419, 20);
+            this.lblTerm.Name = "lblTerm";
+            this.lblTerm.Size = new System.Drawing.Size(49, 20);
+            this.lblTerm.TabIndex = 260;
+            this.lblTerm.Text = "Term:";
             // 
-            // label2
+            // lblLevel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(28, 20);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 20);
-            this.label2.TabIndex = 259;
-            this.label2.Text = "Level:";
+            this.lblLevel.AutoSize = true;
+            this.lblLevel.Location = new System.Drawing.Point(28, 20);
+            this.lblLevel.Name = "lblLevel";
+            this.lblLevel.Size = new System.Drawing.Size(50, 20);
+            this.lblLevel.TabIndex = 259;
+            this.lblLevel.Text = "Level:";
             // 
             // dataGridView1
             // 
@@ -202,22 +204,34 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
-            this.panel4.Controls.Add(this.label1);
+            this.panel4.Controls.Add(this.lblClasses);
             this.panel4.ForeColor = System.Drawing.Color.Black;
             this.panel4.Location = new System.Drawing.Point(0, 1);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(520, 98);
             this.panel4.TabIndex = 245;
             // 
-            // label1
+            // lblClasses
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 46);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Classes";
+            this.lblClasses.AutoSize = true;
+            this.lblClasses.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClasses.Location = new System.Drawing.Point(18, 29);
+            this.lblClasses.Name = "lblClasses";
+            this.lblClasses.Size = new System.Drawing.Size(162, 46);
+            this.lblClasses.TabIndex = 0;
+            this.lblClasses.Text = "Classes";
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Location = new System.Drawing.Point(508, 782);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(107, 45);
+            this.btnSearch.TabIndex = 270;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = false;
             // 
             // UCclasses
             // 
@@ -242,18 +256,19 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnNewClass;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.TextBox tbSearch;
+        private System.Windows.Forms.ComboBox cbSY;
+        private System.Windows.Forms.ComboBox cbTerm;
+        private System.Windows.Forms.ComboBox cbLevel;
+        private System.Windows.Forms.Label lblSY;
+        private System.Windows.Forms.Label lblTerm;
+        private System.Windows.Forms.Label lblLevel;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblClasses;
+        private System.Windows.Forms.Button btnSearch;
     }
 }
