@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace Taw_Kabui_Management_System
 {
     public partial class LoginForm : Form
     {
+        connect con = new connect();
+        MySqlCommand cmd;
+        MySqlDataReader reader;
         public LoginForm()
         {
             InitializeComponent();
@@ -19,9 +23,24 @@ namespace Taw_Kabui_Management_System
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            Form mainform = new MainForm();
-            mainform.Show();
-            this.Hide();
+            con.connection();
+            cmd = new MySqlCommand("select * from logindb where username = '"+ tbUser.Text +"' AND password = '"+ tbPass.Text +"'", con.con);
+            reader = cmd.ExecuteReader();
+            if (reader.Read())
+            {
+                MessageBox.Show("Successfully Login"," ", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Form mform = new MainForm();
+                this.Hide();
+                mform.Show();
+            }
+            else
+            {
+                MessageBox.Show("Username and Password Not Match", " ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                tbUser.Clear();
+                tbPass.Clear();
+                return;
+            }
+            con.con.Close();
         }
 
         private void linkForgot_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
