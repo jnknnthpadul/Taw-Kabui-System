@@ -38,9 +38,7 @@
             this.dtpBirthday = new System.Windows.Forms.DateTimePicker();
             this.tbContact = new System.Windows.Forms.TextBox();
             this.tbAddress = new System.Windows.Forms.TextBox();
-            this.tbLastName = new System.Windows.Forms.TextBox();
-            this.tbMiddleName = new System.Windows.Forms.TextBox();
-            this.btnStudName = new System.Windows.Forms.TextBox();
+            this.tbChildName = new System.Windows.Forms.TextBox();
             this.tbChildNum = new System.Windows.Forms.TextBox();
             this.btnGenerate = new System.Windows.Forms.Button();
             this.lblGender = new System.Windows.Forms.Label();
@@ -48,15 +46,15 @@
             this.lblContact = new System.Windows.Forms.Label();
             this.lblBirthDay = new System.Windows.Forms.Label();
             this.lblHomeAddress = new System.Windows.Forms.Label();
-            this.lblLastName = new System.Windows.Forms.Label();
-            this.lblMiddleName = new System.Windows.Forms.Label();
+            this.lblClass = new System.Windows.Forms.Label();
+            this.lblImpairment = new System.Windows.Forms.Label();
             this.lblStudName = new System.Windows.Forms.Label();
             this.lblChildNum = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblStudentEnrollment = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvStudent = new System.Windows.Forms.DataGridView();
             this.tbPaddress = new System.Windows.Forms.TextBox();
             this.tbParentName = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -68,19 +66,17 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.cbGrade = new System.Windows.Forms.ComboBox();
             this.lblGrade = new System.Windows.Forms.Label();
-            this.chckCard = new System.Windows.Forms.CheckBox();
-            this.chckMedicalCert = new System.Windows.Forms.CheckBox();
-            this.chckBirthCert = new System.Windows.Forms.CheckBox();
-            this.rbTransferee = new System.Windows.Forms.RadioButton();
             this.rbNewStudent = new System.Windows.Forms.RadioButton();
             this.rbOldStudent = new System.Windows.Forms.RadioButton();
             this.panel9 = new System.Windows.Forms.Panel();
             this.lblRequirments = new System.Windows.Forms.Label();
+            this.cbImpairment = new System.Windows.Forms.ComboBox();
+            this.cbClass = new System.Windows.Forms.ComboBox();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStudent)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -93,7 +89,6 @@
             this.tbPcontact.Name = "tbPcontact";
             this.tbPcontact.Size = new System.Drawing.Size(378, 26);
             this.tbPcontact.TabIndex = 22;
-            this.tbPcontact.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox10_KeyPress);
             // 
             // tbSearch
             // 
@@ -123,14 +118,14 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.cbClass);
+            this.panel6.Controls.Add(this.cbImpairment);
             this.panel6.Controls.Add(this.cbGender);
             this.panel6.Controls.Add(this.tbAge);
             this.panel6.Controls.Add(this.dtpBirthday);
             this.panel6.Controls.Add(this.tbContact);
             this.panel6.Controls.Add(this.tbAddress);
-            this.panel6.Controls.Add(this.tbLastName);
-            this.panel6.Controls.Add(this.tbMiddleName);
-            this.panel6.Controls.Add(this.btnStudName);
+            this.panel6.Controls.Add(this.tbChildName);
             this.panel6.Controls.Add(this.tbChildNum);
             this.panel6.Controls.Add(this.btnGenerate);
             this.panel6.Controls.Add(this.lblGender);
@@ -138,8 +133,8 @@
             this.panel6.Controls.Add(this.lblContact);
             this.panel6.Controls.Add(this.lblBirthDay);
             this.panel6.Controls.Add(this.lblHomeAddress);
-            this.panel6.Controls.Add(this.lblLastName);
-            this.panel6.Controls.Add(this.lblMiddleName);
+            this.panel6.Controls.Add(this.lblClass);
+            this.panel6.Controls.Add(this.lblImpairment);
             this.panel6.Controls.Add(this.lblStudName);
             this.panel6.Controls.Add(this.lblChildNum);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
@@ -166,7 +161,6 @@
             this.tbAge.Name = "tbAge";
             this.tbAge.Size = new System.Drawing.Size(166, 26);
             this.tbAge.TabIndex = 18;
-            this.tbAge.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox7_KeyPress);
             // 
             // dtpBirthday
             // 
@@ -182,7 +176,6 @@
             this.tbContact.Name = "tbContact";
             this.tbContact.Size = new System.Drawing.Size(186, 26);
             this.tbContact.TabIndex = 16;
-            this.tbContact.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox6_KeyPress);
             // 
             // tbAddress
             // 
@@ -191,29 +184,12 @@
             this.tbAddress.Size = new System.Drawing.Size(346, 26);
             this.tbAddress.TabIndex = 15;
             // 
-            // tbLastName
+            // tbChildName
             // 
-            this.tbLastName.Location = new System.Drawing.Point(131, 178);
-            this.tbLastName.Name = "tbLastName";
-            this.tbLastName.Size = new System.Drawing.Size(346, 26);
-            this.tbLastName.TabIndex = 14;
-            this.tbLastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox4_KeyPress);
-            // 
-            // tbMiddleName
-            // 
-            this.tbMiddleName.Location = new System.Drawing.Point(131, 122);
-            this.tbMiddleName.Name = "tbMiddleName";
-            this.tbMiddleName.Size = new System.Drawing.Size(346, 26);
-            this.tbMiddleName.TabIndex = 13;
-            this.tbMiddleName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
-            // 
-            // btnStudName
-            // 
-            this.btnStudName.Location = new System.Drawing.Point(131, 68);
-            this.btnStudName.Name = "btnStudName";
-            this.btnStudName.Size = new System.Drawing.Size(346, 26);
-            this.btnStudName.TabIndex = 12;
-            this.btnStudName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
+            this.tbChildName.Location = new System.Drawing.Point(131, 68);
+            this.tbChildName.Name = "tbChildName";
+            this.tbChildName.Size = new System.Drawing.Size(346, 26);
+            this.tbChildName.TabIndex = 12;
             // 
             // tbChildNum
             // 
@@ -221,7 +197,6 @@
             this.tbChildNum.Name = "tbChildNum";
             this.tbChildNum.Size = new System.Drawing.Size(249, 26);
             this.tbChildNum.TabIndex = 11;
-            this.tbChildNum.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // btnGenerate
             // 
@@ -273,27 +248,27 @@
             this.lblHomeAddress.AutoSize = true;
             this.lblHomeAddress.Location = new System.Drawing.Point(17, 226);
             this.lblHomeAddress.Name = "lblHomeAddress";
-            this.lblHomeAddress.Size = new System.Drawing.Size(119, 20);
+            this.lblHomeAddress.Size = new System.Drawing.Size(72, 20);
             this.lblHomeAddress.TabIndex = 5;
-            this.lblHomeAddress.Text = "Home Address:";
+            this.lblHomeAddress.Text = "Address:";
             // 
-            // lblLastName
+            // lblClass
             // 
-            this.lblLastName.AutoSize = true;
-            this.lblLastName.Location = new System.Drawing.Point(17, 178);
-            this.lblLastName.Name = "lblLastName";
-            this.lblLastName.Size = new System.Drawing.Size(90, 20);
-            this.lblLastName.TabIndex = 4;
-            this.lblLastName.Text = "Last Name:";
+            this.lblClass.AutoSize = true;
+            this.lblClass.Location = new System.Drawing.Point(17, 178);
+            this.lblClass.Name = "lblClass";
+            this.lblClass.Size = new System.Drawing.Size(52, 20);
+            this.lblClass.TabIndex = 4;
+            this.lblClass.Text = "Class:";
             // 
-            // lblMiddleName
+            // lblImpairment
             // 
-            this.lblMiddleName.AutoSize = true;
-            this.lblMiddleName.Location = new System.Drawing.Point(17, 125);
-            this.lblMiddleName.Name = "lblMiddleName";
-            this.lblMiddleName.Size = new System.Drawing.Size(105, 20);
-            this.lblMiddleName.TabIndex = 3;
-            this.lblMiddleName.Text = "Middle Name:";
+            this.lblImpairment.AutoSize = true;
+            this.lblImpairment.Location = new System.Drawing.Point(17, 125);
+            this.lblImpairment.Name = "lblImpairment";
+            this.lblImpairment.Size = new System.Drawing.Size(102, 20);
+            this.lblImpairment.TabIndex = 3;
+            this.lblImpairment.Text = "Impairement:";
             // 
             // lblStudName
             // 
@@ -338,7 +313,7 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(41)))), ((int)(((byte)(84)))));
             this.panel4.Controls.Add(this.btnSearch);
             this.panel4.Controls.Add(this.tbSearch);
-            this.panel4.Controls.Add(this.dataGridView1);
+            this.panel4.Controls.Add(this.dgvStudent);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
@@ -353,16 +328,21 @@
             this.btnSearch.TabIndex = 20;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // dataGridView1
+            // dgvStudent
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(520, 98);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1143, 848);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvStudent.AllowUserToAddRows = false;
+            this.dgvStudent.AllowUserToDeleteRows = false;
+            this.dgvStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStudent.Location = new System.Drawing.Point(520, 98);
+            this.dgvStudent.Name = "dgvStudent";
+            this.dgvStudent.ReadOnly = true;
+            this.dgvStudent.RowHeadersWidth = 62;
+            this.dgvStudent.RowTemplate.Height = 28;
+            this.dgvStudent.Size = new System.Drawing.Size(1143, 848);
+            this.dgvStudent.TabIndex = 0;
+            this.dgvStudent.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStudent_CellContentDoubleClick);
             // 
             // tbPaddress
             // 
@@ -377,7 +357,6 @@
             this.tbParentName.Name = "tbParentName";
             this.tbParentName.Size = new System.Drawing.Size(310, 26);
             this.tbParentName.TabIndex = 20;
-            this.tbParentName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox8_KeyPress);
             // 
             // panel8
             // 
@@ -426,10 +405,6 @@
             this.panel3.Controls.Add(this.btnClear);
             this.panel3.Controls.Add(this.cbGrade);
             this.panel3.Controls.Add(this.lblGrade);
-            this.panel3.Controls.Add(this.chckCard);
-            this.panel3.Controls.Add(this.chckMedicalCert);
-            this.panel3.Controls.Add(this.chckBirthCert);
-            this.panel3.Controls.Add(this.rbTransferee);
             this.panel3.Controls.Add(this.rbNewStudent);
             this.panel3.Controls.Add(this.rbOldStudent);
             this.panel3.Controls.Add(this.panel9);
@@ -444,21 +419,23 @@
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(386, 884);
+            this.btnSave.Location = new System.Drawing.Point(388, 854);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(91, 35);
             this.btnSave.TabIndex = 17;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(279, 884);
+            this.btnClear.Location = new System.Drawing.Point(281, 854);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(91, 35);
             this.btnClear.TabIndex = 16;
             this.btnClear.Text = "CLEAR";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // cbGrade
             // 
@@ -471,7 +448,7 @@
             "Grade 4",
             "Grade 5",
             "Grade 6"});
-            this.cbGrade.Location = new System.Drawing.Point(356, 828);
+            this.cbGrade.Location = new System.Drawing.Point(304, 799);
             this.cbGrade.Name = "cbGrade";
             this.cbGrade.Size = new System.Drawing.Size(121, 28);
             this.cbGrade.TabIndex = 15;
@@ -479,57 +456,16 @@
             // lblGrade
             // 
             this.lblGrade.AutoSize = true;
-            this.lblGrade.Location = new System.Drawing.Point(290, 835);
+            this.lblGrade.Location = new System.Drawing.Point(244, 802);
             this.lblGrade.Name = "lblGrade";
             this.lblGrade.Size = new System.Drawing.Size(54, 20);
             this.lblGrade.TabIndex = 14;
             this.lblGrade.Text = "Grade";
             // 
-            // chckCard
-            // 
-            this.chckCard.AutoSize = true;
-            this.chckCard.Location = new System.Drawing.Point(21, 895);
-            this.chckCard.Name = "chckCard";
-            this.chckCard.Size = new System.Drawing.Size(122, 24);
-            this.chckCard.TabIndex = 10;
-            this.chckCard.Text = "Report Card";
-            this.chckCard.UseVisualStyleBackColor = true;
-            // 
-            // chckMedicalCert
-            // 
-            this.chckMedicalCert.AutoSize = true;
-            this.chckMedicalCert.Location = new System.Drawing.Point(21, 865);
-            this.chckMedicalCert.Name = "chckMedicalCert";
-            this.chckMedicalCert.Size = new System.Drawing.Size(165, 24);
-            this.chckMedicalCert.TabIndex = 9;
-            this.chckMedicalCert.Text = "Medical Certificate";
-            this.chckMedicalCert.UseVisualStyleBackColor = true;
-            // 
-            // chckBirthCert
-            // 
-            this.chckBirthCert.AutoSize = true;
-            this.chckBirthCert.Location = new System.Drawing.Point(21, 835);
-            this.chckBirthCert.Name = "chckBirthCert";
-            this.chckBirthCert.Size = new System.Drawing.Size(144, 24);
-            this.chckBirthCert.TabIndex = 8;
-            this.chckBirthCert.Text = "Birth Certificate";
-            this.chckBirthCert.UseVisualStyleBackColor = true;
-            // 
-            // rbTransferee
-            // 
-            this.rbTransferee.AutoSize = true;
-            this.rbTransferee.Location = new System.Drawing.Point(356, 790);
-            this.rbTransferee.Name = "rbTransferee";
-            this.rbTransferee.Size = new System.Drawing.Size(111, 24);
-            this.rbTransferee.TabIndex = 7;
-            this.rbTransferee.TabStop = true;
-            this.rbTransferee.Text = "Transferee";
-            this.rbTransferee.UseVisualStyleBackColor = true;
-            // 
             // rbNewStudent
             // 
             this.rbNewStudent.AutoSize = true;
-            this.rbNewStudent.Location = new System.Drawing.Point(179, 790);
+            this.rbNewStudent.Location = new System.Drawing.Point(36, 838);
             this.rbNewStudent.Name = "rbNewStudent";
             this.rbNewStudent.Size = new System.Drawing.Size(126, 24);
             this.rbNewStudent.TabIndex = 6;
@@ -540,7 +476,7 @@
             // rbOldStudent
             // 
             this.rbOldStudent.AutoSize = true;
-            this.rbOldStudent.Location = new System.Drawing.Point(21, 790);
+            this.rbOldStudent.Location = new System.Drawing.Point(36, 798);
             this.rbOldStudent.Name = "rbOldStudent";
             this.rbOldStudent.Size = new System.Drawing.Size(119, 24);
             this.rbOldStudent.TabIndex = 5;
@@ -567,6 +503,31 @@
             this.lblRequirments.TabIndex = 13;
             this.lblRequirments.Text = "Requirements";
             // 
+            // cbImpairment
+            // 
+            this.cbImpairment.FormattingEnabled = true;
+            this.cbImpairment.Items.AddRange(new object[] {
+            "ADHD",
+            "AUTISM",
+            "DOWN SYNDROME"});
+            this.cbImpairment.Location = new System.Drawing.Point(131, 117);
+            this.cbImpairment.Name = "cbImpairment";
+            this.cbImpairment.Size = new System.Drawing.Size(346, 28);
+            this.cbImpairment.TabIndex = 20;
+            // 
+            // cbClass
+            // 
+            this.cbClass.FormattingEnabled = true;
+            this.cbClass.Items.AddRange(new object[] {
+            "Class 1",
+            "Class 2",
+            "Class 3",
+            "Class 4"});
+            this.cbClass.Location = new System.Drawing.Point(131, 170);
+            this.cbClass.Name = "cbClass";
+            this.cbClass.Size = new System.Drawing.Size(346, 28);
+            this.cbClass.TabIndex = 21;
+            // 
             // UCenroll
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -584,7 +545,7 @@
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStudent)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -607,9 +568,7 @@
         private System.Windows.Forms.DateTimePicker dtpBirthday;
         private System.Windows.Forms.TextBox tbContact;
         private System.Windows.Forms.TextBox tbAddress;
-        private System.Windows.Forms.TextBox tbLastName;
-        private System.Windows.Forms.TextBox tbMiddleName;
-        private System.Windows.Forms.TextBox btnStudName;
+        private System.Windows.Forms.TextBox tbChildName;
         private System.Windows.Forms.TextBox tbChildNum;
         private System.Windows.Forms.Button btnGenerate;
         private System.Windows.Forms.Label lblGender;
@@ -617,15 +576,15 @@
         private System.Windows.Forms.Label lblContact;
         private System.Windows.Forms.Label lblBirthDay;
         private System.Windows.Forms.Label lblHomeAddress;
-        private System.Windows.Forms.Label lblLastName;
-        private System.Windows.Forms.Label lblMiddleName;
+        private System.Windows.Forms.Label lblClass;
+        private System.Windows.Forms.Label lblImpairment;
         private System.Windows.Forms.Label lblStudName;
         private System.Windows.Forms.Label lblChildNum;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label lblStudentEnrollment;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvStudent;
         private System.Windows.Forms.TextBox tbPaddress;
         private System.Windows.Forms.TextBox tbParentName;
         private System.Windows.Forms.Panel panel8;
@@ -637,13 +596,11 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.ComboBox cbGrade;
         private System.Windows.Forms.Label lblGrade;
-        private System.Windows.Forms.CheckBox chckCard;
-        private System.Windows.Forms.CheckBox chckMedicalCert;
-        private System.Windows.Forms.CheckBox chckBirthCert;
-        private System.Windows.Forms.RadioButton rbTransferee;
         private System.Windows.Forms.RadioButton rbNewStudent;
         private System.Windows.Forms.RadioButton rbOldStudent;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Label lblRequirments;
+        private System.Windows.Forms.ComboBox cbImpairment;
+        private System.Windows.Forms.ComboBox cbClass;
     }
 }

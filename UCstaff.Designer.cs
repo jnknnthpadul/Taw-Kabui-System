@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCstaff));
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblStaff = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.tbSSS = new System.Windows.Forms.TextBox();
             this.lblLstName = new System.Windows.Forms.Label();
             this.tbTIN = new System.Windows.Forms.TextBox();
@@ -64,15 +65,9 @@
             this.chckSuspended = new System.Windows.Forms.CheckBox();
             this.chckContractual = new System.Windows.Forms.CheckBox();
             this.tbSearch = new System.Windows.Forms.TextBox();
-            this.btnBlock = new System.Windows.Forms.Button();
-            this.btnSuspend = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnRefresh = new System.Windows.Forms.Button();
-            this.btnReset = new System.Windows.Forms.Button();
-            this.btnBrowse = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.pbStaff = new System.Windows.Forms.PictureBox();
+            this.dgvStaff = new System.Windows.Forms.DataGridView();
             this.lblSSS = new System.Windows.Forms.Label();
             this.lblPosition = new System.Windows.Forms.Label();
             this.lblRole = new System.Windows.Forms.Label();
@@ -88,13 +83,10 @@
             this.lblBirthDate = new System.Windows.Forms.Label();
             this.lblPerAddress = new System.Windows.Forms.Label();
             this.lblFrstName = new System.Windows.Forms.Label();
-            this.btnClear = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbStaff)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStaff)).BeginInit();
             this.SuspendLayout();
             // 
             // panel4
@@ -164,15 +156,9 @@
             this.panel1.Controls.Add(this.chckSuspended);
             this.panel1.Controls.Add(this.chckContractual);
             this.panel1.Controls.Add(this.tbSearch);
-            this.panel1.Controls.Add(this.btnBlock);
-            this.panel1.Controls.Add(this.btnSuspend);
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnUpdate);
-            this.panel1.Controls.Add(this.btnRefresh);
-            this.panel1.Controls.Add(this.btnReset);
-            this.panel1.Controls.Add(this.btnBrowse);
-            this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Controls.Add(this.pbStaff);
+            this.panel1.Controls.Add(this.dgvStaff);
             this.panel1.Controls.Add(this.lblSSS);
             this.panel1.Controls.Add(this.lblPosition);
             this.panel1.Controls.Add(this.lblRole);
@@ -194,9 +180,35 @@
             this.panel1.Size = new System.Drawing.Size(1662, 844);
             this.panel1.TabIndex = 1;
             // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave.Location = new System.Drawing.Point(52, 455);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(81, 31);
+            this.btnSave.TabIndex = 116;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnClear
+            // 
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
+            this.btnClear.FlatAppearance.BorderSize = 0;
+            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClear.Location = new System.Drawing.Point(52, 528);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(81, 31);
+            this.btnClear.TabIndex = 115;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // tbSSS
             // 
-            this.tbSSS.Location = new System.Drawing.Point(1073, 312);
+            this.tbSSS.Location = new System.Drawing.Point(820, 303);
             this.tbSSS.MaxLength = 9;
             this.tbSSS.Name = "tbSSS";
             this.tbSSS.Size = new System.Drawing.Size(269, 26);
@@ -205,7 +217,7 @@
             // lblLstName
             // 
             this.lblLstName.AutoSize = true;
-            this.lblLstName.Location = new System.Drawing.Point(1308, 30);
+            this.lblLstName.Location = new System.Drawing.Point(1055, 21);
             this.lblLstName.Name = "lblLstName";
             this.lblLstName.Size = new System.Drawing.Size(86, 20);
             this.lblLstName.TabIndex = 66;
@@ -213,7 +225,7 @@
             // 
             // tbTIN
             // 
-            this.tbTIN.Location = new System.Drawing.Point(604, 311);
+            this.tbTIN.Location = new System.Drawing.Point(351, 302);
             this.tbTIN.MaxLength = 12;
             this.tbTIN.Name = "tbTIN";
             this.tbTIN.Size = new System.Drawing.Size(269, 26);
@@ -222,7 +234,12 @@
             // cbPosition
             // 
             this.cbPosition.FormattingEnabled = true;
-            this.cbPosition.Location = new System.Drawing.Point(1072, 263);
+            this.cbPosition.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4"});
+            this.cbPosition.Location = new System.Drawing.Point(819, 254);
             this.cbPosition.Name = "cbPosition";
             this.cbPosition.Size = new System.Drawing.Size(271, 28);
             this.cbPosition.TabIndex = 112;
@@ -233,7 +250,7 @@
             this.cbDepartment.Items.AddRange(new object[] {
             "Office",
             "Classroom"});
-            this.cbDepartment.Location = new System.Drawing.Point(602, 260);
+            this.cbDepartment.Location = new System.Drawing.Point(349, 251);
             this.cbDepartment.Name = "cbDepartment";
             this.cbDepartment.Size = new System.Drawing.Size(271, 28);
             this.cbDepartment.TabIndex = 111;
@@ -244,7 +261,7 @@
             this.cbSex.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.cbSex.Location = new System.Drawing.Point(602, 156);
+            this.cbSex.Location = new System.Drawing.Point(349, 147);
             this.cbSex.Name = "cbSex";
             this.cbSex.Size = new System.Drawing.Size(271, 28);
             this.cbSex.TabIndex = 110;
@@ -258,14 +275,14 @@
             "Teacher",
             "Worker",
             "Volunteer"});
-            this.cbRole.Location = new System.Drawing.Point(1070, 212);
+            this.cbRole.Location = new System.Drawing.Point(817, 203);
             this.cbRole.Name = "cbRole";
             this.cbRole.Size = new System.Drawing.Size(271, 28);
             this.cbRole.TabIndex = 109;
             // 
             // tbContact
             // 
-            this.tbContact.Location = new System.Drawing.Point(1072, 156);
+            this.tbContact.Location = new System.Drawing.Point(819, 147);
             this.tbContact.MaxLength = 11;
             this.tbContact.Name = "tbContact";
             this.tbContact.Size = new System.Drawing.Size(269, 26);
@@ -273,7 +290,7 @@
             // 
             // tbSalary
             // 
-            this.tbSalary.Location = new System.Drawing.Point(1357, 111);
+            this.tbSalary.Location = new System.Drawing.Point(1104, 102);
             this.tbSalary.MaxLength = 8;
             this.tbSalary.Name = "tbSalary";
             this.tbSalary.Size = new System.Drawing.Size(258, 26);
@@ -281,7 +298,7 @@
             // 
             // tbAge
             // 
-            this.tbAge.Location = new System.Drawing.Point(1070, 111);
+            this.tbAge.Location = new System.Drawing.Point(817, 102);
             this.tbAge.MaxLength = 2;
             this.tbAge.Name = "tbAge";
             this.tbAge.Size = new System.Drawing.Size(155, 26);
@@ -290,7 +307,7 @@
             // rbVolunteer
             // 
             this.rbVolunteer.AutoSize = true;
-            this.rbVolunteer.Location = new System.Drawing.Point(879, 212);
+            this.rbVolunteer.Location = new System.Drawing.Point(580, 204);
             this.rbVolunteer.Name = "rbVolunteer";
             this.rbVolunteer.Size = new System.Drawing.Size(103, 24);
             this.rbVolunteer.TabIndex = 105;
@@ -301,7 +318,7 @@
             // rbContractual
             // 
             this.rbContractual.AutoSize = true;
-            this.rbContractual.Location = new System.Drawing.Point(747, 212);
+            this.rbContractual.Location = new System.Drawing.Point(458, 203);
             this.rbContractual.Name = "rbContractual";
             this.rbContractual.Size = new System.Drawing.Size(116, 24);
             this.rbContractual.TabIndex = 104;
@@ -312,7 +329,7 @@
             // rbRegular
             // 
             this.rbRegular.AutoSize = true;
-            this.rbRegular.Location = new System.Drawing.Point(615, 210);
+            this.rbRegular.Location = new System.Drawing.Point(362, 201);
             this.rbRegular.Name = "rbRegular";
             this.rbRegular.Size = new System.Drawing.Size(90, 24);
             this.rbRegular.TabIndex = 103;
@@ -322,21 +339,21 @@
             // 
             // dtpContract
             // 
-            this.dtpContract.Location = new System.Drawing.Point(1070, 364);
+            this.dtpContract.Location = new System.Drawing.Point(817, 355);
             this.dtpContract.Name = "dtpContract";
             this.dtpContract.Size = new System.Drawing.Size(262, 26);
             this.dtpContract.TabIndex = 102;
             // 
             // dtpHired
             // 
-            this.dtpHired.Location = new System.Drawing.Point(602, 363);
+            this.dtpHired.Location = new System.Drawing.Point(349, 354);
             this.dtpHired.Name = "dtpHired";
             this.dtpHired.Size = new System.Drawing.Size(303, 26);
             this.dtpHired.TabIndex = 101;
             // 
             // dtpBOD
             // 
-            this.dtpBOD.Location = new System.Drawing.Point(602, 108);
+            this.dtpBOD.Location = new System.Drawing.Point(349, 99);
             this.dtpBOD.Name = "dtpBOD";
             this.dtpBOD.Size = new System.Drawing.Size(303, 26);
             this.dtpBOD.TabIndex = 100;
@@ -344,7 +361,7 @@
             // lblContract
             // 
             this.lblContract.AutoSize = true;
-            this.lblContract.Location = new System.Drawing.Point(957, 369);
+            this.lblContract.Location = new System.Drawing.Point(704, 360);
             this.lblContract.Name = "lblContract";
             this.lblContract.Size = new System.Drawing.Size(107, 20);
             this.lblContract.TabIndex = 97;
@@ -352,7 +369,7 @@
             // 
             // tbPreAddress
             // 
-            this.tbPreAddress.Location = new System.Drawing.Point(1185, 63);
+            this.tbPreAddress.Location = new System.Drawing.Point(932, 54);
             this.tbPreAddress.Name = "tbPreAddress";
             this.tbPreAddress.Size = new System.Drawing.Size(430, 26);
             this.tbPreAddress.TabIndex = 96;
@@ -360,7 +377,7 @@
             // lblPreAddress
             // 
             this.lblPreAddress.AutoSize = true;
-            this.lblPreAddress.Location = new System.Drawing.Point(1052, 66);
+            this.lblPreAddress.Location = new System.Drawing.Point(799, 57);
             this.lblPreAddress.Name = "lblPreAddress";
             this.lblPreAddress.Size = new System.Drawing.Size(127, 20);
             this.lblPreAddress.TabIndex = 95;
@@ -368,28 +385,28 @@
             // 
             // tbLstName
             // 
-            this.tbLstName.Location = new System.Drawing.Point(1400, 27);
+            this.tbLstName.Location = new System.Drawing.Point(1147, 18);
             this.tbLstName.Name = "tbLstName";
             this.tbLstName.Size = new System.Drawing.Size(215, 26);
             this.tbLstName.TabIndex = 94;
             // 
             // tbMidName
             // 
-            this.tbMidName.Location = new System.Drawing.Point(1063, 27);
+            this.tbMidName.Location = new System.Drawing.Point(810, 18);
             this.tbMidName.Name = "tbMidName";
             this.tbMidName.Size = new System.Drawing.Size(228, 26);
             this.tbMidName.TabIndex = 93;
             // 
             // tbPerAddress
             // 
-            this.tbPerAddress.Location = new System.Drawing.Point(602, 63);
+            this.tbPerAddress.Location = new System.Drawing.Point(349, 54);
             this.tbPerAddress.Name = "tbPerAddress";
             this.tbPerAddress.Size = new System.Drawing.Size(441, 26);
             this.tbPerAddress.TabIndex = 92;
             // 
             // tbFrstName
             // 
-            this.tbFrstName.Location = new System.Drawing.Point(602, 27);
+            this.tbFrstName.Location = new System.Drawing.Point(349, 18);
             this.tbFrstName.Name = "tbFrstName";
             this.tbFrstName.Size = new System.Drawing.Size(349, 26);
             this.tbFrstName.TabIndex = 91;
@@ -405,6 +422,7 @@
             this.btnSearch.TabIndex = 90;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // chckFemale
             // 
@@ -474,36 +492,12 @@
             this.tbSearch.TabIndex = 83;
             this.tbSearch.Text = "Keyword";
             // 
-            // btnBlock
-            // 
-            this.btnBlock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
-            this.btnBlock.FlatAppearance.BorderSize = 0;
-            this.btnBlock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBlock.Location = new System.Drawing.Point(24, 712);
-            this.btnBlock.Name = "btnBlock";
-            this.btnBlock.Size = new System.Drawing.Size(81, 31);
-            this.btnBlock.TabIndex = 82;
-            this.btnBlock.Text = "Block";
-            this.btnBlock.UseVisualStyleBackColor = false;
-            // 
-            // btnSuspend
-            // 
-            this.btnSuspend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
-            this.btnSuspend.FlatAppearance.BorderSize = 0;
-            this.btnSuspend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSuspend.Location = new System.Drawing.Point(24, 639);
-            this.btnSuspend.Name = "btnSuspend";
-            this.btnSuspend.Size = new System.Drawing.Size(81, 31);
-            this.btnSuspend.TabIndex = 81;
-            this.btnSuspend.Text = "Suspended";
-            this.btnSuspend.UseVisualStyleBackColor = false;
-            // 
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
             this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Location = new System.Drawing.Point(24, 579);
+            this.btnDelete.Location = new System.Drawing.Point(52, 685);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(81, 31);
             this.btnDelete.TabIndex = 80;
@@ -515,73 +509,31 @@
             this.btnUpdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
             this.btnUpdate.FlatAppearance.BorderSize = 0;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUpdate.Location = new System.Drawing.Point(24, 510);
+            this.btnUpdate.Location = new System.Drawing.Point(52, 604);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(81, 31);
             this.btnUpdate.TabIndex = 79;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
             // 
-            // btnRefresh
+            // dgvStaff
             // 
-            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
-            this.btnRefresh.FlatAppearance.BorderSize = 0;
-            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRefresh.Location = new System.Drawing.Point(24, 446);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(81, 31);
-            this.btnRefresh.TabIndex = 78;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = false;
-            // 
-            // btnReset
-            // 
-            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
-            this.btnReset.FlatAppearance.BorderSize = 0;
-            this.btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReset.Location = new System.Drawing.Point(310, 346);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(75, 31);
-            this.btnReset.TabIndex = 77;
-            this.btnReset.Text = "Reset";
-            this.btnReset.UseVisualStyleBackColor = false;
-            // 
-            // btnBrowse
-            // 
-            this.btnBrowse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
-            this.btnBrowse.FlatAppearance.BorderSize = 0;
-            this.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBrowse.Location = new System.Drawing.Point(206, 347);
-            this.btnBrowse.Name = "btnBrowse";
-            this.btnBrowse.Size = new System.Drawing.Size(75, 31);
-            this.btnBrowse.TabIndex = 76;
-            this.btnBrowse.Text = "Browse";
-            this.btnBrowse.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(157, 400);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1474, 343);
-            this.dataGridView1.TabIndex = 75;
-            // 
-            // pbStaff
-            // 
-            this.pbStaff.Image = ((System.Drawing.Image)(resources.GetObject("pbStaff.Image")));
-            this.pbStaff.Location = new System.Drawing.Point(166, 30);
-            this.pbStaff.Name = "pbStaff";
-            this.pbStaff.Size = new System.Drawing.Size(266, 304);
-            this.pbStaff.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbStaff.TabIndex = 74;
-            this.pbStaff.TabStop = false;
+            this.dgvStaff.AllowUserToAddRows = false;
+            this.dgvStaff.AllowUserToDeleteRows = false;
+            this.dgvStaff.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvStaff.Location = new System.Drawing.Point(157, 400);
+            this.dgvStaff.Name = "dgvStaff";
+            this.dgvStaff.ReadOnly = true;
+            this.dgvStaff.RowHeadersWidth = 62;
+            this.dgvStaff.RowTemplate.Height = 28;
+            this.dgvStaff.Size = new System.Drawing.Size(1446, 343);
+            this.dgvStaff.TabIndex = 75;
+            this.dgvStaff.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStaff_CellContentClick);
             // 
             // lblSSS
             // 
             this.lblSSS.AutoSize = true;
-            this.lblSSS.Location = new System.Drawing.Point(994, 314);
+            this.lblSSS.Location = new System.Drawing.Point(741, 305);
             this.lblSSS.Name = "lblSSS";
             this.lblSSS.Size = new System.Drawing.Size(70, 20);
             this.lblSSS.TabIndex = 73;
@@ -590,7 +542,7 @@
             // lblPosition
             // 
             this.lblPosition.AutoSize = true;
-            this.lblPosition.Location = new System.Drawing.Point(995, 263);
+            this.lblPosition.Location = new System.Drawing.Point(742, 254);
             this.lblPosition.Name = "lblPosition";
             this.lblPosition.Size = new System.Drawing.Size(69, 20);
             this.lblPosition.TabIndex = 72;
@@ -599,7 +551,7 @@
             // lblRole
             // 
             this.lblRole.AutoSize = true;
-            this.lblRole.Location = new System.Drawing.Point(1018, 214);
+            this.lblRole.Location = new System.Drawing.Point(765, 205);
             this.lblRole.Name = "lblRole";
             this.lblRole.Size = new System.Drawing.Size(46, 20);
             this.lblRole.TabIndex = 71;
@@ -608,7 +560,7 @@
             // lblContact
             // 
             this.lblContact.AutoSize = true;
-            this.lblContact.Location = new System.Drawing.Point(942, 159);
+            this.lblContact.Location = new System.Drawing.Point(689, 150);
             this.lblContact.Name = "lblContact";
             this.lblContact.Size = new System.Drawing.Size(129, 20);
             this.lblContact.TabIndex = 70;
@@ -617,7 +569,7 @@
             // lblSalary
             // 
             this.lblSalary.AutoSize = true;
-            this.lblSalary.Location = new System.Drawing.Point(1245, 114);
+            this.lblSalary.Location = new System.Drawing.Point(992, 105);
             this.lblSalary.Name = "lblSalary";
             this.lblSalary.Size = new System.Drawing.Size(96, 20);
             this.lblSalary.TabIndex = 69;
@@ -626,7 +578,7 @@
             // lblAge
             // 
             this.lblAge.AutoSize = true;
-            this.lblAge.Location = new System.Drawing.Point(1022, 114);
+            this.lblAge.Location = new System.Drawing.Point(769, 105);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(42, 20);
             this.lblAge.TabIndex = 68;
@@ -635,7 +587,7 @@
             // lblMidName
             // 
             this.lblMidName.AutoSize = true;
-            this.lblMidName.Location = new System.Drawing.Point(957, 30);
+            this.lblMidName.Location = new System.Drawing.Point(704, 21);
             this.lblMidName.Name = "lblMidName";
             this.lblMidName.Size = new System.Drawing.Size(105, 20);
             this.lblMidName.TabIndex = 67;
@@ -644,7 +596,7 @@
             // lblHired
             // 
             this.lblHired.AutoSize = true;
-            this.lblHired.Location = new System.Drawing.Point(506, 369);
+            this.lblHired.Location = new System.Drawing.Point(253, 360);
             this.lblHired.Name = "lblHired";
             this.lblHired.Size = new System.Drawing.Size(90, 20);
             this.lblHired.TabIndex = 65;
@@ -653,7 +605,7 @@
             // lblTIN
             // 
             this.lblTIN.AutoSize = true;
-            this.lblTIN.Location = new System.Drawing.Point(534, 315);
+            this.lblTIN.Location = new System.Drawing.Point(281, 306);
             this.lblTIN.Name = "lblTIN";
             this.lblTIN.Size = new System.Drawing.Size(62, 20);
             this.lblTIN.TabIndex = 64;
@@ -662,7 +614,7 @@
             // lblDepartment
             // 
             this.lblDepartment.AutoSize = true;
-            this.lblDepartment.Location = new System.Drawing.Point(498, 263);
+            this.lblDepartment.Location = new System.Drawing.Point(245, 254);
             this.lblDepartment.Name = "lblDepartment";
             this.lblDepartment.Size = new System.Drawing.Size(98, 20);
             this.lblDepartment.TabIndex = 63;
@@ -671,7 +623,7 @@
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(536, 212);
+            this.lblStatus.Location = new System.Drawing.Point(283, 203);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(60, 20);
             this.lblStatus.TabIndex = 62;
@@ -680,7 +632,7 @@
             // lblSex
             // 
             this.lblSex.AutoSize = true;
-            this.lblSex.Location = new System.Drawing.Point(556, 159);
+            this.lblSex.Location = new System.Drawing.Point(303, 150);
             this.lblSex.Name = "lblSex";
             this.lblSex.Size = new System.Drawing.Size(40, 20);
             this.lblSex.TabIndex = 61;
@@ -689,7 +641,7 @@
             // lblBirthDate
             // 
             this.lblBirthDate.AutoSize = true;
-            this.lblBirthDate.Location = new System.Drawing.Point(511, 114);
+            this.lblBirthDate.Location = new System.Drawing.Point(258, 105);
             this.lblBirthDate.Name = "lblBirthDate";
             this.lblBirthDate.Size = new System.Drawing.Size(85, 20);
             this.lblBirthDate.TabIndex = 60;
@@ -698,7 +650,7 @@
             // lblPerAddress
             // 
             this.lblPerAddress.AutoSize = true;
-            this.lblPerAddress.Location = new System.Drawing.Point(442, 63);
+            this.lblPerAddress.Location = new System.Drawing.Point(189, 54);
             this.lblPerAddress.Name = "lblPerAddress";
             this.lblPerAddress.Size = new System.Drawing.Size(154, 20);
             this.lblPerAddress.TabIndex = 59;
@@ -707,35 +659,11 @@
             // lblFrstName
             // 
             this.lblFrstName.AutoSize = true;
-            this.lblFrstName.Location = new System.Drawing.Point(510, 30);
+            this.lblFrstName.Location = new System.Drawing.Point(257, 21);
             this.lblFrstName.Name = "lblFrstName";
             this.lblFrstName.Size = new System.Drawing.Size(86, 20);
             this.lblFrstName.TabIndex = 58;
             this.lblFrstName.Text = "First Name";
-            // 
-            // btnClear
-            // 
-            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
-            this.btnClear.FlatAppearance.BorderSize = 0;
-            this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClear.Location = new System.Drawing.Point(1400, 358);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(75, 31);
-            this.btnClear.TabIndex = 115;
-            this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = false;
-            // 
-            // btnSave
-            // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
-            this.btnSave.FlatAppearance.BorderSize = 0;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Location = new System.Drawing.Point(1504, 358);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 31);
-            this.btnSave.TabIndex = 116;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = false;
             // 
             // UCstaff
             // 
@@ -750,8 +678,7 @@
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbStaff)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvStaff)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -773,7 +700,6 @@
         private System.Windows.Forms.TextBox tbSalary;
         private System.Windows.Forms.TextBox tbAge;
         private System.Windows.Forms.RadioButton rbVolunteer;
-        private System.Windows.Forms.RadioButton rbContractual;
         private System.Windows.Forms.RadioButton rbRegular;
         private System.Windows.Forms.DateTimePicker dtpContract;
         private System.Windows.Forms.DateTimePicker dtpHired;
@@ -793,15 +719,9 @@
         private System.Windows.Forms.CheckBox chckSuspended;
         private System.Windows.Forms.CheckBox chckContractual;
         private System.Windows.Forms.TextBox tbSearch;
-        private System.Windows.Forms.Button btnBlock;
-        private System.Windows.Forms.Button btnSuspend;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.Button btnBrowse;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.PictureBox pbStaff;
+        private System.Windows.Forms.DataGridView dgvStaff;
         private System.Windows.Forms.Label lblSSS;
         private System.Windows.Forms.Label lblPosition;
         private System.Windows.Forms.Label lblRole;
@@ -819,5 +739,6 @@
         private System.Windows.Forms.Label lblFrstName;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.RadioButton rbContractual;
     }
 }

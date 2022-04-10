@@ -61,9 +61,11 @@
             this.lblChildID = new System.Windows.Forms.Label();
             this.lblImpairment = new System.Windows.Forms.Label();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.tbSearch = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblFees = new System.Windows.Forms.Label();
+            this.lblStatusPayment = new System.Windows.Forms.Label();
+            this.rbPaid = new System.Windows.Forms.RadioButton();
+            this.rbNotPaid = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -84,6 +86,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.Controls.Add(this.rbNotPaid);
+            this.panel2.Controls.Add(this.rbPaid);
+            this.panel2.Controls.Add(this.lblStatusPayment);
             this.panel2.Controls.Add(this.dptDate);
             this.panel2.Controls.Add(this.btnPrintP);
             this.panel2.Controls.Add(this.btnSave);
@@ -115,7 +120,6 @@
             this.panel2.Controls.Add(this.lblChildID);
             this.panel2.Controls.Add(this.lblImpairment);
             this.panel2.Controls.Add(this.btnSearch);
-            this.panel2.Controls.Add(this.tbSearch);
             this.panel2.ForeColor = System.Drawing.Color.Black;
             this.panel2.Location = new System.Drawing.Point(2, 99);
             this.panel2.Name = "panel2";
@@ -124,7 +128,7 @@
             // 
             // dptDate
             // 
-            this.dptDate.Location = new System.Drawing.Point(436, 99);
+            this.dptDate.Location = new System.Drawing.Point(169, 148);
             this.dptDate.Name = "dptDate";
             this.dptDate.Size = new System.Drawing.Size(338, 26);
             this.dptDate.TabIndex = 268;
@@ -146,6 +150,7 @@
             this.btnSave.TabIndex = 263;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // lblProgram
             // 
@@ -168,7 +173,7 @@
             // lblClass
             // 
             this.lblClass.AutoSize = true;
-            this.lblClass.Location = new System.Drawing.Point(372, 53);
+            this.lblClass.Location = new System.Drawing.Point(372, 105);
             this.lblClass.Name = "lblClass";
             this.lblClass.Size = new System.Drawing.Size(48, 20);
             this.lblClass.TabIndex = 266;
@@ -224,7 +229,7 @@
             // 
             // tbNote
             // 
-            this.tbNote.Location = new System.Drawing.Point(169, 707);
+            this.tbNote.Location = new System.Drawing.Point(104, 695);
             this.tbNote.Name = "tbNote";
             this.tbNote.Size = new System.Drawing.Size(197, 26);
             this.tbNote.TabIndex = 256;
@@ -233,7 +238,7 @@
             // lblNote
             // 
             this.lblNote.AutoSize = true;
-            this.lblNote.Location = new System.Drawing.Point(103, 710);
+            this.lblNote.Location = new System.Drawing.Point(51, 698);
             this.lblNote.Name = "lblNote";
             this.lblNote.Size = new System.Drawing.Size(47, 20);
             this.lblNote.TabIndex = 255;
@@ -284,7 +289,7 @@
             // 
             // tbClass
             // 
-            this.tbClass.Location = new System.Drawing.Point(436, 50);
+            this.tbClass.Location = new System.Drawing.Point(436, 102);
             this.tbClass.Name = "tbClass";
             this.tbClass.Size = new System.Drawing.Size(197, 26);
             this.tbClass.TabIndex = 244;
@@ -292,7 +297,7 @@
             // 
             // tbStudName
             // 
-            this.tbStudName.Location = new System.Drawing.Point(169, 148);
+            this.tbStudName.Location = new System.Drawing.Point(169, 46);
             this.tbStudName.Name = "tbStudName";
             this.tbStudName.Size = new System.Drawing.Size(464, 26);
             this.tbStudName.TabIndex = 243;
@@ -300,7 +305,7 @@
             // 
             // tbChildID
             // 
-            this.tbChildID.Location = new System.Drawing.Point(169, 98);
+            this.tbChildID.Location = new System.Drawing.Point(720, 49);
             this.tbChildID.Name = "tbChildID";
             this.tbChildID.Size = new System.Drawing.Size(197, 26);
             this.tbChildID.TabIndex = 242;
@@ -308,7 +313,7 @@
             // 
             // tbImpairment
             // 
-            this.tbImpairment.Location = new System.Drawing.Point(169, 50);
+            this.tbImpairment.Location = new System.Drawing.Point(169, 102);
             this.tbImpairment.Name = "tbImpairment";
             this.tbImpairment.Size = new System.Drawing.Size(197, 26);
             this.tbImpairment.TabIndex = 241;
@@ -335,7 +340,7 @@
             // lblDate
             // 
             this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(376, 101);
+            this.lblDate.Location = new System.Drawing.Point(119, 153);
             this.lblDate.Name = "lblDate";
             this.lblDate.Size = new System.Drawing.Size(44, 20);
             this.lblDate.TabIndex = 234;
@@ -344,7 +349,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(372, 53);
+            this.label13.Location = new System.Drawing.Point(372, 105);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(0, 20);
             this.label13.TabIndex = 233;
@@ -352,7 +357,7 @@
             // lblStudName
             // 
             this.lblStudName.AutoSize = true;
-            this.lblStudName.Location = new System.Drawing.Point(51, 151);
+            this.lblStudName.Location = new System.Drawing.Point(51, 49);
             this.lblStudName.Name = "lblStudName";
             this.lblStudName.Size = new System.Drawing.Size(112, 20);
             this.lblStudName.TabIndex = 232;
@@ -361,7 +366,7 @@
             // lblChildID
             // 
             this.lblChildID.AutoSize = true;
-            this.lblChildID.Location = new System.Drawing.Point(103, 101);
+            this.lblChildID.Location = new System.Drawing.Point(654, 52);
             this.lblChildID.Name = "lblChildID";
             this.lblChildID.Size = new System.Drawing.Size(65, 20);
             this.lblChildID.TabIndex = 231;
@@ -370,7 +375,7 @@
             // lblImpairment
             // 
             this.lblImpairment.AutoSize = true;
-            this.lblImpairment.Location = new System.Drawing.Point(74, 53);
+            this.lblImpairment.Location = new System.Drawing.Point(74, 105);
             this.lblImpairment.Name = "lblImpairment";
             this.lblImpairment.Size = new System.Drawing.Size(89, 20);
             this.lblImpairment.TabIndex = 230;
@@ -384,15 +389,7 @@
             this.btnSearch.TabIndex = 229;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
-            // 
-            // tbSearch
-            // 
-            this.tbSearch.Location = new System.Drawing.Point(671, 50);
-            this.tbSearch.Name = "tbSearch";
-            this.tbSearch.Size = new System.Drawing.Size(255, 26);
-            this.tbSearch.TabIndex = 227;
-            this.tbSearch.Text = "Child ID";
-            this.tbSearch.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // panel4
             // 
@@ -412,6 +409,39 @@
             this.lblFees.Size = new System.Drawing.Size(108, 46);
             this.lblFees.TabIndex = 0;
             this.lblFees.Text = "Fees";
+            // 
+            // lblStatusPayment
+            // 
+            this.lblStatusPayment.AutoSize = true;
+            this.lblStatusPayment.Location = new System.Drawing.Point(597, 154);
+            this.lblStatusPayment.Name = "lblStatusPayment";
+            this.lblStatusPayment.Size = new System.Drawing.Size(122, 20);
+            this.lblStatusPayment.TabIndex = 269;
+            this.lblStatusPayment.Text = "Payment Status";
+            // 
+            // rbPaid
+            // 
+            this.rbPaid.AutoSize = true;
+            this.rbPaid.Location = new System.Drawing.Point(725, 152);
+            this.rbPaid.Name = "rbPaid";
+            this.rbPaid.Size = new System.Drawing.Size(65, 24);
+            this.rbPaid.TabIndex = 270;
+            this.rbPaid.TabStop = true;
+            this.rbPaid.Text = "Paid";
+            this.rbPaid.UseVisualStyleBackColor = true;
+            this.rbPaid.CheckedChanged += new System.EventHandler(this.rbPaid_CheckedChanged);
+            // 
+            // rbNotPaid
+            // 
+            this.rbNotPaid.AutoSize = true;
+            this.rbNotPaid.Location = new System.Drawing.Point(800, 151);
+            this.rbNotPaid.Name = "rbNotPaid";
+            this.rbNotPaid.Size = new System.Drawing.Size(94, 24);
+            this.rbNotPaid.TabIndex = 271;
+            this.rbNotPaid.TabStop = true;
+            this.rbNotPaid.Text = "Not Paid";
+            this.rbNotPaid.UseVisualStyleBackColor = true;
+            this.rbNotPaid.CheckedChanged += new System.EventHandler(this.rbNotPaid_CheckedChanged);
             // 
             // UCfees
             // 
@@ -465,9 +495,11 @@
         private System.Windows.Forms.Label lblChildID;
         private System.Windows.Forms.Label lblImpairment;
         private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.TextBox tbSearch;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label lblFees;
         private System.Windows.Forms.DateTimePicker dptDate;
+        private System.Windows.Forms.RadioButton rbNotPaid;
+        private System.Windows.Forms.RadioButton rbPaid;
+        private System.Windows.Forms.Label lblStatusPayment;
     }
 }

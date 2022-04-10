@@ -7,46 +7,71 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
+using System.Data.SqlClient;
 
 namespace Taw_Kabui_Management_System
 {
     public partial class LoginForm : Form
     {
-        connect con = new connect();
-        MySqlCommand cmd;
-        MySqlDataReader reader;
         public LoginForm()
         {
             InitializeComponent();
         }
-
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\PAD'Z\Documents\TawKabuiDB.mdf;Integrated Security=True;Connect Timeout=30");
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            con.connection();
-            cmd = new MySqlCommand("select * from logindb where username = '"+ tbUser.Text +"' AND password = '"+ tbPass.Text +"'", con.con);
-            reader = cmd.ExecuteReader();
-            if (reader.Read())
+            if (tbUser.Text == "admin" && tbPass.Text == "admin")
             {
-                MessageBox.Show("Successfully Login"," ", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Form mform = new MainForm();
                 this.Hide();
-                mform.Show();
+                MainForm main = new MainForm();
+                main.Show();
+            }
+            else if (tbUser.Text == "")
+            {
+                MessageBox.Show("Enter the username");
+            }
+            else if(tbPass.Text == "")
+            {
+                MessageBox.Show("Enter the password");
             }
             else
             {
-                MessageBox.Show("Username and Password Not Match", " ", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                tbUser.Clear();
-                tbPass.Clear();
-                return;
+                try
+                {
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand("select UserName, Password from AccountTB WHERE UserName = @UserName AND Password = @Password", con);
+                    cmd.Parameters.AddWithValue("@UserName", tbUser.Text);
+                    cmd.Parameters.AddWithValue("@Password", hash.hashPassword(tbPass.Text));
+                    SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+
+                    sda.Fill(dt);
+
+                    if (dt.Rows.Count > 0)
+                    {
+                        MessageBox.Show("Succesfully Login");
+                        this.Hide();
+                        MainForm main = new MainForm();
+                        main.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Username & Password is invalid");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                con.Close();
             }
-            con.con.Close();
         }
 
         private void linkForgot_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Form recoverform = new RecoverForm();
-            recoverform.Show();        }
+            recoverform.Show();        
+        }
 
         private void btnVis_Click(object sender, EventArgs e)
         {

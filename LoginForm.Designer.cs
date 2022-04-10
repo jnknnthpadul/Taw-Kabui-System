@@ -113,24 +113,24 @@
             // tbUser
             // 
             this.tbUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbUser.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tbUser.Location = new System.Drawing.Point(633, 255);
             this.tbUser.MaxLength = 20;
             this.tbUser.Name = "tbUser";
-            this.tbUser.Size = new System.Drawing.Size(252, 35);
+            this.tbUser.Size = new System.Drawing.Size(252, 28);
             this.tbUser.TabIndex = 6;
             // 
             // tbPass
             // 
             this.tbPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPass.ForeColor = System.Drawing.SystemColors.ControlText;
             this.tbPass.Location = new System.Drawing.Point(633, 315);
             this.tbPass.MaxLength = 20;
             this.tbPass.Name = "tbPass";
             this.tbPass.PasswordChar = '•';
-            this.tbPass.Size = new System.Drawing.Size(252, 35);
+            this.tbPass.Size = new System.Drawing.Size(252, 28);
             this.tbPass.TabIndex = 7;
             // 
             // btnExit

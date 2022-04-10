@@ -304,25 +304,13 @@
             this.lblFuel = new System.Windows.Forms.Label();
             this.lblHouseLoc = new System.Windows.Forms.Label();
             this.lblHouseMade = new System.Windows.Forms.Label();
-            this.tbPOHothers = new System.Windows.Forms.TextBox();
-            this.tbStaying = new System.Windows.Forms.TextBox();
-            this.rbOther = new System.Windows.Forms.RadioButton();
-            this.rbStaying = new System.Windows.Forms.RadioButton();
-            this.rbRented = new System.Windows.Forms.RadioButton();
-            this.rbOwned = new System.Windows.Forms.RadioButton();
             this.lblDOH = new System.Windows.Forms.Label();
             this.tbLGU = new System.Windows.Forms.TextBox();
             this.lbl4ps = new System.Windows.Forms.Label();
             this.lblLGU = new System.Windows.Forms.Label();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.lblFinancial = new System.Windows.Forms.Label();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.rtbPOHothers = new System.Windows.Forms.RichTextBox();
-            this.rbSupportYES = new System.Windows.Forms.RadioButton();
-            this.textBox40 = new System.Windows.Forms.TextBox();
+            this.tbPhilhealthMem = new System.Windows.Forms.TextBox();
             this.lblIfyes = new System.Windows.Forms.Label();
-            this.chckOther = new System.Windows.Forms.CheckBox();
-            this.rbSupportNO = new System.Windows.Forms.RadioButton();
             this.tbType = new System.Windows.Forms.TextBox();
             this.lblLME = new System.Windows.Forms.Label();
             this.clbExpenses = new System.Windows.Forms.CheckedListBox();
@@ -334,6 +322,20 @@
             this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.lblPOH = new System.Windows.Forms.Label();
+            this.panel28 = new System.Windows.Forms.Panel();
+            this.rbSupportYES = new System.Windows.Forms.RadioButton();
+            this.rbSupportNO = new System.Windows.Forms.RadioButton();
+            this.panel29 = new System.Windows.Forms.Panel();
+            this.rb4psYES = new System.Windows.Forms.RadioButton();
+            this.rb4psNO = new System.Windows.Forms.RadioButton();
+            this.panel30 = new System.Windows.Forms.Panel();
+            this.rbOwned = new System.Windows.Forms.RadioButton();
+            this.rbRented = new System.Windows.Forms.RadioButton();
+            this.panel31 = new System.Windows.Forms.Panel();
+            this.rbOther = new System.Windows.Forms.RadioButton();
+            this.tbPOHothers = new System.Windows.Forms.TextBox();
+            this.tbStaying = new System.Windows.Forms.TextBox();
+            this.rbStaying = new System.Windows.Forms.RadioButton();
             this.btnfbCancel = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dtpInterviewfb = new System.Windows.Forms.DateTimePicker();
@@ -341,8 +343,6 @@
             this.tbTimefb = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dtpDateIssued = new System.Windows.Forms.DateTimePicker();
-            this.rbPrivate = new System.Windows.Forms.RadioButton();
-            this.rbPublic = new System.Windows.Forms.RadioButton();
             this.tbPWDid = new System.Windows.Forms.TextBox();
             this.tbTherapy = new System.Windows.Forms.TextBox();
             this.tbStop = new System.Windows.Forms.TextBox();
@@ -357,8 +357,6 @@
             this.tbProfileNationality = new System.Windows.Forms.TextBox();
             this.dtpProfileDOB = new System.Windows.Forms.DateTimePicker();
             this.tbProfilePOB = new System.Windows.Forms.TextBox();
-            this.rbProfileFemale = new System.Windows.Forms.RadioButton();
-            this.rbProfileMale = new System.Windows.Forms.RadioButton();
             this.tbProfileAddress = new System.Windows.Forms.TextBox();
             this.tbProfileAge = new System.Windows.Forms.TextBox();
             this.tbProfileNickname = new System.Windows.Forms.TextBox();
@@ -386,26 +384,35 @@
             this.lblfbName = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblProfile = new System.Windows.Forms.Label();
+            this.panel32 = new System.Windows.Forms.Panel();
+            this.rbPublic = new System.Windows.Forms.RadioButton();
+            this.rbPrivate = new System.Windows.Forms.RadioButton();
+            this.panel33 = new System.Windows.Forms.Panel();
+            this.rbProfileFemale = new System.Windows.Forms.RadioButton();
+            this.rbProfileMale = new System.Windows.Forms.RadioButton();
             this.lblfbChildID = new System.Windows.Forms.Label();
             this.lblfbTime = new System.Windows.Forms.Label();
             this.lblfbInterview = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel22 = new System.Windows.Forms.Panel();
+            this.gbLPO = new System.Windows.Forms.GroupBox();
+            this.lblLPO = new System.Windows.Forms.Label();
+            this.rbLPOno = new System.Windows.Forms.RadioButton();
+            this.rbLPOyes = new System.Windows.Forms.RadioButton();
             this.panel23 = new System.Windows.Forms.Panel();
             this.lblPrescreening = new System.Windows.Forms.Label();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnInformant = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.gbAssesment = new System.Windows.Forms.GroupBox();
-            this.rbLPOno = new System.Windows.Forms.RadioButton();
-            this.rbLPOyes = new System.Windows.Forms.RadioButton();
+            this.button1 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.rbImpression = new System.Windows.Forms.RadioButton();
             this.rbDiagnosis = new System.Windows.Forms.RadioButton();
-            this.lblLPO = new System.Windows.Forms.Label();
-            this.tbOther = new System.Windows.Forms.TextBox();
-            this.rtbAgencies = new System.Windows.Forms.RichTextBox();
-            this.rtbPertinent = new System.Windows.Forms.RichTextBox();
+            this.tbOtherfa = new System.Windows.Forms.TextBox();
+            this.tbAgencies = new System.Windows.Forms.RichTextBox();
+            this.tbPertinent = new System.Windows.Forms.RichTextBox();
             this.clbPrograms = new System.Windows.Forms.CheckedListBox();
             this.lblDes1 = new System.Windows.Forms.Label();
             this.lblProgram = new System.Windows.Forms.Label();
@@ -415,12 +422,12 @@
             this.gbInformant = new System.Windows.Forms.GroupBox();
             this.lblNotes = new System.Windows.Forms.Label();
             this.rtbInterviewNote = new System.Windows.Forms.RichTextBox();
-            this.tbInfomantNumber2 = new System.Windows.Forms.TextBox();
+            this.tbInformantNetwork2 = new System.Windows.Forms.TextBox();
             this.tbInformantNetwork1 = new System.Windows.Forms.TextBox();
             this.tbInformantRelationship = new System.Windows.Forms.TextBox();
-            this.tbHow = new System.Windows.Forms.TextBox();
+            this.tbInformantHow = new System.Windows.Forms.TextBox();
             this.tbInformantWhen = new System.Windows.Forms.TextBox();
-            this.tbInfomantWhat = new System.Windows.Forms.TextBox();
+            this.tbInformantWhat = new System.Windows.Forms.TextBox();
             this.tbInformantWho = new System.Windows.Forms.TextBox();
             this.tbInformantContact2 = new System.Windows.Forms.TextBox();
             this.tbInformantContact1 = new System.Windows.Forms.TextBox();
@@ -531,12 +538,19 @@
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel10.SuspendLayout();
+            this.panel28.SuspendLayout();
+            this.panel29.SuspendLayout();
+            this.panel30.SuspendLayout();
+            this.panel31.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel32.SuspendLayout();
+            this.panel33.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel22.SuspendLayout();
+            this.gbLPO.SuspendLayout();
             this.panel23.SuspendLayout();
             this.gbAssesment.SuspendLayout();
             this.gbInformant.SuspendLayout();
@@ -1762,6 +1776,7 @@
             this.chckEvacuation.TabIndex = 18;
             this.chckEvacuation.Text = "Evacuation Center";
             this.chckEvacuation.UseVisualStyleBackColor = true;
+            this.chckEvacuation.CheckedChanged += new System.EventHandler(this.chckEvacuation_CheckedChanged);
             // 
             // chckDayCare
             // 
@@ -1772,6 +1787,7 @@
             this.chckDayCare.TabIndex = 0;
             this.chckDayCare.Text = "Day Care";
             this.chckDayCare.UseVisualStyleBackColor = true;
+            this.chckDayCare.CheckedChanged += new System.EventHandler(this.chckDayCare_CheckedChanged);
             // 
             // chckHealthCenter
             // 
@@ -1782,6 +1798,7 @@
             this.chckHealthCenter.TabIndex = 1;
             this.chckHealthCenter.Text = "Health Center";
             this.chckHealthCenter.UseVisualStyleBackColor = true;
+            this.chckHealthCenter.CheckedChanged += new System.EventHandler(this.chckHealthCenter_CheckedChanged);
             // 
             // chckBirthing
             // 
@@ -1792,6 +1809,7 @@
             this.chckBirthing.TabIndex = 2;
             this.chckBirthing.Text = "Lying in/Birthing Center";
             this.chckBirthing.UseVisualStyleBackColor = true;
+            this.chckBirthing.CheckedChanged += new System.EventHandler(this.chckBirthing_CheckedChanged);
             // 
             // chckHPublic
             // 
@@ -1802,6 +1820,7 @@
             this.chckHPublic.TabIndex = 3;
             this.chckHPublic.Text = "Hospital (Public)";
             this.chckHPublic.UseVisualStyleBackColor = true;
+            this.chckHPublic.CheckedChanged += new System.EventHandler(this.chckHPublic_CheckedChanged);
             // 
             // chckHPrivate
             // 
@@ -1812,6 +1831,7 @@
             this.chckHPrivate.TabIndex = 4;
             this.chckHPrivate.Text = "Hospital (Private)";
             this.chckHPrivate.UseVisualStyleBackColor = true;
+            this.chckHPrivate.CheckedChanged += new System.EventHandler(this.chckHPrivate_CheckedChanged);
             // 
             // chckGESPublic
             // 
@@ -1823,6 +1843,7 @@
             this.chckGESPublic.TabIndex = 5;
             this.chckGESPublic.Text = "General Education School (Public)";
             this.chckGESPublic.UseVisualStyleBackColor = true;
+            this.chckGESPublic.CheckedChanged += new System.EventHandler(this.chckGESPublic_CheckedChanged);
             // 
             // chckGESPrivate
             // 
@@ -1834,6 +1855,7 @@
             this.chckGESPrivate.TabIndex = 6;
             this.chckGESPrivate.Text = "General Education School(Private)";
             this.chckGESPrivate.UseVisualStyleBackColor = true;
+            this.chckGESPrivate.CheckedChanged += new System.EventHandler(this.chckGESPrivate_CheckedChanged);
             // 
             // chckSCCPublic
             // 
@@ -1844,6 +1866,7 @@
             this.chckSCCPublic.TabIndex = 7;
             this.chckSCCPublic.Text = "Self-contained Center(Public) ";
             this.chckSCCPublic.UseVisualStyleBackColor = true;
+            this.chckSCCPublic.CheckedChanged += new System.EventHandler(this.chckSCCPublic_CheckedChanged);
             // 
             // chckSCCPrivate
             // 
@@ -1854,6 +1877,7 @@
             this.chckSCCPrivate.TabIndex = 8;
             this.chckSCCPrivate.Text = "Self-contained Center(Private) ";
             this.chckSCCPrivate.UseVisualStyleBackColor = true;
+            this.chckSCCPrivate.CheckedChanged += new System.EventHandler(this.chckSCCPrivate_CheckedChanged);
             // 
             // chckTCPublic
             // 
@@ -1864,6 +1888,7 @@
             this.chckTCPublic.TabIndex = 9;
             this.chckTCPublic.Text = "Therapy Center (Public)";
             this.chckTCPublic.UseVisualStyleBackColor = true;
+            this.chckTCPublic.CheckedChanged += new System.EventHandler(this.chckTCPublic_CheckedChanged);
             // 
             // chckTCPrivate
             // 
@@ -1874,6 +1899,7 @@
             this.chckTCPrivate.TabIndex = 10;
             this.chckTCPrivate.Text = "Therapy Center (Private)";
             this.chckTCPrivate.UseVisualStyleBackColor = true;
+            this.chckTCPrivate.CheckedChanged += new System.EventHandler(this.chckTCPrivate_CheckedChanged);
             // 
             // chckPPP
             // 
@@ -1884,6 +1910,7 @@
             this.chckPPP.TabIndex = 11;
             this.chckPPP.Text = "Playground/Park/Plaza";
             this.chckPPP.UseVisualStyleBackColor = true;
+            this.chckPPP.CheckedChanged += new System.EventHandler(this.chckPPP_CheckedChanged);
             // 
             // tbSOE
             // 
@@ -3064,17 +3091,18 @@
             this.chckCoveredGym.TabIndex = 12;
             this.chckCoveredGym.Text = "Covered Gym";
             this.chckCoveredGym.UseVisualStyleBackColor = true;
+            this.chckCoveredGym.CheckedChanged += new System.EventHandler(this.chckCoveredGym_CheckedChanged);
             // 
             // tbBathrooms
             // 
-            this.tbBathrooms.Location = new System.Drawing.Point(567, 671);
+            this.tbBathrooms.Location = new System.Drawing.Point(567, 621);
             this.tbBathrooms.Name = "tbBathrooms";
             this.tbBathrooms.Size = new System.Drawing.Size(184, 26);
             this.tbBathrooms.TabIndex = 30;
             // 
             // tbRooms
             // 
-            this.tbRooms.Location = new System.Drawing.Point(567, 639);
+            this.tbRooms.Location = new System.Drawing.Point(567, 589);
             this.tbRooms.Name = "tbRooms";
             this.tbRooms.Size = new System.Drawing.Size(184, 26);
             this.tbRooms.TabIndex = 29;
@@ -3091,6 +3119,7 @@
             this.btnfbSave.TabIndex = 44;
             this.btnfbSave.Text = "SAVE";
             this.btnfbSave.UseVisualStyleBackColor = false;
+            this.btnfbSave.Click += new System.EventHandler(this.btnfbSave_Click);
             // 
             // rtbPOHnote
             // 
@@ -3114,31 +3143,23 @@
             this.panel5.Controls.Add(this.lblFuel);
             this.panel5.Controls.Add(this.lblHouseLoc);
             this.panel5.Controls.Add(this.lblHouseMade);
-            this.panel5.Controls.Add(this.tbPOHothers);
-            this.panel5.Controls.Add(this.tbStaying);
-            this.panel5.Controls.Add(this.rbOther);
-            this.panel5.Controls.Add(this.rbStaying);
-            this.panel5.Controls.Add(this.rbRented);
-            this.panel5.Controls.Add(this.rbOwned);
             this.panel5.Controls.Add(this.lblDOH);
             this.panel5.Controls.Add(this.tbLGU);
             this.panel5.Controls.Add(this.lbl4ps);
             this.panel5.Controls.Add(this.lblLGU);
-            this.panel5.Controls.Add(this.radioButton5);
             this.panel5.Controls.Add(this.lblFinancial);
-            this.panel5.Controls.Add(this.radioButton6);
-            this.panel5.Controls.Add(this.rtbPOHothers);
-            this.panel5.Controls.Add(this.rbSupportYES);
-            this.panel5.Controls.Add(this.textBox40);
+            this.panel5.Controls.Add(this.tbPhilhealthMem);
             this.panel5.Controls.Add(this.lblIfyes);
-            this.panel5.Controls.Add(this.chckOther);
-            this.panel5.Controls.Add(this.rbSupportNO);
             this.panel5.Controls.Add(this.tbType);
             this.panel5.Controls.Add(this.lblLME);
             this.panel5.Controls.Add(this.clbExpenses);
             this.panel5.Controls.Add(this.lblType);
             this.panel5.Controls.Add(this.lblPhilHealth);
             this.panel5.Controls.Add(this.panel6);
+            this.panel5.Controls.Add(this.panel28);
+            this.panel5.Controls.Add(this.panel29);
+            this.panel5.Controls.Add(this.panel30);
+            this.panel5.Controls.Add(this.panel31);
             this.panel5.ForeColor = System.Drawing.Color.Black;
             this.panel5.Location = new System.Drawing.Point(724, 21);
             this.panel5.Name = "panel5";
@@ -3159,21 +3180,21 @@
             // 
             // tbLocation
             // 
-            this.tbLocation.Location = new System.Drawing.Point(42, 661);
+            this.tbLocation.Location = new System.Drawing.Point(42, 611);
             this.tbLocation.Name = "tbLocation";
             this.tbLocation.Size = new System.Drawing.Size(337, 26);
             this.tbLocation.TabIndex = 28;
             // 
             // tbFuel
             // 
-            this.tbFuel.Location = new System.Drawing.Point(414, 595);
+            this.tbFuel.Location = new System.Drawing.Point(414, 545);
             this.tbFuel.Name = "tbFuel";
             this.tbFuel.Size = new System.Drawing.Size(337, 26);
             this.tbFuel.TabIndex = 27;
             // 
             // tbMade
             // 
-            this.tbMade.Location = new System.Drawing.Point(42, 595);
+            this.tbMade.Location = new System.Drawing.Point(42, 545);
             this.tbMade.Name = "tbMade";
             this.tbMade.Size = new System.Drawing.Size(337, 26);
             this.tbMade.TabIndex = 26;
@@ -3181,7 +3202,7 @@
             // lblBathrooms
             // 
             this.lblBathrooms.AutoSize = true;
-            this.lblBathrooms.Location = new System.Drawing.Point(424, 674);
+            this.lblBathrooms.Location = new System.Drawing.Point(424, 624);
             this.lblBathrooms.Name = "lblBathrooms";
             this.lblBathrooms.Size = new System.Drawing.Size(137, 20);
             this.lblBathrooms.TabIndex = 25;
@@ -3190,7 +3211,7 @@
             // lblRooms
             // 
             this.lblRooms.AutoSize = true;
-            this.lblRooms.Location = new System.Drawing.Point(462, 645);
+            this.lblRooms.Location = new System.Drawing.Point(462, 595);
             this.lblRooms.Name = "lblRooms";
             this.lblRooms.Size = new System.Drawing.Size(103, 20);
             this.lblRooms.TabIndex = 24;
@@ -3199,7 +3220,7 @@
             // lblFuel
             // 
             this.lblFuel.AutoSize = true;
-            this.lblFuel.Location = new System.Drawing.Point(410, 562);
+            this.lblFuel.Location = new System.Drawing.Point(410, 512);
             this.lblFuel.Name = "lblFuel";
             this.lblFuel.Size = new System.Drawing.Size(126, 20);
             this.lblFuel.TabIndex = 23;
@@ -3208,7 +3229,7 @@
             // lblHouseLoc
             // 
             this.lblHouseLoc.AutoSize = true;
-            this.lblHouseLoc.Location = new System.Drawing.Point(38, 629);
+            this.lblHouseLoc.Location = new System.Drawing.Point(38, 579);
             this.lblHouseLoc.Name = "lblHouseLoc";
             this.lblHouseLoc.Size = new System.Drawing.Size(245, 20);
             this.lblHouseLoc.TabIndex = 22;
@@ -3217,74 +3238,16 @@
             // lblHouseMade
             // 
             this.lblHouseMade.AutoSize = true;
-            this.lblHouseMade.Location = new System.Drawing.Point(38, 562);
+            this.lblHouseMade.Location = new System.Drawing.Point(38, 512);
             this.lblHouseMade.Name = "lblHouseMade";
             this.lblHouseMade.Size = new System.Drawing.Size(208, 20);
             this.lblHouseMade.TabIndex = 21;
             this.lblHouseMade.Text = "What is the house made of?";
             // 
-            // tbPOHothers
-            // 
-            this.tbPOHothers.Location = new System.Drawing.Point(478, 521);
-            this.tbPOHothers.Name = "tbPOHothers";
-            this.tbPOHothers.Size = new System.Drawing.Size(252, 26);
-            this.tbPOHothers.TabIndex = 20;
-            // 
-            // tbStaying
-            // 
-            this.tbStaying.Location = new System.Drawing.Point(378, 484);
-            this.tbStaying.Name = "tbStaying";
-            this.tbStaying.Size = new System.Drawing.Size(352, 26);
-            this.tbStaying.TabIndex = 19;
-            // 
-            // rbOther
-            // 
-            this.rbOther.AutoSize = true;
-            this.rbOther.Location = new System.Drawing.Point(343, 521);
-            this.rbOther.Name = "rbOther";
-            this.rbOther.Size = new System.Drawing.Size(131, 24);
-            this.rbOther.TabIndex = 18;
-            this.rbOther.TabStop = true;
-            this.rbOther.Text = "Other,specify:";
-            this.rbOther.UseVisualStyleBackColor = true;
-            // 
-            // rbStaying
-            // 
-            this.rbStaying.AutoSize = true;
-            this.rbStaying.Location = new System.Drawing.Point(343, 454);
-            this.rbStaying.Name = "rbStaying";
-            this.rbStaying.Size = new System.Drawing.Size(403, 24);
-            this.rbStaying.TabIndex = 17;
-            this.rbStaying.TabStop = true;
-            this.rbStaying.Text = "Staying with person/family (specific living with whom):";
-            this.rbStaying.UseVisualStyleBackColor = true;
-            // 
-            // rbRented
-            // 
-            this.rbRented.AutoSize = true;
-            this.rbRented.Location = new System.Drawing.Point(110, 521);
-            this.rbRented.Name = "rbRented";
-            this.rbRented.Size = new System.Drawing.Size(87, 24);
-            this.rbRented.TabIndex = 16;
-            this.rbRented.TabStop = true;
-            this.rbRented.Text = "Rented";
-            this.rbRented.UseVisualStyleBackColor = true;
-            // 
-            // rbOwned
-            // 
-            this.rbOwned.AutoSize = true;
-            this.rbOwned.Location = new System.Drawing.Point(110, 486);
-            this.rbOwned.Name = "rbOwned";
-            this.rbOwned.Size = new System.Drawing.Size(84, 24);
-            this.rbOwned.TabIndex = 15;
-            this.rbOwned.TabStop = true;
-            this.rbOwned.Text = "Owned";
-            this.rbOwned.UseVisualStyleBackColor = true;
-            // 
             // lblDOH
             // 
             this.lblDOH.AutoSize = true;
-            this.lblDOH.Location = new System.Drawing.Point(18, 449);
+            this.lblDOH.Location = new System.Drawing.Point(18, 399);
             this.lblDOH.Name = "lblDOH";
             this.lblDOH.Size = new System.Drawing.Size(162, 20);
             this.lblDOH.TabIndex = 14;
@@ -3316,17 +3279,6 @@
             this.lblLGU.TabIndex = 2;
             this.lblLGU.Text = "Civil/LGU Organization(s)\r\nMembership:";
             // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(464, 146);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(67, 24);
-            this.radioButton5.TabIndex = 3;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "YES";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            // 
             // lblFinancial
             // 
             this.lblFinancial.AutoSize = true;
@@ -3336,42 +3288,12 @@
             this.lblFinancial.TabIndex = 2;
             this.lblFinancial.Text = "Are there other relative \r\nproviding financial support \r\nto the family";
             // 
-            // radioButton6
+            // tbPhilhealthMem
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(551, 146);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(57, 24);
-            this.radioButton6.TabIndex = 4;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "NO";
-            this.radioButton6.UseVisualStyleBackColor = true;
-            // 
-            // rtbPOHothers
-            // 
-            this.rtbPOHothers.Location = new System.Drawing.Point(3, 338);
-            this.rtbPOHothers.Name = "rtbPOHothers";
-            this.rtbPOHothers.Size = new System.Drawing.Size(217, 96);
-            this.rtbPOHothers.TabIndex = 3;
-            this.rtbPOHothers.Text = "";
-            // 
-            // rbSupportYES
-            // 
-            this.rbSupportYES.AutoSize = true;
-            this.rbSupportYES.Location = new System.Drawing.Point(259, 119);
-            this.rbSupportYES.Name = "rbSupportYES";
-            this.rbSupportYES.Size = new System.Drawing.Size(67, 24);
-            this.rbSupportYES.TabIndex = 3;
-            this.rbSupportYES.TabStop = true;
-            this.rbSupportYES.Text = "YES";
-            this.rbSupportYES.UseVisualStyleBackColor = true;
-            // 
-            // textBox40
-            // 
-            this.textBox40.Location = new System.Drawing.Point(244, 258);
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(590, 26);
-            this.textBox40.TabIndex = 13;
+            this.tbPhilhealthMem.Location = new System.Drawing.Point(244, 258);
+            this.tbPhilhealthMem.Name = "tbPhilhealthMem";
+            this.tbPhilhealthMem.Size = new System.Drawing.Size(590, 26);
+            this.tbPhilhealthMem.TabIndex = 13;
             // 
             // lblIfyes
             // 
@@ -3382,30 +3304,9 @@
             this.lblIfyes.TabIndex = 5;
             this.lblIfyes.Text = "If yes, how often?";
             // 
-            // chckOther
-            // 
-            this.chckOther.AutoSize = true;
-            this.chckOther.Location = new System.Drawing.Point(8, 312);
-            this.chckOther.Name = "chckOther";
-            this.chckOther.Size = new System.Drawing.Size(183, 24);
-            this.chckOther.TabIndex = 2;
-            this.chckOther.Text = "Other, please specify";
-            this.chckOther.UseVisualStyleBackColor = true;
-            // 
-            // rbSupportNO
-            // 
-            this.rbSupportNO.AutoSize = true;
-            this.rbSupportNO.Location = new System.Drawing.Point(332, 119);
-            this.rbSupportNO.Name = "rbSupportNO";
-            this.rbSupportNO.Size = new System.Drawing.Size(57, 24);
-            this.rbSupportNO.TabIndex = 4;
-            this.rbSupportNO.TabStop = true;
-            this.rbSupportNO.Text = "NO";
-            this.rbSupportNO.UseVisualStyleBackColor = true;
-            // 
             // tbType
             // 
-            this.tbType.Location = new System.Drawing.Point(244, 343);
+            this.tbType.Location = new System.Drawing.Point(249, 327);
             this.tbType.Name = "tbType";
             this.tbType.Size = new System.Drawing.Size(590, 26);
             this.tbType.TabIndex = 12;
@@ -3519,6 +3420,146 @@
             this.lblPOH.Text = "PROFILE OF HOUSEHOLD(Please see the second page of this form for the continuation" +
     ")";
             // 
+            // panel28
+            // 
+            this.panel28.Controls.Add(this.rbSupportYES);
+            this.panel28.Controls.Add(this.rbSupportNO);
+            this.panel28.Location = new System.Drawing.Point(249, 113);
+            this.panel28.Name = "panel28";
+            this.panel28.Size = new System.Drawing.Size(149, 30);
+            this.panel28.TabIndex = 32;
+            // 
+            // rbSupportYES
+            // 
+            this.rbSupportYES.AutoSize = true;
+            this.rbSupportYES.Location = new System.Drawing.Point(3, 3);
+            this.rbSupportYES.Name = "rbSupportYES";
+            this.rbSupportYES.Size = new System.Drawing.Size(67, 24);
+            this.rbSupportYES.TabIndex = 3;
+            this.rbSupportYES.TabStop = true;
+            this.rbSupportYES.Text = "YES";
+            this.rbSupportYES.UseVisualStyleBackColor = true;
+            // 
+            // rbSupportNO
+            // 
+            this.rbSupportNO.AutoSize = true;
+            this.rbSupportNO.Location = new System.Drawing.Point(76, 3);
+            this.rbSupportNO.Name = "rbSupportNO";
+            this.rbSupportNO.Size = new System.Drawing.Size(57, 24);
+            this.rbSupportNO.TabIndex = 4;
+            this.rbSupportNO.TabStop = true;
+            this.rbSupportNO.Text = "NO";
+            this.rbSupportNO.UseVisualStyleBackColor = true;
+            // 
+            // panel29
+            // 
+            this.panel29.Controls.Add(this.rb4psYES);
+            this.panel29.Controls.Add(this.rb4psNO);
+            this.panel29.Location = new System.Drawing.Point(464, 142);
+            this.panel29.Name = "panel29";
+            this.panel29.Size = new System.Drawing.Size(149, 28);
+            this.panel29.TabIndex = 33;
+            // 
+            // rb4psYES
+            // 
+            this.rb4psYES.AutoSize = true;
+            this.rb4psYES.Location = new System.Drawing.Point(1, 2);
+            this.rb4psYES.Name = "rb4psYES";
+            this.rb4psYES.Size = new System.Drawing.Size(67, 24);
+            this.rb4psYES.TabIndex = 3;
+            this.rb4psYES.TabStop = true;
+            this.rb4psYES.Text = "YES";
+            this.rb4psYES.UseVisualStyleBackColor = true;
+            // 
+            // rb4psNO
+            // 
+            this.rb4psNO.AutoSize = true;
+            this.rb4psNO.Location = new System.Drawing.Point(88, 2);
+            this.rb4psNO.Name = "rb4psNO";
+            this.rb4psNO.Size = new System.Drawing.Size(57, 24);
+            this.rb4psNO.TabIndex = 4;
+            this.rb4psNO.TabStop = true;
+            this.rb4psNO.Text = "NO";
+            this.rb4psNO.UseVisualStyleBackColor = true;
+            // 
+            // panel30
+            // 
+            this.panel30.Controls.Add(this.rbOwned);
+            this.panel30.Controls.Add(this.rbRented);
+            this.panel30.Location = new System.Drawing.Point(97, 434);
+            this.panel30.Name = "panel30";
+            this.panel30.Size = new System.Drawing.Size(112, 63);
+            this.panel30.TabIndex = 34;
+            // 
+            // rbOwned
+            // 
+            this.rbOwned.AutoSize = true;
+            this.rbOwned.Location = new System.Drawing.Point(13, 3);
+            this.rbOwned.Name = "rbOwned";
+            this.rbOwned.Size = new System.Drawing.Size(84, 24);
+            this.rbOwned.TabIndex = 15;
+            this.rbOwned.TabStop = true;
+            this.rbOwned.Text = "Owned";
+            this.rbOwned.UseVisualStyleBackColor = true;
+            // 
+            // rbRented
+            // 
+            this.rbRented.AutoSize = true;
+            this.rbRented.Location = new System.Drawing.Point(13, 33);
+            this.rbRented.Name = "rbRented";
+            this.rbRented.Size = new System.Drawing.Size(87, 24);
+            this.rbRented.TabIndex = 16;
+            this.rbRented.TabStop = true;
+            this.rbRented.Text = "Rented";
+            this.rbRented.UseVisualStyleBackColor = true;
+            // 
+            // panel31
+            // 
+            this.panel31.Controls.Add(this.rbOther);
+            this.panel31.Controls.Add(this.tbPOHothers);
+            this.panel31.Controls.Add(this.tbStaying);
+            this.panel31.Controls.Add(this.rbStaying);
+            this.panel31.Location = new System.Drawing.Point(342, 400);
+            this.panel31.Name = "panel31";
+            this.panel31.Size = new System.Drawing.Size(416, 110);
+            this.panel31.TabIndex = 35;
+            // 
+            // rbOther
+            // 
+            this.rbOther.AutoSize = true;
+            this.rbOther.Location = new System.Drawing.Point(3, 76);
+            this.rbOther.Name = "rbOther";
+            this.rbOther.Size = new System.Drawing.Size(131, 24);
+            this.rbOther.TabIndex = 18;
+            this.rbOther.TabStop = true;
+            this.rbOther.Text = "Other,specify:";
+            this.rbOther.UseVisualStyleBackColor = true;
+            // 
+            // tbPOHothers
+            // 
+            this.tbPOHothers.Location = new System.Drawing.Point(140, 75);
+            this.tbPOHothers.Name = "tbPOHothers";
+            this.tbPOHothers.Size = new System.Drawing.Size(252, 26);
+            this.tbPOHothers.TabIndex = 20;
+            // 
+            // tbStaying
+            // 
+            this.tbStaying.Location = new System.Drawing.Point(39, 39);
+            this.tbStaying.Name = "tbStaying";
+            this.tbStaying.Size = new System.Drawing.Size(352, 26);
+            this.tbStaying.TabIndex = 19;
+            // 
+            // rbStaying
+            // 
+            this.rbStaying.AutoSize = true;
+            this.rbStaying.Location = new System.Drawing.Point(3, 3);
+            this.rbStaying.Name = "rbStaying";
+            this.rbStaying.Size = new System.Drawing.Size(403, 24);
+            this.rbStaying.TabIndex = 17;
+            this.rbStaying.TabStop = true;
+            this.rbStaying.Text = "Staying with person/family (specific living with whom):";
+            this.rbStaying.UseVisualStyleBackColor = true;
+            // 
             // btnfbCancel
             // 
             this.btnfbCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
@@ -3566,7 +3607,6 @@
             this.tbChildIDfb.Name = "tbChildIDfb";
             this.tbChildIDfb.Size = new System.Drawing.Size(156, 26);
             this.tbChildIDfb.TabIndex = 6;
-            this.tbChildIDfb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox19_KeyPress);
             // 
             // tbTimefb
             // 
@@ -3580,8 +3620,6 @@
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.Control;
             this.panel3.Controls.Add(this.dtpDateIssued);
-            this.panel3.Controls.Add(this.rbPrivate);
-            this.panel3.Controls.Add(this.rbPublic);
             this.panel3.Controls.Add(this.tbPWDid);
             this.panel3.Controls.Add(this.tbTherapy);
             this.panel3.Controls.Add(this.tbStop);
@@ -3596,8 +3634,6 @@
             this.panel3.Controls.Add(this.tbProfileNationality);
             this.panel3.Controls.Add(this.dtpProfileDOB);
             this.panel3.Controls.Add(this.tbProfilePOB);
-            this.panel3.Controls.Add(this.rbProfileFemale);
-            this.panel3.Controls.Add(this.rbProfileMale);
             this.panel3.Controls.Add(this.tbProfileAddress);
             this.panel3.Controls.Add(this.tbProfileAge);
             this.panel3.Controls.Add(this.tbProfileNickname);
@@ -3624,6 +3660,8 @@
             this.panel3.Controls.Add(this.lblfbNickname);
             this.panel3.Controls.Add(this.lblfbName);
             this.panel3.Controls.Add(this.panel4);
+            this.panel3.Controls.Add(this.panel32);
+            this.panel3.Controls.Add(this.panel33);
             this.panel3.ForeColor = System.Drawing.Color.Black;
             this.panel3.Location = new System.Drawing.Point(21, 69);
             this.panel3.Name = "panel3";
@@ -3637,35 +3675,12 @@
             this.dtpDateIssued.Size = new System.Drawing.Size(322, 26);
             this.dtpDateIssued.TabIndex = 44;
             // 
-            // rbPrivate
-            // 
-            this.rbPrivate.AutoSize = true;
-            this.rbPrivate.Location = new System.Drawing.Point(221, 436);
-            this.rbPrivate.Name = "rbPrivate";
-            this.rbPrivate.Size = new System.Drawing.Size(198, 24);
-            this.rbPrivate.TabIndex = 43;
-            this.rbPrivate.TabStop = true;
-            this.rbPrivate.Text = "Private (including NGO)";
-            this.rbPrivate.UseVisualStyleBackColor = true;
-            // 
-            // rbPublic
-            // 
-            this.rbPublic.AutoSize = true;
-            this.rbPublic.Location = new System.Drawing.Point(113, 436);
-            this.rbPublic.Name = "rbPublic";
-            this.rbPublic.Size = new System.Drawing.Size(76, 24);
-            this.rbPublic.TabIndex = 42;
-            this.rbPublic.TabStop = true;
-            this.rbPublic.Text = "Public";
-            this.rbPublic.UseVisualStyleBackColor = true;
-            // 
             // tbPWDid
             // 
             this.tbPWDid.Location = new System.Drawing.Point(25, 749);
             this.tbPWDid.Name = "tbPWDid";
             this.tbPWDid.Size = new System.Drawing.Size(282, 26);
             this.tbPWDid.TabIndex = 40;
-            this.tbPWDid.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox36_KeyPress);
             // 
             // tbTherapy
             // 
@@ -3715,7 +3730,6 @@
             this.tbEducation.Name = "tbEducation";
             this.tbEducation.Size = new System.Drawing.Size(156, 26);
             this.tbEducation.TabIndex = 34;
-            this.tbEducation.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox29_KeyPress);
             // 
             // tbIntervention
             // 
@@ -3723,7 +3737,6 @@
             this.tbIntervention.Name = "tbIntervention";
             this.tbIntervention.Size = new System.Drawing.Size(156, 26);
             this.tbIntervention.TabIndex = 33;
-            this.tbIntervention.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox28_KeyPress);
             // 
             // tbEthics
             // 
@@ -3731,7 +3744,6 @@
             this.tbEthics.Name = "tbEthics";
             this.tbEthics.Size = new System.Drawing.Size(156, 26);
             this.tbEthics.TabIndex = 32;
-            this.tbEthics.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox27_KeyPress);
             // 
             // tbProfileReligion
             // 
@@ -3739,7 +3751,6 @@
             this.tbProfileReligion.Name = "tbProfileReligion";
             this.tbProfileReligion.Size = new System.Drawing.Size(156, 26);
             this.tbProfileReligion.TabIndex = 31;
-            this.tbProfileReligion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox26_KeyPress);
             // 
             // tbProfileNationality
             // 
@@ -3747,7 +3758,6 @@
             this.tbProfileNationality.Name = "tbProfileNationality";
             this.tbProfileNationality.Size = new System.Drawing.Size(156, 26);
             this.tbProfileNationality.TabIndex = 30;
-            this.tbProfileNationality.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox25_KeyPress);
             // 
             // dtpProfileDOB
             // 
@@ -3763,28 +3773,6 @@
             this.tbProfilePOB.Size = new System.Drawing.Size(204, 26);
             this.tbProfilePOB.TabIndex = 28;
             // 
-            // rbProfileFemale
-            // 
-            this.rbProfileFemale.AutoSize = true;
-            this.rbProfileFemale.Location = new System.Drawing.Point(573, 183);
-            this.rbProfileFemale.Name = "rbProfileFemale";
-            this.rbProfileFemale.Size = new System.Drawing.Size(44, 24);
-            this.rbProfileFemale.TabIndex = 27;
-            this.rbProfileFemale.TabStop = true;
-            this.rbProfileFemale.Text = "F";
-            this.rbProfileFemale.UseVisualStyleBackColor = true;
-            // 
-            // rbProfileMale
-            // 
-            this.rbProfileMale.AutoSize = true;
-            this.rbProfileMale.Location = new System.Drawing.Point(520, 183);
-            this.rbProfileMale.Name = "rbProfileMale";
-            this.rbProfileMale.Size = new System.Drawing.Size(47, 24);
-            this.rbProfileMale.TabIndex = 26;
-            this.rbProfileMale.TabStop = true;
-            this.rbProfileMale.Text = "M";
-            this.rbProfileMale.UseVisualStyleBackColor = true;
-            // 
             // tbProfileAddress
             // 
             this.tbProfileAddress.Location = new System.Drawing.Point(200, 103);
@@ -3799,7 +3787,6 @@
             this.tbProfileAge.Name = "tbProfileAge";
             this.tbProfileAge.Size = new System.Drawing.Size(102, 26);
             this.tbProfileAge.TabIndex = 24;
-            this.tbProfileAge.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox22_KeyPress);
             // 
             // tbProfileNickname
             // 
@@ -3807,7 +3794,6 @@
             this.tbProfileNickname.Name = "tbProfileNickname";
             this.tbProfileNickname.Size = new System.Drawing.Size(156, 26);
             this.tbProfileNickname.TabIndex = 23;
-            this.tbProfileNickname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox21_KeyPress);
             // 
             // tbProfileName
             // 
@@ -3815,7 +3801,6 @@
             this.tbProfileName.Name = "tbProfileName";
             this.tbProfileName.Size = new System.Drawing.Size(209, 26);
             this.tbProfileName.TabIndex = 7;
-            this.tbProfileName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox20_KeyPress);
             // 
             // lblPWD
             // 
@@ -4025,6 +4010,68 @@
             this.lblProfile.TabIndex = 0;
             this.lblProfile.Text = "PROFILE OF CHILD";
             // 
+            // panel32
+            // 
+            this.panel32.Controls.Add(this.rbPublic);
+            this.panel32.Controls.Add(this.rbPrivate);
+            this.panel32.Location = new System.Drawing.Point(103, 436);
+            this.panel32.Name = "panel32";
+            this.panel32.Size = new System.Drawing.Size(296, 35);
+            this.panel32.TabIndex = 45;
+            // 
+            // rbPublic
+            // 
+            this.rbPublic.AutoSize = true;
+            this.rbPublic.Location = new System.Drawing.Point(11, 3);
+            this.rbPublic.Name = "rbPublic";
+            this.rbPublic.Size = new System.Drawing.Size(76, 24);
+            this.rbPublic.TabIndex = 42;
+            this.rbPublic.TabStop = true;
+            this.rbPublic.Text = "Public";
+            this.rbPublic.UseVisualStyleBackColor = true;
+            // 
+            // rbPrivate
+            // 
+            this.rbPrivate.AutoSize = true;
+            this.rbPrivate.Location = new System.Drawing.Point(94, 3);
+            this.rbPrivate.Name = "rbPrivate";
+            this.rbPrivate.Size = new System.Drawing.Size(198, 24);
+            this.rbPrivate.TabIndex = 43;
+            this.rbPrivate.TabStop = true;
+            this.rbPrivate.Text = "Private (including NGO)";
+            this.rbPrivate.UseVisualStyleBackColor = true;
+            // 
+            // panel33
+            // 
+            this.panel33.Controls.Add(this.rbProfileFemale);
+            this.panel33.Controls.Add(this.rbProfileMale);
+            this.panel33.Location = new System.Drawing.Point(514, 179);
+            this.panel33.Name = "panel33";
+            this.panel33.Size = new System.Drawing.Size(149, 30);
+            this.panel33.TabIndex = 46;
+            // 
+            // rbProfileFemale
+            // 
+            this.rbProfileFemale.AutoSize = true;
+            this.rbProfileFemale.Location = new System.Drawing.Point(72, 4);
+            this.rbProfileFemale.Name = "rbProfileFemale";
+            this.rbProfileFemale.Size = new System.Drawing.Size(44, 24);
+            this.rbProfileFemale.TabIndex = 27;
+            this.rbProfileFemale.TabStop = true;
+            this.rbProfileFemale.Text = "F";
+            this.rbProfileFemale.UseVisualStyleBackColor = true;
+            // 
+            // rbProfileMale
+            // 
+            this.rbProfileMale.AutoSize = true;
+            this.rbProfileMale.Location = new System.Drawing.Point(5, 4);
+            this.rbProfileMale.Name = "rbProfileMale";
+            this.rbProfileMale.Size = new System.Drawing.Size(47, 24);
+            this.rbProfileMale.TabIndex = 26;
+            this.rbProfileMale.TabStop = true;
+            this.rbProfileMale.Text = "M";
+            this.rbProfileMale.UseVisualStyleBackColor = true;
+            // 
             // lblfbChildID
             // 
             this.lblfbChildID.AutoSize = true;
@@ -4084,6 +4131,7 @@
             // panel22
             // 
             this.panel22.BackColor = System.Drawing.SystemColors.Control;
+            this.panel22.Controls.Add(this.gbLPO);
             this.panel22.Controls.Add(this.panel23);
             this.panel22.Controls.Add(this.btnCancel);
             this.panel22.Controls.Add(this.btnInformant);
@@ -4095,6 +4143,49 @@
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(1618, 886);
             this.panel22.TabIndex = 1;
+            // 
+            // gbLPO
+            // 
+            this.gbLPO.Controls.Add(this.lblLPO);
+            this.gbLPO.Controls.Add(this.rbLPOno);
+            this.gbLPO.Controls.Add(this.rbLPOyes);
+            this.gbLPO.Location = new System.Drawing.Point(828, 665);
+            this.gbLPO.Name = "gbLPO";
+            this.gbLPO.Size = new System.Drawing.Size(572, 62);
+            this.gbLPO.TabIndex = 25;
+            this.gbLPO.TabStop = false;
+            this.gbLPO.Text = "LPO";
+            // 
+            // lblLPO
+            // 
+            this.lblLPO.AutoSize = true;
+            this.lblLPO.Location = new System.Drawing.Point(43, 29);
+            this.lblLPO.Name = "lblLPO";
+            this.lblLPO.Size = new System.Drawing.Size(356, 20);
+            this.lblLPO.TabIndex = 10;
+            this.lblLPO.Text = "Is the child qualified to an LPO program/services?";
+            // 
+            // rbLPOno
+            // 
+            this.rbLPOno.AutoSize = true;
+            this.rbLPOno.Location = new System.Drawing.Point(484, 27);
+            this.rbLPOno.Name = "rbLPOno";
+            this.rbLPOno.Size = new System.Drawing.Size(54, 24);
+            this.rbLPOno.TabIndex = 15;
+            this.rbLPOno.TabStop = true;
+            this.rbLPOno.Text = "No";
+            this.rbLPOno.UseVisualStyleBackColor = true;
+            // 
+            // rbLPOyes
+            // 
+            this.rbLPOyes.AutoSize = true;
+            this.rbLPOyes.Location = new System.Drawing.Point(416, 27);
+            this.rbLPOyes.Name = "rbLPOyes";
+            this.rbLPOyes.Size = new System.Drawing.Size(62, 24);
+            this.rbLPOyes.TabIndex = 14;
+            this.rbLPOyes.TabStop = true;
+            this.rbLPOyes.Text = "Yes";
+            this.rbLPOyes.UseVisualStyleBackColor = true;
             // 
             // panel23
             // 
@@ -4120,7 +4211,7 @@
             this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
             this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Location = new System.Drawing.Point(1081, 760);
+            this.btnCancel.Location = new System.Drawing.Point(1109, 786);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(170, 44);
             this.btnCancel.TabIndex = 23;
@@ -4132,7 +4223,7 @@
             this.btnInformant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
             this.btnInformant.FlatAppearance.BorderSize = 0;
             this.btnInformant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInformant.Location = new System.Drawing.Point(1081, 810);
+            this.btnInformant.Location = new System.Drawing.Point(1109, 836);
             this.btnInformant.Name = "btnInformant";
             this.btnInformant.Size = new System.Drawing.Size(314, 44);
             this.btnInformant.TabIndex = 22;
@@ -4144,24 +4235,24 @@
             this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Location = new System.Drawing.Point(1253, 760);
+            this.btnSave.Location = new System.Drawing.Point(1281, 786);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(142, 44);
             this.btnSave.TabIndex = 21;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // gbAssesment
             // 
             this.gbAssesment.BackColor = System.Drawing.SystemColors.Control;
-            this.gbAssesment.Controls.Add(this.rbLPOno);
-            this.gbAssesment.Controls.Add(this.rbLPOyes);
+            this.gbAssesment.Controls.Add(this.button1);
+            this.gbAssesment.Controls.Add(this.listBox1);
             this.gbAssesment.Controls.Add(this.rbImpression);
             this.gbAssesment.Controls.Add(this.rbDiagnosis);
-            this.gbAssesment.Controls.Add(this.lblLPO);
-            this.gbAssesment.Controls.Add(this.tbOther);
-            this.gbAssesment.Controls.Add(this.rtbAgencies);
-            this.gbAssesment.Controls.Add(this.rtbPertinent);
+            this.gbAssesment.Controls.Add(this.tbOtherfa);
+            this.gbAssesment.Controls.Add(this.tbAgencies);
+            this.gbAssesment.Controls.Add(this.tbPertinent);
             this.gbAssesment.Controls.Add(this.clbPrograms);
             this.gbAssesment.Controls.Add(this.lblDes1);
             this.gbAssesment.Controls.Add(this.lblProgram);
@@ -4171,32 +4262,28 @@
             this.gbAssesment.ForeColor = System.Drawing.SystemColors.ControlText;
             this.gbAssesment.Location = new System.Drawing.Point(828, 74);
             this.gbAssesment.Name = "gbAssesment";
-            this.gbAssesment.Size = new System.Drawing.Size(780, 629);
+            this.gbAssesment.Size = new System.Drawing.Size(780, 585);
             this.gbAssesment.TabIndex = 19;
             this.gbAssesment.TabStop = false;
             this.gbAssesment.Text = "Initial Assesment";
             // 
-            // rbLPOno
+            // button1
             // 
-            this.rbLPOno.AutoSize = true;
-            this.rbLPOno.Location = new System.Drawing.Point(463, 575);
-            this.rbLPOno.Name = "rbLPOno";
-            this.rbLPOno.Size = new System.Drawing.Size(54, 24);
-            this.rbLPOno.TabIndex = 15;
-            this.rbLPOno.TabStop = true;
-            this.rbLPOno.Text = "No";
-            this.rbLPOno.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(661, 535);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 29);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // rbLPOyes
+            // listBox1
             // 
-            this.rbLPOyes.AutoSize = true;
-            this.rbLPOyes.Location = new System.Drawing.Point(395, 575);
-            this.rbLPOyes.Name = "rbLPOyes";
-            this.rbLPOyes.Size = new System.Drawing.Size(62, 24);
-            this.rbLPOyes.TabIndex = 14;
-            this.rbLPOyes.TabStop = true;
-            this.rbLPOyes.Text = "Yes";
-            this.rbLPOyes.UseVisualStyleBackColor = true;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(578, 319);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(196, 204);
+            this.listBox1.TabIndex = 14;
             // 
             // rbImpression
             // 
@@ -4220,38 +4307,29 @@
             this.rbDiagnosis.Text = "Formal Diagnosis";
             this.rbDiagnosis.UseVisualStyleBackColor = true;
             // 
-            // lblLPO
+            // tbOtherfa
             // 
-            this.lblLPO.AutoSize = true;
-            this.lblLPO.Location = new System.Drawing.Point(22, 577);
-            this.lblLPO.Name = "lblLPO";
-            this.lblLPO.Size = new System.Drawing.Size(356, 20);
-            this.lblLPO.TabIndex = 10;
-            this.lblLPO.Text = "Is the child qualified to an LPO program/services?";
+            this.tbOtherfa.Location = new System.Drawing.Point(26, 532);
+            this.tbOtherfa.Name = "tbOtherfa";
+            this.tbOtherfa.Size = new System.Drawing.Size(325, 26);
+            this.tbOtherfa.TabIndex = 9;
+            this.tbOtherfa.Text = "Others, please specify";
             // 
-            // tbOther
+            // tbAgencies
             // 
-            this.tbOther.Location = new System.Drawing.Point(26, 532);
-            this.tbOther.Name = "tbOther";
-            this.tbOther.Size = new System.Drawing.Size(325, 26);
-            this.tbOther.TabIndex = 9;
-            this.tbOther.Text = "Others, please specify";
+            this.tbAgencies.Location = new System.Drawing.Point(26, 207);
+            this.tbAgencies.Name = "tbAgencies";
+            this.tbAgencies.Size = new System.Drawing.Size(748, 32);
+            this.tbAgencies.TabIndex = 8;
+            this.tbAgencies.Text = "";
             // 
-            // rtbAgencies
+            // tbPertinent
             // 
-            this.rtbAgencies.Location = new System.Drawing.Point(26, 207);
-            this.rtbAgencies.Name = "rtbAgencies";
-            this.rtbAgencies.Size = new System.Drawing.Size(748, 32);
-            this.rtbAgencies.TabIndex = 8;
-            this.rtbAgencies.Text = "";
-            // 
-            // rtbPertinent
-            // 
-            this.rtbPertinent.Location = new System.Drawing.Point(26, 138);
-            this.rtbPertinent.Name = "rtbPertinent";
-            this.rtbPertinent.Size = new System.Drawing.Size(748, 32);
-            this.rtbPertinent.TabIndex = 7;
-            this.rtbPertinent.Text = "";
+            this.tbPertinent.Location = new System.Drawing.Point(26, 138);
+            this.tbPertinent.Name = "tbPertinent";
+            this.tbPertinent.Size = new System.Drawing.Size(748, 32);
+            this.tbPertinent.TabIndex = 7;
+            this.tbPertinent.Text = "";
             // 
             // clbPrograms
             // 
@@ -4274,7 +4352,7 @@
             this.clbPrograms.Location = new System.Drawing.Point(26, 319);
             this.clbPrograms.MultiColumn = true;
             this.clbPrograms.Name = "clbPrograms";
-            this.clbPrograms.Size = new System.Drawing.Size(708, 204);
+            this.clbPrograms.Size = new System.Drawing.Size(546, 204);
             this.clbPrograms.TabIndex = 5;
             // 
             // lblDes1
@@ -4329,12 +4407,12 @@
             this.gbInformant.BackColor = System.Drawing.SystemColors.Control;
             this.gbInformant.Controls.Add(this.lblNotes);
             this.gbInformant.Controls.Add(this.rtbInterviewNote);
-            this.gbInformant.Controls.Add(this.tbInfomantNumber2);
+            this.gbInformant.Controls.Add(this.tbInformantNetwork2);
             this.gbInformant.Controls.Add(this.tbInformantNetwork1);
             this.gbInformant.Controls.Add(this.tbInformantRelationship);
-            this.gbInformant.Controls.Add(this.tbHow);
+            this.gbInformant.Controls.Add(this.tbInformantHow);
             this.gbInformant.Controls.Add(this.tbInformantWhen);
-            this.gbInformant.Controls.Add(this.tbInfomantWhat);
+            this.gbInformant.Controls.Add(this.tbInformantWhat);
             this.gbInformant.Controls.Add(this.tbInformantWho);
             this.gbInformant.Controls.Add(this.tbInformantContact2);
             this.gbInformant.Controls.Add(this.tbInformantContact1);
@@ -4377,12 +4455,12 @@
             this.rtbInterviewNote.TabIndex = 21;
             this.rtbInterviewNote.Text = "";
             // 
-            // tbInfomantNumber2
+            // tbInformantNetwork2
             // 
-            this.tbInfomantNumber2.Location = new System.Drawing.Point(440, 245);
-            this.tbInfomantNumber2.Name = "tbInfomantNumber2";
-            this.tbInfomantNumber2.Size = new System.Drawing.Size(334, 26);
-            this.tbInfomantNumber2.TabIndex = 20;
+            this.tbInformantNetwork2.Location = new System.Drawing.Point(440, 245);
+            this.tbInformantNetwork2.Name = "tbInformantNetwork2";
+            this.tbInformantNetwork2.Size = new System.Drawing.Size(334, 26);
+            this.tbInformantNetwork2.TabIndex = 20;
             // 
             // tbInformantNetwork1
             // 
@@ -4398,12 +4476,12 @@
             this.tbInformantRelationship.Size = new System.Drawing.Size(334, 26);
             this.tbInformantRelationship.TabIndex = 15;
             // 
-            // tbHow
+            // tbInformantHow
             // 
-            this.tbHow.Location = new System.Drawing.Point(10, 473);
-            this.tbHow.Name = "tbHow";
-            this.tbHow.Size = new System.Drawing.Size(764, 26);
-            this.tbHow.TabIndex = 18;
+            this.tbInformantHow.Location = new System.Drawing.Point(10, 473);
+            this.tbInformantHow.Name = "tbInformantHow";
+            this.tbInformantHow.Size = new System.Drawing.Size(764, 26);
+            this.tbInformantHow.TabIndex = 18;
             // 
             // tbInformantWhen
             // 
@@ -4412,12 +4490,12 @@
             this.tbInformantWhen.Size = new System.Drawing.Size(764, 26);
             this.tbInformantWhen.TabIndex = 17;
             // 
-            // tbInfomantWhat
+            // tbInformantWhat
             // 
-            this.tbInfomantWhat.Location = new System.Drawing.Point(10, 361);
-            this.tbInfomantWhat.Name = "tbInfomantWhat";
-            this.tbInfomantWhat.Size = new System.Drawing.Size(764, 26);
-            this.tbInfomantWhat.TabIndex = 16;
+            this.tbInformantWhat.Location = new System.Drawing.Point(10, 361);
+            this.tbInformantWhat.Name = "tbInformantWhat";
+            this.tbInformantWhat.Size = new System.Drawing.Size(764, 26);
+            this.tbInformantWhat.TabIndex = 16;
             // 
             // tbInformantWho
             // 
@@ -5143,6 +5221,7 @@
             this.chckMarket.TabIndex = 13;
             this.chckMarket.Text = "Market";
             this.chckMarket.UseVisualStyleBackColor = true;
+            this.chckMarket.CheckedChanged += new System.EventHandler(this.chckMarket_CheckedChanged);
             // 
             // chckMall
             // 
@@ -5153,6 +5232,7 @@
             this.chckMall.TabIndex = 14;
             this.chckMall.Text = "Mall";
             this.chckMall.UseVisualStyleBackColor = true;
+            this.chckMall.CheckedChanged += new System.EventHandler(this.chckMall_CheckedChanged);
             // 
             // chckBusiness
             // 
@@ -5163,6 +5243,7 @@
             this.chckBusiness.TabIndex = 15;
             this.chckBusiness.Text = "Business Establishment";
             this.chckBusiness.UseVisualStyleBackColor = true;
+            this.chckBusiness.CheckedChanged += new System.EventHandler(this.chckBusiness_CheckedChanged);
             // 
             // chckFactory
             // 
@@ -5173,6 +5254,7 @@
             this.chckFactory.TabIndex = 16;
             this.chckFactory.Text = "Factory";
             this.chckFactory.UseVisualStyleBackColor = true;
+            this.chckFactory.CheckedChanged += new System.EventHandler(this.chckFactory_CheckedChanged);
             // 
             // chckWorkship
             // 
@@ -5183,6 +5265,7 @@
             this.chckWorkship.TabIndex = 17;
             this.chckWorkship.Text = "Place to worship";
             this.chckWorkship.UseVisualStyleBackColor = true;
+            this.chckWorkship.CheckedChanged += new System.EventHandler(this.chckWorkship_CheckedChanged);
             // 
             // tbDayCare
             // 
@@ -5241,6 +5324,7 @@
             this.rbRural.TabStop = true;
             this.rbRural.Text = "Rural";
             this.rbRural.UseVisualStyleBackColor = true;
+            this.rbRural.CheckedChanged += new System.EventHandler(this.rbRural_CheckedChanged);
             // 
             // lblSOW
             // 
@@ -5270,6 +5354,7 @@
             this.rbUrvan.TabStop = true;
             this.rbUrvan.Text = "Urvan";
             this.rbUrvan.UseVisualStyleBackColor = true;
+            this.rbUrvan.CheckedChanged += new System.EventHandler(this.rbUrvan_CheckedChanged);
             // 
             // tbMOT
             // 
@@ -5329,15 +5414,29 @@
             this.panel6.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
+            this.panel28.ResumeLayout(false);
+            this.panel28.PerformLayout();
+            this.panel29.ResumeLayout(false);
+            this.panel29.PerformLayout();
+            this.panel30.ResumeLayout(false);
+            this.panel30.PerformLayout();
+            this.panel31.ResumeLayout(false);
+            this.panel31.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.panel32.ResumeLayout(false);
+            this.panel32.PerformLayout();
+            this.panel33.ResumeLayout(false);
+            this.panel33.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.panel22.ResumeLayout(false);
+            this.gbLPO.ResumeLayout(false);
+            this.gbLPO.PerformLayout();
             this.panel23.ResumeLayout(false);
             this.panel23.PerformLayout();
             this.gbAssesment.ResumeLayout(false);
@@ -5425,14 +5524,12 @@
         private System.Windows.Forms.TextBox tbLGU;
         private System.Windows.Forms.Label lbl4ps;
         private System.Windows.Forms.Label lblLGU;
-        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton rb4psYES;
         private System.Windows.Forms.Label lblFinancial;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RichTextBox rtbPOHothers;
+        private System.Windows.Forms.RadioButton rb4psNO;
         private System.Windows.Forms.RadioButton rbSupportYES;
-        private System.Windows.Forms.TextBox textBox40;
+        private System.Windows.Forms.TextBox tbPhilhealthMem;
         private System.Windows.Forms.Label lblIfyes;
-        private System.Windows.Forms.CheckBox chckOther;
         private System.Windows.Forms.RadioButton rbSupportNO;
         private System.Windows.Forms.TextBox tbType;
         private System.Windows.Forms.Label lblLME;
@@ -5784,9 +5881,9 @@
         private System.Windows.Forms.RadioButton rbImpression;
         private System.Windows.Forms.RadioButton rbDiagnosis;
         private System.Windows.Forms.Label lblLPO;
-        private System.Windows.Forms.TextBox tbOther;
-        private System.Windows.Forms.RichTextBox rtbAgencies;
-        private System.Windows.Forms.RichTextBox rtbPertinent;
+        private System.Windows.Forms.TextBox tbOtherfa;
+        private System.Windows.Forms.RichTextBox tbAgencies;
+        private System.Windows.Forms.RichTextBox tbPertinent;
         private System.Windows.Forms.CheckedListBox clbPrograms;
         private System.Windows.Forms.Label lblDes1;
         private System.Windows.Forms.Label lblProgram;
@@ -5796,12 +5893,12 @@
         private System.Windows.Forms.GroupBox gbInformant;
         private System.Windows.Forms.Label lblNotes;
         private System.Windows.Forms.RichTextBox rtbInterviewNote;
-        private System.Windows.Forms.TextBox tbInfomantNumber2;
+        private System.Windows.Forms.TextBox tbInformantNetwork2;
         private System.Windows.Forms.TextBox tbInformantNetwork1;
         private System.Windows.Forms.TextBox tbInformantRelationship;
-        private System.Windows.Forms.TextBox tbHow;
+        private System.Windows.Forms.TextBox tbInformantHow;
         private System.Windows.Forms.TextBox tbInformantWhen;
-        private System.Windows.Forms.TextBox tbInfomantWhat;
+        private System.Windows.Forms.TextBox tbInformantWhat;
         private System.Windows.Forms.TextBox tbInformantWho;
         private System.Windows.Forms.TextBox tbInformantContact2;
         private System.Windows.Forms.TextBox tbInformantContact1;
@@ -5841,5 +5938,14 @@
         private System.Windows.Forms.ComboBox cbOften;
         private System.Windows.Forms.DateTimePicker dtpLstChckup;
         private System.Windows.Forms.ComboBox cbCPsex;
+        private System.Windows.Forms.GroupBox gbLPO;
+        private System.Windows.Forms.Panel panel28;
+        private System.Windows.Forms.Panel panel29;
+        private System.Windows.Forms.Panel panel30;
+        private System.Windows.Forms.Panel panel31;
+        private System.Windows.Forms.Panel panel32;
+        private System.Windows.Forms.Panel panel33;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button1;
     }
 }

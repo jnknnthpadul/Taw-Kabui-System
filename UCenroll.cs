@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Taw_Kabui_Management_System
 {
@@ -25,58 +26,76 @@ namespace Taw_Kabui_Management_System
         public UCenroll()
         {
             InitializeComponent();
+            populate();
         }
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\PAD'Z\Documents\TawKabuiDB.mdf;Integrated Security=True;Connect Timeout=30");
+        string type;
 
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+
+            if (rbNewStudent.Checked == true)
             {
-                e.Handled = true;
+                type = "New Student";
+            }
+            else
+            {
+                type = "Old Student";
+            }
+
+            try
+            {
+                con.Open();
+                string query = "insert into StudentTB values('" + tbChildNum.Text + "','" + tbChildName.Text + "','" + cbImpairment.SelectedItem.ToString() + "','" + cbClass.SelectedItem.ToString()+ "','" + tbAddress.Text + "','" + dtpBirthday.Value.Date + "','" + tbAge.Text + "','" + tbContact.Text + "','" + cbGender.SelectedItem.ToString() + "','" + tbParentName.Text + "','" +tbPaddress.Text + "','" + tbPcontact.Text + "','" + type + "','" + cbGrade.SelectedItem.ToString() + "')";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Succesfully Added");
+                con.Close();
+                populate();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
-
-        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        private void populate() 
         {
-            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
+            con.Open();
+            string query = "select * from StudentTB";
+            SqlDataAdapter sda = new SqlDataAdapter(query,con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            dgvStudent.DataSource = dt;
+            con.Close();
         }
 
-        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        private void btnClear_Click(object sender, EventArgs e)
         {
-            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
+            tbChildNum.Text = "";
+            tbChildName.Text = "";
+            tbAddress.Text = "";
+            tbAge.Text = "";
+            tbContact.Text = "";
+            tbParentName.Text = "";
+            tbPaddress.Text = "";
+            tbPcontact.Text = "";
+            rbNewStudent.Checked = false;
+            rbOldStudent.Checked = false;
         }
 
-        private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
+        private void btnSearch_Click(object sender, EventArgs e)
         {
-            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
+            con.Open();
+            SqlDataAdapter adapt = new SqlDataAdapter("select * from AccountTB where ChildName like '" + tbSearch.Text + "%'", con);
+            DataTable dt = new DataTable();
+            adapt.Fill(dt);
+            dgvStudent.DataSource = dt;
+            con.Close();
         }
 
-        private void textBox7_KeyPress(object sender, KeyPressEventArgs e)
+        private void dgvStudent_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
-            {
-                e.Handled = true;
-            }
-        }
 
-        private void textBox6_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
-            {
-                e.Handled = true;
-            }
-        }
-
-        private void textBox8_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back);
-        }
-
-        private void textBox10_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
-            {
-                e.Handled = true;
-            }
         }
     }
 }
