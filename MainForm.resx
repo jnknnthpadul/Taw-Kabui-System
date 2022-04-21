@@ -121,7 +121,7 @@
   <data name="btnBack.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        FgAACxYBLSD57gAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACR5SURBVHhe7d0P
+        FQAACxUBgJnYgwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACR5SURBVHhe7d0P
         sOxnXd/xvTe5EVIUdSjKoFir07GWTlWCEJOQAAmBQDDSOvwJQsgfIKGIKJCQhHINJtgphJug2MCllVbH
         ESqdzqityh8JBCqCRSq0SBI7tYMptCqiwFhvtrvxmzEcPuH+eXbP7vP8Xu+Z14zDyD3nnrPzeZZ9zp47
         263m+2cnzG+YPX7hxoX3Lnx64fN/dcPeO//kNSfOP3HdA+e/etVD56/+4bPnz7jgwvlTn30xbMT3nHw6
@@ -283,7 +283,7 @@
   <data name="btnMin.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        SAAADkgBa28N/wAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAC/DSURBVHhe7d17
+        RgAADkYBz+ZBAQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAC/DSURBVHhe7d17
         kJxlnejx52kwC25WkcNl1yMrUuWeLZQtqiwPFkuZAElMNoQkYyCZGGa4BAi5DKmjC+t6UFYR1wVrEamt
         oqA8HrC2LF0sDyWZS09P91wakJu4yk3DxeUqICLhltvM+T0z05nOO7+Z6cv7vv2+z/t9tz5b5vePVVa/
         v+fbMz39mrGxMaDltpfthy8v21PFyq6y3dg1Yq/cNmL/ZeuIvUX8cMuw7d08bO++bNj+QuzcNJR7/pKh
@@ -493,7 +493,7 @@
   <data name="btnExit.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAADgOSURBVHhe7d0J
+        vwAADr8BOAVTJAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAADgOSURBVHhe7d0J
         mFxlne9xZtHZHXWWO+N13GhTVb1WnQLCNmOQRRAclcd4kcfrI4tcGXgUGEQdBtQZ5TIiIHeEZ5wBQRiW
         iaQXsoeQvdPVlUASIISh2RLWQPaFLL2c+/6Lt7By+u3u6qrznjrL9/c8H0GF1FvnnHr//7MfQeKTNfn8
         7xc7Olr6s9kz+3O5rxdzuWuKjvPTQjZ7TyGXm6v0q//9WfX/P6f+ukXZrrkAEqf8+9+i54QB9deC+usc

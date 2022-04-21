@@ -28,7 +28,7 @@ namespace Taw_Kabui_Management_System
             InitializeComponent();
             populate();
         }
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\PAD'Z\Documents\TawKabuiDB.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\PAD'Z\Desktop\Taw Kabui Management System\TawKabuiDB.mdf;Integrated Security=True;Connect Timeout=30");
         string status;
         private void btnSave_Click(object sender, EventArgs e)
         {
@@ -48,11 +48,28 @@ namespace Taw_Kabui_Management_System
             try
             {
                 con.Open();
-                string query = "insert into StaffTB values('" + tbFrstName.Text + "','" + tbMidName.Text + "','" + tbLstName.Text + "','" + tbPerAddress.Text + "','" + tbPreAddress.Text + "','" + dtpBOD.Value.Date + "','" + tbAge.Text + "','" + tbSalary.Text + "','" + cbSex.SelectedItem.ToString() + "','" + tbContact.Text + "','" + status + "','" + cbRole.SelectedItem.ToString() + "','" + cbDepartment.SelectedItem.ToString() + "','" + cbPosition.SelectedItem.ToString() + "','" + tbTIN.Text + "','" + tbSSS.Text + "','" + dtpHired.Value.Date + "','" + dtpContract.Value.Date + "')";
-                SqlCommand cmd = new SqlCommand(query, con);
+                SqlCommand cmd = new SqlCommand("INSERT into StaffTB(FirstName,MiddleName,LastName,PermanentAddress,PresentAddress,BirthDate,Age,Salary,Sex,ContactNumber,Status,Role,Department,Position,TIN,SSS,DateHired,ContractEnd) values(@FirstName,@MiddleName,@LastName,@PermanentAddress,@PresentAddress,@BirthDate,@Age,@Salary,@Sex,@ContactNumber,@Status,@Role,@Department,@Position,@TIN,@SSS,@DateHired,@ContractEnd)", con);
+                cmd.Parameters.AddWithValue("@FirstName", tbFrstName.Text);
+                cmd.Parameters.AddWithValue("@MiddleName", tbMidName.Text);
+                cmd.Parameters.AddWithValue("@LastName", tbLstName.Text);
+                cmd.Parameters.AddWithValue("@PermanentAddress", tbPerAddress.Text);
+                cmd.Parameters.AddWithValue("@PresentAddress", tbPreAddress.Text);
+                cmd.Parameters.AddWithValue("@BirthDate", dtpBOD.Value);
+                cmd.Parameters.AddWithValue("@Age", tbAge.Text);
+                cmd.Parameters.AddWithValue("@Salary", tbSalary.Text);
+                cmd.Parameters.AddWithValue("@Sex", cbSex.SelectedItem.ToString());
+                cmd.Parameters.AddWithValue("@ContactNumber", tbContact.Text);
+                cmd.Parameters.AddWithValue("@Status", status);
+                cmd.Parameters.AddWithValue("@Role", cbRole.SelectedItem.ToString());
+                cmd.Parameters.AddWithValue("@Department", cbDepartment.SelectedItem.ToString());
+                cmd.Parameters.AddWithValue("@Position", cbPosition.SelectedItem.ToString());
+                cmd.Parameters.AddWithValue("@TIN", tbTIN.Text);
+                cmd.Parameters.AddWithValue("@SSS", tbSSS.Text);
+                cmd.Parameters.AddWithValue("@DateHired", dtpHired.Value);
+                cmd.Parameters.AddWithValue("@ContractEnd", dtpContract.Value);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Succesfully Registered");
                 con.Close();
+                MessageBox.Show("Staff Save");
                 populate();
             }
             catch (Exception ex)
@@ -108,20 +125,57 @@ namespace Taw_Kabui_Management_System
             tbFrstName.Text = dgvStaff.Rows[e.RowIndex].Cells[0].Value.ToString();
             tbMidName.Text = dgvStaff.Rows[e.RowIndex].Cells[1].Value.ToString();
             tbLstName.Text = dgvStaff.Rows[e.RowIndex].Cells[2].Value.ToString();
-            tbPerAddress.Text = dgvStaff.Rows[e.RowIndex].Cells[4].Value.ToString();
-            tbPreAddress.Text = dgvStaff.Rows[e.RowIndex].Cells[5].Value.ToString();
+            tbPerAddress.Text = dgvStaff.Rows[e.RowIndex].Cells[3].Value.ToString();
+            tbPreAddress.Text = dgvStaff.Rows[e.RowIndex].Cells[4].Value.ToString();
             //tbFrstName.Text = dgvAccount.Rows[e.RowIndex].Cells[0].Value.ToString();
-            tbAge.Text = dgvStaff.Rows[e.RowIndex].Cells[7].Value.ToString();
-            tbSalary.Text = dgvStaff.Rows[e.RowIndex].Cells[8].Value.ToString();
-            cbSex.Text = dgvStaff.Rows[e.RowIndex].Cells[9].Value.ToString();
-            tbContact.Text = dgvStaff.Rows[e.RowIndex].Cells[10].Value.ToString();
+            tbAge.Text = dgvStaff.Rows[e.RowIndex].Cells[6].Value.ToString();
+            tbSalary.Text = dgvStaff.Rows[e.RowIndex].Cells[7].Value.ToString();
+            cbSex.Text = dgvStaff.Rows[e.RowIndex].Cells[8].Value.ToString();
+            tbContact.Text = dgvStaff.Rows[e.RowIndex].Cells[9].Value.ToString();
             //tbFrstName.Text = dgvAccount.Rows[e.RowIndex].Cells[0].Value.ToString();
-            cbRole.Text = dgvStaff.Rows[e.RowIndex].Cells[12].Value.ToString();
-            cbDepartment.Text = dgvStaff.Rows[e.RowIndex].Cells[13].Value.ToString();
-            cbPosition.Text = dgvStaff.Rows[e.RowIndex].Cells[14].Value.ToString();
-            tbTIN.Text = dgvStaff.Rows[e.RowIndex].Cells[15].Value.ToString();
-            tbSSS.Text = dgvStaff.Rows[e.RowIndex].Cells[16].Value.ToString();
+            cbRole.Text = dgvStaff.Rows[e.RowIndex].Cells[11].Value.ToString();
+            cbDepartment.Text = dgvStaff.Rows[e.RowIndex].Cells[12].Value.ToString();
+            cbPosition.Text = dgvStaff.Rows[e.RowIndex].Cells[13].Value.ToString();
+            tbTIN.Text = dgvStaff.Rows[e.RowIndex].Cells[14].Value.ToString();
+            tbSSS.Text = dgvStaff.Rows[e.RowIndex].Cells[15].Value.ToString();
             //tbFrstName.Text = dgvAccount.Rows[e.RowIndex].Cells[0].Value.ToString();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                string query = "update StaffTB set FirstName ='" + tbFrstName.Text +"', MiddleName = '"+tbMidName.Text+ "', LastName = '" + tbLstName.Text + "', PermanentAddress = '" + tbPerAddress.Text + "', PresentAddress = '" + tbPreAddress.Text + "', BirthDate = '" + dtpBOD.Value.ToString("yyyy-MM-dd") + "', Age = '" + tbAge.Text + "', Salary = '" + tbSalary.Text + "', Sex = '" + cbSex.SelectedItem.ToString() + "', ContactNumber = '" + tbContact.Text + "', Role = '" + cbRole.SelectedItem.ToString() + "', Department = '" + cbDepartment.SelectedItem.ToString() + "', Position = '" + cbPosition.SelectedItem.ToString() + "', TIN = '" + tbTIN.Text + "', SSS = '" + tbSSS.Text + "', DateHired = '" + dtpHired.Value.ToString("yyyy-MM-dd") + "', ContractEnd = '" + dtpContract.Value.ToString("yyyy-MM-dd") + "' where FirstName='" + tbFrstName.Text + "'";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Staff Updated");
+                con.Close();
+                populate();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                string query = "delete from StaffTB where FirstName='" + tbFrstName.Text + "';";
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Account Deleted");
+
+                con.Close();
+                populate();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

@@ -17,7 +17,7 @@ namespace Taw_Kabui_Management_System
         {
             InitializeComponent();
         }
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\PAD'Z\Documents\TawKabuiDB.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\PAD'Z\Desktop\Taw Kabui Management System\TawKabuiDB.mdf;Integrated Security=True;Connect Timeout=30");
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             Form mainform = new MainForm();
@@ -116,6 +116,15 @@ namespace Taw_Kabui_Management_System
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            btnClassesForm.Hide();
+            lblwelcomecontainer.Text = LoginForm.Username;
+            lblrolecontianer.Text = LoginForm.Role;
+
+            if (lblrolecontianer.Text == "Level Access 1")
+            {
+                bntAccountForm.Enabled = false;
+            }
+
             con.Open();
             SqlDataAdapter sda1 = new SqlDataAdapter("select count(*) from StudentTB", con);
             DataTable dt1 = new DataTable();
@@ -125,30 +134,30 @@ namespace Taw_Kabui_Management_System
             DataTable dt2 = new DataTable();
             sda2.Fill(dt2);
             lblStaffCount.Text = dt2.Rows[0][0].ToString();
-            SqlDataAdapter sda3 = new SqlDataAdapter("select count(*) from StudentTB", con);
+            SqlDataAdapter sda3 = new SqlDataAdapter("select count(*) from AccountTB", con);
             DataTable dt3 = new DataTable();
             sda3.Fill(dt3);
-            lblClassesCount.Text = dt3.Rows[0][0].ToString();
-            SqlDataAdapter sda4 = new SqlDataAdapter("select count(*) from StudentTB", con);
+            lblAccountCount.Text = dt3.Rows[0][0].ToString();
+            SqlDataAdapter sda4 = new SqlDataAdapter("select count(Status) from FeesTB", con);
             DataTable dt4 = new DataTable();
             sda4.Fill(dt4);
             lblPaidCount.Text = dt4.Rows[0][0].ToString();
-            SqlDataAdapter sda5 = new SqlDataAdapter("select count(*) from StudentTB", con);
+            SqlDataAdapter sda5 = new SqlDataAdapter("select count(*) from StudentTB where Impairment='ADHD'", con);
             DataTable dt5 = new DataTable();
             sda5.Fill(dt5);
             lblADHDCount.Text = dt5.Rows[0][0].ToString();
-            SqlDataAdapter sda6 = new SqlDataAdapter("select count(*) from StudentTB", con);
+            SqlDataAdapter sda6 = new SqlDataAdapter("select count(*) from StudentTB where Impairment='AUTISM'", con);
             DataTable dt6 = new DataTable();
             sda6.Fill(dt6);
             lblAutismCount.Text = dt6.Rows[0][0].ToString();
-            SqlDataAdapter sda7 = new SqlDataAdapter("select count(*) from StudentTB", con);
+            SqlDataAdapter sda7 = new SqlDataAdapter("select count(*) from StudentTB where Impairment='DOWN SYNDROME'", con);
             DataTable dt7 = new DataTable();
             sda7.Fill(dt7);
             lblDownSCount.Text = dt7.Rows[0][0].ToString();
-            SqlDataAdapter sda8 = new SqlDataAdapter("select count(*) from StudentTB", con);
+            SqlDataAdapter sda8 = new SqlDataAdapter("select sum(Payment) from FeesTB", con);
             DataTable dt8 = new DataTable();
             sda8.Fill(dt8);
-            lblNotPaidCount.Text = dt8.Rows[0][0].ToString();
+            lblCollectedCount.Text = dt8.Rows[0][0].ToString();
             con.Close();
         }
 

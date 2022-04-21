@@ -38,7 +38,6 @@
             this.btnFeesForm = new System.Windows.Forms.Button();
             this.btnReportForm = new System.Windows.Forms.Button();
             this.bntAccountForm = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.lblrolecontianer = new System.Windows.Forms.Label();
             this.lblRole = new System.Windows.Forms.Label();
             this.lblwelcomecontainer = new System.Windows.Forms.Label();
@@ -54,8 +53,8 @@
             this.panelContainer = new System.Windows.Forms.Panel();
             this.Calendar = new System.Windows.Forms.MonthCalendar();
             this.pnlNotPaid = new System.Windows.Forms.Panel();
-            this.lblNotPaidCount = new System.Windows.Forms.Label();
-            this.lblNotPaid = new System.Windows.Forms.Label();
+            this.lblCollectedCount = new System.Windows.Forms.Label();
+            this.lblCollected = new System.Windows.Forms.Label();
             this.pnlPaid = new System.Windows.Forms.Panel();
             this.lblPaidCount = new System.Windows.Forms.Label();
             this.lblPaid = new System.Windows.Forms.Label();
@@ -63,8 +62,8 @@
             this.lblDownSCount = new System.Windows.Forms.Label();
             this.lblDownS = new System.Windows.Forms.Label();
             this.pnlClasses = new System.Windows.Forms.Panel();
-            this.lblClassesCount = new System.Windows.Forms.Label();
-            this.lblClasses = new System.Windows.Forms.Label();
+            this.lblAccountCount = new System.Windows.Forms.Label();
+            this.lblAccount = new System.Windows.Forms.Label();
             this.pnlAutism = new System.Windows.Forms.Panel();
             this.lblAutismCount = new System.Windows.Forms.Label();
             this.lblAutism = new System.Windows.Forms.Label();
@@ -78,7 +77,6 @@
             this.lblStudentCount = new System.Windows.Forms.Label();
             this.lblStudent = new System.Windows.Forms.Label();
             this.flpNavigation.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.pnlTitle.SuspendLayout();
             this.pnlName.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
@@ -104,7 +102,6 @@
             this.flpNavigation.Controls.Add(this.btnFeesForm);
             this.flpNavigation.Controls.Add(this.btnReportForm);
             this.flpNavigation.Controls.Add(this.bntAccountForm);
-            this.flpNavigation.Controls.Add(this.panel1);
             this.flpNavigation.Dock = System.Windows.Forms.DockStyle.Left;
             this.flpNavigation.Location = new System.Drawing.Point(0, 68);
             this.flpNavigation.Name = "flpNavigation";
@@ -259,34 +256,21 @@
             this.bntAccountForm.UseVisualStyleBackColor = false;
             this.bntAccountForm.Click += new System.EventHandler(this.bntAccountForm_Click);
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(121)))), ((int)(((byte)(153)))));
-            this.panel1.Controls.Add(this.lblrolecontianer);
-            this.panel1.Controls.Add(this.lblRole);
-            this.panel1.Controls.Add(this.lblwelcomecontainer);
-            this.panel1.Controls.Add(this.lblWelcome);
-            this.panel1.Controls.Add(this.btnBack);
-            this.panel1.Location = new System.Drawing.Point(3, 811);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(225, 161);
-            this.panel1.TabIndex = 33;
-            // 
             // lblrolecontianer
             // 
             this.lblrolecontianer.AutoSize = true;
-            this.lblrolecontianer.ForeColor = System.Drawing.Color.White;
-            this.lblrolecontianer.Location = new System.Drawing.Point(76, 114);
+            this.lblrolecontianer.ForeColor = System.Drawing.Color.Black;
+            this.lblrolecontianer.Location = new System.Drawing.Point(1421, 38);
             this.lblrolecontianer.Name = "lblrolecontianer";
-            this.lblrolecontianer.Size = new System.Drawing.Size(51, 20);
+            this.lblrolecontianer.Size = new System.Drawing.Size(52, 20);
             this.lblrolecontianer.TabIndex = 36;
-            this.lblrolecontianer.Text = "label4";
+            this.lblrolecontianer.Text = "admin";
             // 
             // lblRole
             // 
             this.lblRole.AutoSize = true;
-            this.lblRole.ForeColor = System.Drawing.Color.White;
-            this.lblRole.Location = new System.Drawing.Point(9, 114);
+            this.lblRole.ForeColor = System.Drawing.Color.Black;
+            this.lblRole.Location = new System.Drawing.Point(1368, 38);
             this.lblRole.Name = "lblRole";
             this.lblRole.Size = new System.Drawing.Size(46, 20);
             this.lblRole.TabIndex = 35;
@@ -295,18 +279,18 @@
             // lblwelcomecontainer
             // 
             this.lblwelcomecontainer.AutoSize = true;
-            this.lblwelcomecontainer.ForeColor = System.Drawing.Color.White;
-            this.lblwelcomecontainer.Location = new System.Drawing.Point(94, 74);
+            this.lblwelcomecontainer.ForeColor = System.Drawing.Color.Black;
+            this.lblwelcomecontainer.Location = new System.Drawing.Point(1417, 8);
             this.lblwelcomecontainer.Name = "lblwelcomecontainer";
-            this.lblwelcomecontainer.Size = new System.Drawing.Size(13, 20);
+            this.lblwelcomecontainer.Size = new System.Drawing.Size(56, 20);
             this.lblwelcomecontainer.TabIndex = 34;
-            this.lblwelcomecontainer.Text = " ";
+            this.lblwelcomecontainer.Text = " admin";
             // 
             // lblWelcome
             // 
             this.lblWelcome.AutoSize = true;
-            this.lblWelcome.ForeColor = System.Drawing.Color.White;
-            this.lblWelcome.Location = new System.Drawing.Point(9, 72);
+            this.lblWelcome.ForeColor = System.Drawing.Color.Black;
+            this.lblWelcome.Location = new System.Drawing.Point(1335, 8);
             this.lblWelcome.Name = "lblWelcome";
             this.lblWelcome.Size = new System.Drawing.Size(79, 20);
             this.lblWelcome.TabIndex = 20;
@@ -319,7 +303,7 @@
             this.btnBack.FlatAppearance.BorderSize = 0;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBack.Location = new System.Drawing.Point(175, 95);
+            this.btnBack.Location = new System.Drawing.Point(1633, 8);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(47, 54);
             this.btnBack.TabIndex = 33;
@@ -411,9 +395,14 @@
             // 
             this.panelContainer.BackColor = System.Drawing.SystemColors.Control;
             this.panelContainer.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panelContainer.Controls.Add(this.lblrolecontianer);
             this.panelContainer.Controls.Add(this.Calendar);
+            this.panelContainer.Controls.Add(this.lblRole);
+            this.panelContainer.Controls.Add(this.lblwelcomecontainer);
             this.panelContainer.Controls.Add(this.pnlNotPaid);
+            this.panelContainer.Controls.Add(this.lblWelcome);
             this.panelContainer.Controls.Add(this.pnlPaid);
+            this.panelContainer.Controls.Add(this.btnBack);
             this.panelContainer.Controls.Add(this.pnlDownSyndrome);
             this.panelContainer.Controls.Add(this.pnlClasses);
             this.panelContainer.Controls.Add(this.pnlAutism);
@@ -428,7 +417,7 @@
             // 
             // Calendar
             // 
-            this.Calendar.Location = new System.Drawing.Point(1294, 681);
+            this.Calendar.Location = new System.Drawing.Point(1325, 713);
             this.Calendar.Name = "Calendar";
             this.Calendar.TabIndex = 19;
             // 
@@ -438,36 +427,36 @@
             this.pnlNotPaid.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlNotPaid.BackgroundImage")));
             this.pnlNotPaid.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pnlNotPaid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlNotPaid.Controls.Add(this.lblNotPaidCount);
-            this.pnlNotPaid.Controls.Add(this.lblNotPaid);
-            this.pnlNotPaid.Location = new System.Drawing.Point(1321, 350);
+            this.pnlNotPaid.Controls.Add(this.lblCollectedCount);
+            this.pnlNotPaid.Controls.Add(this.lblCollected);
+            this.pnlNotPaid.Location = new System.Drawing.Point(1321, 407);
             this.pnlNotPaid.Name = "pnlNotPaid";
             this.pnlNotPaid.Size = new System.Drawing.Size(300, 300);
             this.pnlNotPaid.TabIndex = 16;
             // 
-            // lblNotPaidCount
+            // lblCollectedCount
             // 
-            this.lblNotPaidCount.AutoSize = true;
-            this.lblNotPaidCount.BackColor = System.Drawing.Color.Transparent;
-            this.lblNotPaidCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNotPaidCount.ForeColor = System.Drawing.Color.White;
-            this.lblNotPaidCount.Location = new System.Drawing.Point(103, 157);
-            this.lblNotPaidCount.Name = "lblNotPaidCount";
-            this.lblNotPaidCount.Size = new System.Drawing.Size(31, 46);
-            this.lblNotPaidCount.TabIndex = 1;
-            this.lblNotPaidCount.Text = " ";
+            this.lblCollectedCount.AutoSize = true;
+            this.lblCollectedCount.BackColor = System.Drawing.Color.Transparent;
+            this.lblCollectedCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCollectedCount.ForeColor = System.Drawing.Color.White;
+            this.lblCollectedCount.Location = new System.Drawing.Point(99, 157);
+            this.lblCollectedCount.Name = "lblCollectedCount";
+            this.lblCollectedCount.Size = new System.Drawing.Size(31, 46);
+            this.lblCollectedCount.TabIndex = 1;
+            this.lblCollectedCount.Text = " ";
             // 
-            // lblNotPaid
+            // lblCollected
             // 
-            this.lblNotPaid.AutoSize = true;
-            this.lblNotPaid.BackColor = System.Drawing.Color.Transparent;
-            this.lblNotPaid.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNotPaid.ForeColor = System.Drawing.Color.White;
-            this.lblNotPaid.Location = new System.Drawing.Point(73, 89);
-            this.lblNotPaid.Name = "lblNotPaid";
-            this.lblNotPaid.Size = new System.Drawing.Size(155, 36);
-            this.lblNotPaid.TabIndex = 0;
-            this.lblNotPaid.Text = "NOT PAID";
+            this.lblCollected.AutoSize = true;
+            this.lblCollected.BackColor = System.Drawing.Color.Transparent;
+            this.lblCollected.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCollected.ForeColor = System.Drawing.Color.White;
+            this.lblCollected.Location = new System.Drawing.Point(58, 89);
+            this.lblCollected.Name = "lblCollected";
+            this.lblCollected.Size = new System.Drawing.Size(192, 36);
+            this.lblCollected.TabIndex = 0;
+            this.lblCollected.Text = "COLLECTED";
             // 
             // pnlPaid
             // 
@@ -477,7 +466,7 @@
             this.pnlPaid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlPaid.Controls.Add(this.lblPaidCount);
             this.pnlPaid.Controls.Add(this.lblPaid);
-            this.pnlPaid.Location = new System.Drawing.Point(1321, 24);
+            this.pnlPaid.Location = new System.Drawing.Point(1321, 81);
             this.pnlPaid.Name = "pnlPaid";
             this.pnlPaid.Size = new System.Drawing.Size(300, 300);
             this.pnlPaid.TabIndex = 12;
@@ -514,7 +503,7 @@
             this.pnlDownSyndrome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlDownSyndrome.Controls.Add(this.lblDownSCount);
             this.pnlDownSyndrome.Controls.Add(this.lblDownS);
-            this.pnlDownSyndrome.Location = new System.Drawing.Point(927, 350);
+            this.pnlDownSyndrome.Location = new System.Drawing.Point(927, 407);
             this.pnlDownSyndrome.Name = "pnlDownSyndrome";
             this.pnlDownSyndrome.Size = new System.Drawing.Size(300, 300);
             this.pnlDownSyndrome.TabIndex = 17;
@@ -549,36 +538,36 @@
             this.pnlClasses.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlClasses.BackgroundImage")));
             this.pnlClasses.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pnlClasses.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlClasses.Controls.Add(this.lblClassesCount);
-            this.pnlClasses.Controls.Add(this.lblClasses);
-            this.pnlClasses.Location = new System.Drawing.Point(927, 24);
+            this.pnlClasses.Controls.Add(this.lblAccountCount);
+            this.pnlClasses.Controls.Add(this.lblAccount);
+            this.pnlClasses.Location = new System.Drawing.Point(927, 81);
             this.pnlClasses.Name = "pnlClasses";
             this.pnlClasses.Size = new System.Drawing.Size(300, 300);
             this.pnlClasses.TabIndex = 13;
             // 
-            // lblClassesCount
+            // lblAccountCount
             // 
-            this.lblClassesCount.AutoSize = true;
-            this.lblClassesCount.BackColor = System.Drawing.Color.Transparent;
-            this.lblClassesCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClassesCount.ForeColor = System.Drawing.Color.White;
-            this.lblClassesCount.Location = new System.Drawing.Point(129, 166);
-            this.lblClassesCount.Name = "lblClassesCount";
-            this.lblClassesCount.Size = new System.Drawing.Size(31, 46);
-            this.lblClassesCount.TabIndex = 1;
-            this.lblClassesCount.Text = " ";
+            this.lblAccountCount.AutoSize = true;
+            this.lblAccountCount.BackColor = System.Drawing.Color.Transparent;
+            this.lblAccountCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccountCount.ForeColor = System.Drawing.Color.White;
+            this.lblAccountCount.Location = new System.Drawing.Point(129, 166);
+            this.lblAccountCount.Name = "lblAccountCount";
+            this.lblAccountCount.Size = new System.Drawing.Size(31, 46);
+            this.lblAccountCount.TabIndex = 1;
+            this.lblAccountCount.Text = " ";
             // 
-            // lblClasses
+            // lblAccount
             // 
-            this.lblClasses.AutoSize = true;
-            this.lblClasses.BackColor = System.Drawing.Color.Transparent;
-            this.lblClasses.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClasses.ForeColor = System.Drawing.Color.White;
-            this.lblClasses.Location = new System.Drawing.Point(82, 89);
-            this.lblClasses.Name = "lblClasses";
-            this.lblClasses.Size = new System.Drawing.Size(154, 36);
-            this.lblClasses.TabIndex = 0;
-            this.lblClasses.Text = "CLASSES";
+            this.lblAccount.AutoSize = true;
+            this.lblAccount.BackColor = System.Drawing.Color.Transparent;
+            this.lblAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAccount.ForeColor = System.Drawing.Color.White;
+            this.lblAccount.Location = new System.Drawing.Point(82, 89);
+            this.lblAccount.Name = "lblAccount";
+            this.lblAccount.Size = new System.Drawing.Size(162, 36);
+            this.lblAccount.TabIndex = 0;
+            this.lblAccount.Text = "ACCOUNT";
             // 
             // pnlAutism
             // 
@@ -588,7 +577,7 @@
             this.pnlAutism.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlAutism.Controls.Add(this.lblAutismCount);
             this.pnlAutism.Controls.Add(this.lblAutism);
-            this.pnlAutism.Location = new System.Drawing.Point(510, 350);
+            this.pnlAutism.Location = new System.Drawing.Point(510, 407);
             this.pnlAutism.Name = "pnlAutism";
             this.pnlAutism.Size = new System.Drawing.Size(300, 300);
             this.pnlAutism.TabIndex = 18;
@@ -625,7 +614,7 @@
             this.pnLADHD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnLADHD.Controls.Add(this.lblADHDCount);
             this.pnLADHD.Controls.Add(this.lblADHD);
-            this.pnLADHD.Location = new System.Drawing.Point(118, 350);
+            this.pnLADHD.Location = new System.Drawing.Point(118, 407);
             this.pnLADHD.Name = "pnLADHD";
             this.pnLADHD.Size = new System.Drawing.Size(300, 300);
             this.pnLADHD.TabIndex = 15;
@@ -662,7 +651,7 @@
             this.pnlStaff.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlStaff.Controls.Add(this.lblStaffCount);
             this.pnlStaff.Controls.Add(this.lblStaff);
-            this.pnlStaff.Location = new System.Drawing.Point(510, 24);
+            this.pnlStaff.Location = new System.Drawing.Point(510, 81);
             this.pnlStaff.Name = "pnlStaff";
             this.pnlStaff.Size = new System.Drawing.Size(300, 300);
             this.pnlStaff.TabIndex = 14;
@@ -700,7 +689,7 @@
             this.pnlStudent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlStudent.Controls.Add(this.lblStudentCount);
             this.pnlStudent.Controls.Add(this.lblStudent);
-            this.pnlStudent.Location = new System.Drawing.Point(118, 24);
+            this.pnlStudent.Location = new System.Drawing.Point(118, 81);
             this.pnlStudent.Name = "pnlStudent";
             this.pnlStudent.Size = new System.Drawing.Size(300, 300);
             this.pnlStudent.TabIndex = 11;
@@ -745,14 +734,13 @@
             this.Text = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.flpNavigation.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.pnlTitle.ResumeLayout(false);
             this.pnlTitle.PerformLayout();
             this.pnlName.ResumeLayout(false);
             this.pnlName.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.panelContainer.ResumeLayout(false);
+            this.panelContainer.PerformLayout();
             this.pnlNotPaid.ResumeLayout(false);
             this.pnlNotPaid.PerformLayout();
             this.pnlPaid.ResumeLayout(false);
@@ -801,8 +789,8 @@
         private System.Windows.Forms.Label lblAutismCount;
         private System.Windows.Forms.Label lblAutism;
         private System.Windows.Forms.Panel pnlClasses;
-        private System.Windows.Forms.Label lblClassesCount;
-        private System.Windows.Forms.Label lblClasses;
+        private System.Windows.Forms.Label lblAccountCount;
+        private System.Windows.Forms.Label lblAccount;
         private System.Windows.Forms.Panel pnlDownSyndrome;
         private System.Windows.Forms.Label lblDownSCount;
         private System.Windows.Forms.Label lblDownS;
@@ -810,13 +798,12 @@
         private System.Windows.Forms.Label lblPaidCount;
         private System.Windows.Forms.Label lblPaid;
         private System.Windows.Forms.Panel pnlNotPaid;
-        private System.Windows.Forms.Label lblNotPaidCount;
-        private System.Windows.Forms.Label lblNotPaid;
+        private System.Windows.Forms.Label lblCollectedCount;
+        private System.Windows.Forms.Label lblCollected;
         private System.Windows.Forms.Panel panelContainer;
         private System.Windows.Forms.MonthCalendar Calendar;
         private System.Windows.Forms.Label lblStaff;
         private System.Windows.Forms.Button btnMin;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblrolecontianer;
         private System.Windows.Forms.Label lblRole;
         private System.Windows.Forms.Label lblwelcomecontainer;

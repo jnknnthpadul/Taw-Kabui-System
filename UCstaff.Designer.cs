@@ -58,12 +58,6 @@
             this.tbPerAddress = new System.Windows.Forms.TextBox();
             this.tbFrstName = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
-            this.chckFemale = new System.Windows.Forms.CheckBox();
-            this.chckMale = new System.Windows.Forms.CheckBox();
-            this.chckBlock = new System.Windows.Forms.CheckBox();
-            this.chckRegular = new System.Windows.Forms.CheckBox();
-            this.chckSuspended = new System.Windows.Forms.CheckBox();
-            this.chckContractual = new System.Windows.Forms.CheckBox();
             this.tbSearch = new System.Windows.Forms.TextBox();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
@@ -149,12 +143,6 @@
             this.panel1.Controls.Add(this.tbPerAddress);
             this.panel1.Controls.Add(this.tbFrstName);
             this.panel1.Controls.Add(this.btnSearch);
-            this.panel1.Controls.Add(this.chckFemale);
-            this.panel1.Controls.Add(this.chckMale);
-            this.panel1.Controls.Add(this.chckBlock);
-            this.panel1.Controls.Add(this.chckRegular);
-            this.panel1.Controls.Add(this.chckSuspended);
-            this.panel1.Controls.Add(this.chckContractual);
             this.panel1.Controls.Add(this.tbSearch);
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnUpdate);
@@ -416,7 +404,7 @@
             this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(197)))), ((int)(((byte)(0)))));
             this.btnSearch.FlatAppearance.BorderSize = 0;
             this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Location = new System.Drawing.Point(638, 764);
+            this.btnSearch.Location = new System.Drawing.Point(1476, 355);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(126, 31);
             this.btnSearch.TabIndex = 90;
@@ -424,73 +412,12 @@
             this.btnSearch.UseVisualStyleBackColor = false;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
-            // chckFemale
-            // 
-            this.chckFemale.AutoSize = true;
-            this.chckFemale.Location = new System.Drawing.Point(1253, 790);
-            this.chckFemale.Name = "chckFemale";
-            this.chckFemale.Size = new System.Drawing.Size(88, 24);
-            this.chckFemale.TabIndex = 89;
-            this.chckFemale.Text = "Female";
-            this.chckFemale.UseVisualStyleBackColor = true;
-            // 
-            // chckMale
-            // 
-            this.chckMale.AutoSize = true;
-            this.chckMale.Location = new System.Drawing.Point(1254, 750);
-            this.chckMale.Name = "chckMale";
-            this.chckMale.Size = new System.Drawing.Size(69, 24);
-            this.chckMale.TabIndex = 88;
-            this.chckMale.Text = "Male";
-            this.chckMale.UseVisualStyleBackColor = true;
-            // 
-            // chckBlock
-            // 
-            this.chckBlock.AutoSize = true;
-            this.chckBlock.Location = new System.Drawing.Point(1072, 790);
-            this.chckBlock.Name = "chckBlock";
-            this.chckBlock.Size = new System.Drawing.Size(74, 24);
-            this.chckBlock.TabIndex = 87;
-            this.chckBlock.Text = "Block";
-            this.chckBlock.UseVisualStyleBackColor = true;
-            // 
-            // chckRegular
-            // 
-            this.chckRegular.AutoSize = true;
-            this.chckRegular.Location = new System.Drawing.Point(1072, 750);
-            this.chckRegular.Name = "chckRegular";
-            this.chckRegular.Size = new System.Drawing.Size(91, 24);
-            this.chckRegular.TabIndex = 86;
-            this.chckRegular.Text = "Regular";
-            this.chckRegular.UseVisualStyleBackColor = true;
-            // 
-            // chckSuspended
-            // 
-            this.chckSuspended.AutoSize = true;
-            this.chckSuspended.Location = new System.Drawing.Point(878, 790);
-            this.chckSuspended.Name = "chckSuspended";
-            this.chckSuspended.Size = new System.Drawing.Size(117, 24);
-            this.chckSuspended.TabIndex = 85;
-            this.chckSuspended.Text = "Suspended";
-            this.chckSuspended.UseVisualStyleBackColor = true;
-            // 
-            // chckContractual
-            // 
-            this.chckContractual.AutoSize = true;
-            this.chckContractual.Location = new System.Drawing.Point(878, 750);
-            this.chckContractual.Name = "chckContractual";
-            this.chckContractual.Size = new System.Drawing.Size(117, 24);
-            this.chckContractual.TabIndex = 84;
-            this.chckContractual.Text = "Contractual";
-            this.chckContractual.UseVisualStyleBackColor = true;
-            // 
             // tbSearch
             // 
-            this.tbSearch.Location = new System.Drawing.Point(180, 766);
+            this.tbSearch.Location = new System.Drawing.Point(1294, 357);
             this.tbSearch.Name = "tbSearch";
-            this.tbSearch.Size = new System.Drawing.Size(452, 26);
+            this.tbSearch.Size = new System.Drawing.Size(176, 26);
             this.tbSearch.TabIndex = 83;
-            this.tbSearch.Text = "Keyword";
             // 
             // btnDelete
             // 
@@ -503,6 +430,7 @@
             this.btnDelete.TabIndex = 80;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -515,6 +443,7 @@
             this.btnUpdate.TabIndex = 79;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // dgvStaff
             // 
@@ -712,12 +641,6 @@
         private System.Windows.Forms.TextBox tbPerAddress;
         private System.Windows.Forms.TextBox tbFrstName;
         private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.CheckBox chckFemale;
-        private System.Windows.Forms.CheckBox chckMale;
-        private System.Windows.Forms.CheckBox chckBlock;
-        private System.Windows.Forms.CheckBox chckRegular;
-        private System.Windows.Forms.CheckBox chckSuspended;
-        private System.Windows.Forms.CheckBox chckContractual;
         private System.Windows.Forms.TextBox tbSearch;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;

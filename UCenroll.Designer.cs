@@ -33,9 +33,11 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.lblEmergency = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.dtpBirthday = new System.Windows.Forms.DateTimePicker();
+            this.cbClass = new System.Windows.Forms.ComboBox();
+            this.cbImpairment = new System.Windows.Forms.ComboBox();
             this.cbGender = new System.Windows.Forms.ComboBox();
             this.tbAge = new System.Windows.Forms.TextBox();
-            this.dtpBirthday = new System.Windows.Forms.DateTimePicker();
             this.tbContact = new System.Windows.Forms.TextBox();
             this.tbAddress = new System.Windows.Forms.TextBox();
             this.tbChildName = new System.Windows.Forms.TextBox();
@@ -70,8 +72,6 @@
             this.rbOldStudent = new System.Windows.Forms.RadioButton();
             this.panel9 = new System.Windows.Forms.Panel();
             this.lblRequirments = new System.Windows.Forms.Label();
-            this.cbImpairment = new System.Windows.Forms.ComboBox();
-            this.cbClass = new System.Windows.Forms.ComboBox();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -118,11 +118,11 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.dtpBirthday);
             this.panel6.Controls.Add(this.cbClass);
             this.panel6.Controls.Add(this.cbImpairment);
             this.panel6.Controls.Add(this.cbGender);
             this.panel6.Controls.Add(this.tbAge);
-            this.panel6.Controls.Add(this.dtpBirthday);
             this.panel6.Controls.Add(this.tbContact);
             this.panel6.Controls.Add(this.tbAddress);
             this.panel6.Controls.Add(this.tbChildName);
@@ -143,8 +143,43 @@
             this.panel6.Size = new System.Drawing.Size(520, 365);
             this.panel6.TabIndex = 1;
             // 
+            // dtpBirthday
+            // 
+            this.dtpBirthday.Location = new System.Drawing.Point(94, 279);
+            this.dtpBirthday.Name = "dtpBirthday";
+            this.dtpBirthday.Size = new System.Drawing.Size(200, 26);
+            this.dtpBirthday.TabIndex = 22;
+            // 
+            // cbClass
+            // 
+            this.cbClass.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbClass.FormattingEnabled = true;
+            this.cbClass.Items.AddRange(new object[] {
+            "Class 1",
+            "Class 2",
+            "Class 3",
+            "Class 4"});
+            this.cbClass.Location = new System.Drawing.Point(131, 170);
+            this.cbClass.Name = "cbClass";
+            this.cbClass.Size = new System.Drawing.Size(346, 28);
+            this.cbClass.TabIndex = 21;
+            // 
+            // cbImpairment
+            // 
+            this.cbImpairment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbImpairment.FormattingEnabled = true;
+            this.cbImpairment.Items.AddRange(new object[] {
+            "ADHD",
+            "AUTISM",
+            "DOWN SYNDROME"});
+            this.cbImpairment.Location = new System.Drawing.Point(131, 117);
+            this.cbImpairment.Name = "cbImpairment";
+            this.cbImpairment.Size = new System.Drawing.Size(346, 28);
+            this.cbImpairment.TabIndex = 20;
+            // 
             // cbGender
             // 
+            this.cbGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbGender.FormattingEnabled = true;
             this.cbGender.Items.AddRange(new object[] {
             "Male",
@@ -161,13 +196,6 @@
             this.tbAge.Name = "tbAge";
             this.tbAge.Size = new System.Drawing.Size(166, 26);
             this.tbAge.TabIndex = 18;
-            // 
-            // dtpBirthday
-            // 
-            this.dtpBirthday.Location = new System.Drawing.Point(87, 277);
-            this.dtpBirthday.Name = "dtpBirthday";
-            this.dtpBirthday.Size = new System.Drawing.Size(186, 26);
-            this.dtpBirthday.TabIndex = 17;
             // 
             // tbContact
             // 
@@ -439,6 +467,7 @@
             // 
             // cbGrade
             // 
+            this.cbGrade.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbGrade.FormattingEnabled = true;
             this.cbGrade.Items.AddRange(new object[] {
             "Preschool",
@@ -503,31 +532,6 @@
             this.lblRequirments.TabIndex = 13;
             this.lblRequirments.Text = "Requirements";
             // 
-            // cbImpairment
-            // 
-            this.cbImpairment.FormattingEnabled = true;
-            this.cbImpairment.Items.AddRange(new object[] {
-            "ADHD",
-            "AUTISM",
-            "DOWN SYNDROME"});
-            this.cbImpairment.Location = new System.Drawing.Point(131, 117);
-            this.cbImpairment.Name = "cbImpairment";
-            this.cbImpairment.Size = new System.Drawing.Size(346, 28);
-            this.cbImpairment.TabIndex = 20;
-            // 
-            // cbClass
-            // 
-            this.cbClass.FormattingEnabled = true;
-            this.cbClass.Items.AddRange(new object[] {
-            "Class 1",
-            "Class 2",
-            "Class 3",
-            "Class 4"});
-            this.cbClass.Location = new System.Drawing.Point(131, 170);
-            this.cbClass.Name = "cbClass";
-            this.cbClass.Size = new System.Drawing.Size(346, 28);
-            this.cbClass.TabIndex = 21;
-            // 
             // UCenroll
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -565,7 +569,6 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.ComboBox cbGender;
         private System.Windows.Forms.TextBox tbAge;
-        private System.Windows.Forms.DateTimePicker dtpBirthday;
         private System.Windows.Forms.TextBox tbContact;
         private System.Windows.Forms.TextBox tbAddress;
         private System.Windows.Forms.TextBox tbChildName;
@@ -602,5 +605,6 @@
         private System.Windows.Forms.Label lblRequirments;
         private System.Windows.Forms.ComboBox cbImpairment;
         private System.Windows.Forms.ComboBox cbClass;
+        private System.Windows.Forms.DateTimePicker dtpBirthday;
     }
 }

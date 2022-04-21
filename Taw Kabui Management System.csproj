@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -111,10 +111,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TawKabuiDBDataSet.Designer.cs">
+    <Compile Include="TawKabuiDB.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TawKabuiDBDataSet.xsd</DependentUpon>
+      <DependentUpon>TawKabuiDB.xsd</DependentUpon>
     </Compile>
     <Compile Include="UCaccount.cs">
       <SubType>UserControl</SubType>
@@ -211,16 +211,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="TawKabuiDBDataSet.xsc">
-      <DependentUpon>TawKabuiDBDataSet.xsd</DependentUpon>
+    <None Include="TawKabuiDB.xsc">
+      <DependentUpon>TawKabuiDB.xsd</DependentUpon>
     </None>
-    <None Include="TawKabuiDBDataSet.xsd">
+    <None Include="TawKabuiDB.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>TawKabuiDBDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>TawKabuiDB.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="TawKabuiDBDataSet.xss">
-      <DependentUpon>TawKabuiDBDataSet.xsd</DependentUpon>
+    <None Include="TawKabuiDB.xss">
+      <DependentUpon>TawKabuiDB.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -278,15 +278,6 @@
     <None Include="Resources\settings.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="TawKabuiDB.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="TawKabuiDB_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>TawKabuiDB.mdf</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
@@ -297,6 +288,14 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TawKabuiDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TawKabuiDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

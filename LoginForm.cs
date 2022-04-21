@@ -17,7 +17,9 @@ namespace Taw_Kabui_Management_System
         {
             InitializeComponent();
         }
-        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\PAD'Z\Documents\TawKabuiDB.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\PAD'Z\Desktop\Taw Kabui Management System\TawKabuiDB.mdf;Integrated Security=True;Connect Timeout=30");
+        public static string Username = "";
+        public static string Role = "";
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if (tbUser.Text == "admin" && tbPass.Text == "admin")
@@ -39,16 +41,18 @@ namespace Taw_Kabui_Management_System
                 try
                 {
                     con.Open();
-                    SqlCommand cmd = new SqlCommand("select UserName, Password from AccountTB WHERE UserName = @UserName AND Password = @Password", con);
+                    SqlCommand cmd = new SqlCommand("select UserName, Password,Role from AccountTB WHERE UserName = @UserName AND Password = @Password and Role = @Role", con);
                     cmd.Parameters.AddWithValue("@UserName", tbUser.Text);
                     cmd.Parameters.AddWithValue("@Password", hash.hashPassword(tbPass.Text));
+                    cmd.Parameters.AddWithValue("@Role", cbRole.SelectedItem.ToString());
                     SqlDataAdapter sda = new SqlDataAdapter(cmd);
                     DataTable dt = new DataTable();
-
+                    con.Close();
                     sda.Fill(dt);
-
                     if (dt.Rows.Count > 0)
                     {
+                        Username = tbUser.Text;
+                        Role = cbRole.SelectedItem.ToString();
                         MessageBox.Show("Succesfully Login");
                         this.Hide();
                         MainForm main = new MainForm();
@@ -63,7 +67,6 @@ namespace Taw_Kabui_Management_System
                 {
                     MessageBox.Show(ex.Message);
                 }
-                con.Close();
             }
         }
 

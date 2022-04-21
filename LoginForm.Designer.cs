@@ -39,6 +39,8 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.btnVis = new System.Windows.Forms.Button();
             this.btnNoVis = new System.Windows.Forms.Button();
+            this.lblRole = new System.Windows.Forms.Label();
+            this.cbRole = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,7 +79,7 @@
             // 
             this.lblPassword.AutoSize = true;
             this.lblPassword.ForeColor = System.Drawing.Color.White;
-            this.lblPassword.Location = new System.Drawing.Point(520, 324);
+            this.lblPassword.Location = new System.Drawing.Point(520, 317);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(107, 20);
             this.lblPassword.TabIndex = 3;
@@ -87,7 +89,7 @@
             // 
             this.linkForgot.AutoSize = true;
             this.linkForgot.LinkColor = System.Drawing.Color.White;
-            this.linkForgot.Location = new System.Drawing.Point(687, 438);
+            this.linkForgot.Location = new System.Drawing.Point(696, 492);
             this.linkForgot.Name = "linkForgot";
             this.linkForgot.Size = new System.Drawing.Size(137, 20);
             this.linkForgot.TabIndex = 4;
@@ -102,9 +104,9 @@
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(767, 371);
+            this.btnLogin.Location = new System.Drawing.Point(785, 414);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(87, 48);
+            this.btnLogin.Size = new System.Drawing.Size(79, 47);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -126,7 +128,7 @@
             this.tbPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPass.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tbPass.Location = new System.Drawing.Point(633, 315);
+            this.tbPass.Location = new System.Drawing.Point(633, 312);
             this.tbPass.MaxLength = 20;
             this.tbPass.Name = "tbPass";
             this.tbPass.PasswordChar = '•';
@@ -140,9 +142,9 @@
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(665, 371);
+            this.btnExit.Location = new System.Drawing.Point(662, 414);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(87, 48);
+            this.btnExit.Size = new System.Drawing.Size(79, 47);
             this.btnExit.TabIndex = 8;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -156,7 +158,7 @@
             this.btnVis.FlatAppearance.BorderSize = 0;
             this.btnVis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVis.ForeColor = System.Drawing.Color.Transparent;
-            this.btnVis.Location = new System.Drawing.Point(892, 321);
+            this.btnVis.Location = new System.Drawing.Point(889, 313);
             this.btnVis.Name = "btnVis";
             this.btnVis.Size = new System.Drawing.Size(42, 29);
             this.btnVis.TabIndex = 9;
@@ -171,12 +173,32 @@
             this.btnNoVis.FlatAppearance.BorderSize = 0;
             this.btnNoVis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNoVis.ForeColor = System.Drawing.Color.Transparent;
-            this.btnNoVis.Location = new System.Drawing.Point(889, 319);
+            this.btnNoVis.Location = new System.Drawing.Point(889, 313);
             this.btnNoVis.Name = "btnNoVis";
             this.btnNoVis.Size = new System.Drawing.Size(42, 29);
             this.btnNoVis.TabIndex = 10;
             this.btnNoVis.UseVisualStyleBackColor = false;
             this.btnNoVis.Click += new System.EventHandler(this.btnNoVis_Click);
+            // 
+            // lblRole
+            // 
+            this.lblRole.AutoSize = true;
+            this.lblRole.Location = new System.Drawing.Point(561, 370);
+            this.lblRole.Name = "lblRole";
+            this.lblRole.Size = new System.Drawing.Size(57, 20);
+            this.lblRole.TabIndex = 11;
+            this.lblRole.Text = "ROLE:";
+            // 
+            // cbRole
+            // 
+            this.cbRole.FormattingEnabled = true;
+            this.cbRole.Items.AddRange(new object[] {
+            "Level Access 0",
+            "Level Access 1"});
+            this.cbRole.Location = new System.Drawing.Point(633, 367);
+            this.cbRole.Name = "cbRole";
+            this.cbRole.Size = new System.Drawing.Size(252, 28);
+            this.cbRole.TabIndex = 12;
             // 
             // LoginForm
             // 
@@ -186,6 +208,8 @@
             this.BackgroundImage = global::Taw_Kabui_Management_System.Properties.Resources._274971748_480693566933104_4470172570114014334_n;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(950, 600);
+            this.Controls.Add(this.cbRole);
+            this.Controls.Add(this.lblRole);
             this.Controls.Add(this.btnVis);
             this.Controls.Add(this.btnNoVis);
             this.Controls.Add(this.btnExit);
@@ -222,6 +246,8 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnVis;
         private System.Windows.Forms.Button btnNoVis;
+        private System.Windows.Forms.Label lblRole;
+        private System.Windows.Forms.ComboBox cbRole;
     }
 }
 
